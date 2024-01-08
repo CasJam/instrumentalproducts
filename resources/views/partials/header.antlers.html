@@ -13,14 +13,7 @@
       </button>
     </div>
 
-    <div class="hidden font-display font-medium uppercase tracking-[4px] text-white leading-6 
-              md:text-sm md:flex md:space-x-8 md:mt-2.5 
-              lg:text-base">
-      <a href="#" class="text-off-white-50 hover:text-primary-400">Newsletter</a>
-      <a href="#" class="text-off-white-50 hover:text-primary-400">YouTube</a>
-      <a href="#" class="text-off-white-50 hover:text-primary-400">Podcast</a>
-      <a href="#" class="text-off-white-50 hover:text-primary-400">Services</a>
-    </div>
+    {{ partial:header/nav_links context="desktop" }}
 
     <div class="hidden md:flex md:items-center md:space-x-4 md:flex-1 md:justify-end md:mt-[7px]">
       <a href="https://twitter.com/casjam" target="_blank" class="text-sm font-semibold text-secondary-200 lg:text-base hover:text-primary-400">
@@ -46,12 +39,8 @@
       </div>
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/25">
-          <div class="space-y-2 py-6 font-regular text-lg">
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">Newsletter</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">YouTube</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">Podcast</a>
-            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">Services</a>
-          </div>
+          {{ partial:header/nav_links context="mobile" }}
+
           <div class="py-8 flex space-x-4 flex-1 justify-start">
             <a href="https://twitter.com/casjam" target="_blank" class="text-lg text-secondary-300 opacity-60 hover:opacity-100">
               <i class="fa-brands fa-x-twitter"></i>
