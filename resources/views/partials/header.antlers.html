@@ -1,0 +1,67 @@
+<header class="absolute inset-x-0 top-0 z-50" x-data="{ mobile_nav_open: false }">
+  <nav class="flex items-start justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex md:flex-1 md:mr-8">
+      <a href="/" class="-m-1.5 p-1.5">
+        <img src="/assets/images/full-stack-founder.svg" alt="Full Stack Founder" class="h-20 xs:h-24 lg:h-28 xl:h-32" />
+      </a>
+    </div>
+
+    <div class="flex md:hidden">
+      <button type="button" class="mt-1.5 -mr-2 inline-flex items-center justify-center rounded-md p-2.5 text-secondary-400 opacity-60 hover:opacity-100" x-on:click="mobile_nav_open = ! mobile_nav_open">
+        <span class="sr-only">Open main menu</span>
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </button>
+    </div>
+
+    <div class="hidden font-display font-medium uppercase tracking-[4px] text-white leading-6 
+              md:text-sm md:flex md:space-x-8 md:mt-2.5 
+              lg:text-base">
+      <a href="#" class="text-off-white-50 hover:text-primary-400">Newsletter</a>
+      <a href="#" class="text-off-white-50 hover:text-primary-400">YouTube</a>
+      <a href="#" class="text-off-white-50 hover:text-primary-400">Podcast</a>
+      <a href="#" class="text-off-white-50 hover:text-primary-400">Services</a>
+    </div>
+
+    <div class="hidden md:flex md:items-center md:space-x-4 md:flex-1 md:justify-end md:mt-[7px]">
+      <a href="https://twitter.com/casjam" target="_blank" class="text-sm font-semibold text-secondary-200 lg:text-base hover:text-primary-400">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://youtube.com/@fullstackfounder" target="_blank" class="text-xl font-semibold text-secondary-200 lg:text-2xl hover:text-primary-400">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </nav>
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div class="lg:hidden" role="dialog" aria-modal="true" :class="mobile_nav_open ? '' : 'hidden'">
+    <div class="fixed inset-0 z-50"></div>
+    <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+      <div class="flex items-start justify-between">
+        <a href="/" class="-m-1.5 p-1.5">
+          <img src="assets/images/full-stack-founder.svg" alt="Full Stack Founder" class="h-20 xs:h-24 lg:h-28 xl:h-32" />
+        </a>
+        <button type="button" class="rounded-md p-2.5 text-secondary-400 opacity-60 hover:opacity-100" x-on:click="mobile_nav_open = ! mobile_nav_open">
+          <span class="sr-only">Close menu</span>
+          <i class="fa-solid fa-xmark fa-xl"></i>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/25">
+          <div class="space-y-2 py-6 font-regular text-lg">
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">Newsletter</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">YouTube</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">Podcast</a>
+            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-off-white-50 hover:bg-gray-800">Services</a>
+          </div>
+          <div class="py-8 flex space-x-4 flex-1 justify-start">
+            <a href="https://twitter.com/casjam" target="_blank" class="text-lg text-secondary-300 opacity-60 hover:opacity-100">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://youtube.com/@fullstackfounder" target="_blank" class="text-xl text-secondary-300 opacity-60 hover:opacity-100">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

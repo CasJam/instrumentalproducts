@@ -3,3 +3,46 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
+
+@layer base {
+  body {
+    @apply text-gray-600 font-display leading-relaxed;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-black;
+  }
+
+  h2 {
+    @apply text-2xl font-bold tracking-tight pt-8 xs:text-3xl sm:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-xl font-semibold lg:text-2xl;
+  }
+
+  strong {
+    @apply text-black;
+  }
+
+  a {
+    @apply text-primary-500 hover:text-black;
+  }
+}
+
+@layer components {
+
+  .btn {
+    @apply cursor-pointer w-full flex-none rounded-md border border-primary-500 bg-primary-500 px-5 py-2.5 text-lg font-medium text-white shadow-sm hover:bg-primary-600 sm:w-auto md:w-auto;
+  }
+
+  .btn.btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600;
+  }
+
+  .form-control {
+    @apply min-w-0 w-full flex-auto font-normal rounded-md border border-off-white-100 px-3.5 py-3 text-black focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1 focus:ring-inset sm:text-lg sm:leading-6 md:w-auto;
+  }
+}
