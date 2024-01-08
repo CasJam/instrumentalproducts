@@ -1,1 +1,9 @@
 {{ content | widont }}
+
+<div x-data="{ open: false }">
+    <button @click="open = ! open">Toggle Content</button>
+
+    <div x-show="open">
+        Content...
+    </div>
+</div>
