@@ -13,16 +13,10 @@
       </button>
     </div>
 
-    {{ partial:header/nav_links context="desktop" }}
+    {{ partial:header/nav_links screensize="desktop" mode="{{ mode }}" }}
 
-    <div class="hidden md:flex md:items-center md:space-x-4 md:flex-1 md:justify-end md:mt-[7px]">
-      <a href="https://twitter.com/casjam" target="_blank" class="text-sm font-semibold text-secondary-200 lg:text-base hover:text-primary-400">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://youtube.com/@fullstackfounder" target="_blank" class="text-xl font-semibold text-secondary-200 lg:text-2xl hover:text-primary-400">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-    </div>
+    {{ partial:header/social_links screensize="desktop" mode="{{ mode }}" }}
+
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
   <div class="lg:hidden" role="dialog" aria-modal="true" :class="mobile_nav_open ? '' : 'hidden'">
@@ -38,17 +32,9 @@
         </button>
       </div>
       <div class="mt-6 flow-root">
-        <div class="-my-6 divide-y divide-gray-500/25">
-          {{ partial:header/nav_links context="mobile" }}
-
-          <div class="py-8 flex space-x-4 flex-1 justify-start">
-            <a href="https://twitter.com/casjam" target="_blank" class="text-lg text-secondary-300 opacity-60 hover:opacity-100">
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://youtube.com/@fullstackfounder" target="_blank" class="text-xl text-secondary-300 opacity-60 hover:opacity-100">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div>
+        <div class="-my-6 divide-y divide-black">
+          {{ partial:header/nav_links screensize="mobile" mode="dark" }}
+          {{ partial:header/social_links screensize="{{ screensize }}" }}
         </div>
       </div>
     </div>
