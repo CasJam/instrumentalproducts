@@ -1,73 +1,70 @@
-<!--  Hero -->
-<div class="bg-tert iary-500">
-
+<div class="main-container relative">
   {{ partial:header }}
-
-  <div class="bg-off-white-50 px-8 relative isolate overflow-hidden pt-14">
-    <img src="/assets/images/hero-bg.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-bottom">
-    <div class="mx-auto max-w-3xl pt-32 pb-16 sm:py-48 lg:py-56">
-      <div class="text-center">
-        <h1 class="text-3xl font-medium tracking-normal text-off-white-50 mb-8 
+  <div class="z-20 relative mx-auto max-w-3xl pt-32 pb-16 sm:py-48 lg:py-56">
+    <div class="text-center">
+      <h1 class="text-3xl font-medium tracking-normal text-off-white-50 mb-8 
                   xs:text-4xl sm:text-6xl md:font-bold 
                   lg:text-7xl">
-          Full stack founders are the new superheroes.
-        </h1>
-        <div class="font-text space-y-10 text-lg font-light text-secondary-200 md:text-2xl md:leading-relaxed">
-          <div class="space-y-2">
-            <p>
-              You can acquire a heroic stack of skills to take any product idea from design to code to launched build a life-changing business.
-            </p>
+        Full stack founders are the new superheroes.
+      </h1>
+      <div class="font-text space-y-10 text-lg font-light text-secondary-200 md:text-2xl md:leading-relaxed">
+        <div class="space-y-2">
+          <p>
+            You can acquire a heroic stack of skills to take any product idea from design to code to launched build a life-changing business.
+          </p>
 
-            <p>
-              New editions sent weekly by Brian Casel.
-            </p>
-          </div>
+          <p>
+            New editions sent weekly by Brian Casel.
+          </p>
+        </div>
 
-          <div class="font-display space-y-2
+        <div class="font-display space-y-2
                       sm:mx-auto sm:flex sm:gap-x-4 sm:space-y-0 
                       sm:w-3/5">
-            <input id="email-address" name="email" type="email" autocomplete="email" class="form-control" placeholder="Enter your email" required>
-            <button type="submit" class="btn btn-primary">
-              Join Us
-            </button>
-          </div>
-
-          {{ form:newsletter_subscribe }}
-
-          {{ if success }}
-          <div class="bg-green-300 text-white p-2">
-            {{ success }}
-          </div>
-          {{ else }}
-          {{ if errors }}
-          <div class="bg-red-300 text-white p-2">
-            {{ errors }}
-            {{ value }}<br>
-            {{ /errors }}
-          </div>
-          {{ /if }}
-
-          {{ fields }}
-          <div class="p-2">
-            <label>{{ display }}</label>
-            <div class="p-1">{{ field }}</div>
-            {{ if error }}
-            <p class="text-gray-500">{{ error }}</p>
-            {{ /if }}
-          </div>
-          {{ /fields }}
-
-          <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-
-          <button type="submit">Submit</button>
-          {{ /if }}
-
-          {{ /form:newsletter_subscribe }}
-
-
+          <input id="email-address" name="email" type="email" autocomplete="email" class="form-control" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">
+            Join Us
+          </button>
         </div>
+
+        {{ form:newsletter_subscribe }}
+
+        {{ if success }}
+        <div class="bg-green-300 text-white p-2">
+          {{ success }}
+        </div>
+        {{ else }}
+        {{ if errors }}
+        <div class="bg-red-300 text-white p-2">
+          {{ errors }}
+          {{ value }}<br>
+          {{ /errors }}
+        </div>
+        {{ /if }}
+
+        {{ fields }}
+        <div class="p-2">
+          <label>{{ display }}</label>
+          <div class="p-1">{{ field }}</div>
+          {{ if error }}
+          <p class="text-gray-500">{{ error }}</p>
+          {{ /if }}
+        </div>
+        {{ /fields }}
+
+        <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+        <button type="submit">Submit</button>
+        {{ /if }}
+
+        {{ /form:newsletter_subscribe }}
+
+
       </div>
     </div>
   </div>
+  <div class="z-10 absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-gradient-to-t from-tertiary-500 to-black">
+    <div id="stars" class="absolute top-0 left-0 h-full w-full"></div>
+    <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-t from-tertiary-500 to-transparent"></div>
+  </div>
 </div>
-<!-- / Hero -->
