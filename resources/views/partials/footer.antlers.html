@@ -20,13 +20,7 @@
         <p class="mb-3 font-text">
           Receive new issues of Full Stack Founder, sent by Brian Casel to your inbox every Saturday.
         </p>
-        <div class="space-y-2 font-display
-                        md:flex md:space-x-2 md:items-center md:space-y-0">
-          <input id="email-address" name="email" type="email" autocomplete="email" class="form-control" placeholder="Enter your email" required>
-          <button type="submit" class="btn btn-primary">
-            Subscribe
-          </button>
-        </div>
+        {{ partial:newsletter_subscribe_form button_text="Subscribe" }}
       </div>
 
 

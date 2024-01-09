@@ -18,53 +18,13 @@
           </p>
         </div>
 
-        <div class="font-display space-y-2
-                      sm:mx-auto sm:flex sm:gap-x-4 sm:space-y-0 
-                      sm:w-3/5">
-          <input id="email-address" name="email" type="email" autocomplete="email" class="form-control" placeholder="Enter your email" required>
-          <button type="submit" class="btn btn-primary">
-            Join Us
-          </button>
-        </div>
-
-        {{ form:newsletter_subscribe }}
-
-        {{ if success }}
-        <div class="bg-green-300 text-white p-2">
-          {{ success }}
-        </div>
-        {{ else }}
-        {{ if errors }}
-        <div class="bg-red-300 text-white p-2">
-          {{ errors }}
-          {{ value }}<br>
-          {{ /errors }}
-        </div>
-        {{ /if }}
-
-        {{ fields }}
-        <div class="p-2">
-          <label>{{ display }}</label>
-          <div class="p-1">{{ field }}</div>
-          {{ if error }}
-          <p class="text-gray-500">{{ error }}</p>
-          {{ /if }}
-        </div>
-        {{ /fields }}
-
-        <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
-
-        <button type="submit">Submit</button>
-        {{ /if }}
-
-        {{ /form:newsletter_subscribe }}
-
+        {{ partial:newsletter_subscribe_form button_text="Join us" additional_classes="mx-auto sm:w-3/5"}}
 
       </div>
     </div>
   </div>
-  <div class="z-10 absolute top-0 left-0 w-full h-full bg-fixed bg-center bg-gradient-to-t from-tertiary-500 to-black">
+  <div class="z-10 absolute top-0 left-0 w-full h-full bg-gradient-to-t from-tertiary-500 to-black">
     <div id="stars" class="absolute top-0 left-0 h-full w-full"></div>
-    <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-t from-tertiary-500 to-transparent"></div>
+    <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-t from-tertiary-500 via-transparent to-transparent"></div>
   </div>
 </div>

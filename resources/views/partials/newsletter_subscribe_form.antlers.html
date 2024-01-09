@@ -1,0 +1,27 @@
+{{ form:newsletter_subscribe }}
+
+{{ if success }}
+{{ redirect to="/newsletter-success" }}
+{{ /if }}
+
+{{ if errors }}
+<div class="text-red-400 font-medium text-sm mb-4">
+  {{ errors }}
+  {{ value }}<br>
+  {{ /errors }}
+</div>
+{{ /if }}
+
+<div class="font-display space-y-2
+            sm:flex sm:gap-x-4 sm:space-y-0 
+            {{ additional_classes }}">
+  {{ fields }}
+  {{ field }}
+  {{ /fields}}
+  <button type="submit" class="btn btn-primary">
+    {{ button_text ?? 'Subscribe' }}
+  </button>
+</div>
+
+<input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+{{ /form:newsletter_subscribe }}
