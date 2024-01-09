@@ -1,11 +1,23 @@
 <div class="relative bg-off-white-100">
   {{ partial:header mode="light" }}
+
+  <div class="z-20 relative mx-auto max-w-3xl px-6 pt-6 pb-10 sm:pt-12 sm:pb-16 lg:pt-12 lg:pb-24 lg:max-w-4xl">
+    <div class="text-center">
+      <h1 class="text-3xl font-medium tracking-normal mb-8 
+                  xs:text-4xl sm:text-5xl md:font-bold 
+                  lg:text-7xl">
+        Full stack founders are the new superheroes.
+      </h1>
+    </div>
+  </div>
 </div>
 
-<div class="bg-off-white-50 py-24 sm:py-32">
+<div class="bg-off-white-50 py-16 sm:py-24 lg:py-32">
   <div class="mx-auto max-w-2xl px-6 lg:max-w-5xl">
 
-    {{ content }}
+    <div class="{{ partial:prose_classes }}">
+      {{ content }}
+    </div>
 
   </div>
 </div
