@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88337a197bd9098ea3816ea068857e9c",
+    "content-hash": "b0c118d69a74fa78c9393c2d882bc938",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -1317,6 +1317,55 @@
                 }
             ],
             "time": "2023-10-12T05:21:21+00:00"
+        },
+        {
+            "name": "gerttimmerman/statamic-zapier",
+            "version": "v1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GertTimmerman/statamic-zapier.git",
+                "reference": "f4538c9353ebe42f18b7f566c16b2248f42ce877"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GertTimmerman/statamic-zapier/zipball/f4538c9353ebe42f18b7f566c16b2248f42ce877",
+                "reference": "f4538c9353ebe42f18b7f566c16b2248f42ce877",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0",
+                "statamic/cms": "^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Zapier",
+                    "description": "Push form submissions to Zapier webhooks"
+                },
+                "laravel": {
+                    "providers": [
+                        "GertTimmerman\\StatamicZapier\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GertTimmerman\\StatamicZapier\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Gert Timmerman"
+                }
+            ],
+            "description": "Statamic Zapier",
+            "support": {
+                "email": "gert@carpenter.nl",
+                "issues": "https://github.com/GertTimmerman/statamic-zapier/issues",
+                "source": "https://github.com/GertTimmerman/statamic-zapier/tree/v1.5"
+            },
+            "time": "2023-11-02T07:23:11+00:00"
         },
         {
             "name": "graham-campbell/result-type",
