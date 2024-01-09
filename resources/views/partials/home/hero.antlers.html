@@ -1,22 +1,20 @@
 <div class="relative">
   {{ partial:header }}
-  <div class="z-20 relative mx-auto max-w-3xl px-6 pt-12 pb-16 sm:pt-24 sm:pb-32 lg:pt-36 lg:pb-56 lg:max-w-4xl">
+  <div class="z-20 relative mx-auto max-w-3xl px-6 pt-12 pb-16 sm:pt-24 sm:pb-32 lg:pt-28 lg:pb-56 lg:max-w-4xl">
     <div class="text-center">
       <h1 class="text-3xl font-medium tracking-normal text-off-white-50 mb-8 
                   xs:text-4xl sm:text-6xl md:font-bold 
                   lg:text-7xl">
         Full stack founders are the new superheroes.
       </h1>
-      <div class="font-text space-y-10 max-w-3xl mx-auto text-lg font-light text-secondary-200 md:text-2xl md:leading-relaxed">
-        <div class="space-y-2">
-          <p>
-            You can acquire a heroic stack of skills to take any product idea from design to code to launched build a life-changing business.
-          </p>
+      <div class="font-text max-w-3xl mx-auto text-lg font-light text-secondary-200 md:text-2xl md:leading-relaxed">
+        <p class="mb-8">
+          You can acquire the heroic stack of skills to take any product idea from design to code to launched and build a life-changing business.
+        </p>
 
-          <p>
-            New editions sent weekly by Brian Casel.
-          </p>
-        </div>
+        <p class="mb-3 lg:text-xl">
+          <span class="opacity-60">New editions sent weekly by</span> <a href="#brian" class="whitespace-nowrap text-off-white-50 hover:text-primary-400">Brian Casel</a>.
+        </p>
 
         {{ partial:newsletter_subscribe_form button_text="Join us" additional_classes="mx-auto sm:w-3/5"}}
 
@@ -24,7 +22,7 @@
     </div>
   </div>
   <div class="z-10 absolute top-0 left-0 w-full h-full bg-gradient-to-t from-tertiary-500 to-black">
-    <div id="stars" class="absolute top-0 left-0 h-full w-full"></div>
+    <div class="stars absolute top-0 left-0 h-full w-full"></div>
     <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-t from-tertiary-500 via-transparent to-transparent"></div>
   </div>
 </div>

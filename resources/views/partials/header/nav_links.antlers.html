@@ -5,8 +5,8 @@
             {{ else }}
               space-y-2 py-6 font-regular text-lg
             {{ /if }}">
-  {{ partial:header/nav_link context="desktop" url="/" target="" text="Newsletter" }}
-  {{ partial:header/nav_link context="desktop" url="https://www.youtube.com/@fullstackfounder" target="_blank" text="YouTube" }}
-  {{ partial:header/nav_link context="desktop" url="https://podcast.fullstackfounder.co" target="_blank" text="Podcast" }}
-  {{ partial:header/nav_link context="desktop" url="/services" target="" text="Services" }}
+  {{ partial:header/nav_link context="{{ context }}" url="/" target="" text="Newsletter" }}
+  {{ partial:header/nav_link context="{{ context }}" url="https://www.youtube.com/@fullstackfounder" target="_blank" text="YouTube" }}
+  {{ partial:header/nav_link context="{{ context }}" url="https://podcast.fullstackfounder.co" target="_blank" text="Podcast" }}
+  {{ partial:header/nav_link context="{{ context }}" url="/services" target="" text="Services" }}
 </div>
