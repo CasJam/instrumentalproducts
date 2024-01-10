@@ -29,13 +29,21 @@
 <div class="bg-off-white-50 px-6 py-16 sm:py-24 lg:py-32">
   <div class="mx-auto max-w-lg 
               lg:max-w-6xl">
+    {{ collection:articles paginate="12" as="articles" }}
     <div class="space-y-16
                 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16 lg:space-y-0">
 
-      {{ collection:articles }}
+      {{ articles }}
       {{ partial:articles/listing }}
-      {{ /collection:articles }}
+      {{ /articles }}
+
+
 
     </div>
+    {{ if total_items > 12 }}
+    {{ partial:articles/pagination }}
+    {{ /if}}
+
+    {{ /collection:articles }}
   </div>
 </div>
