@@ -42,25 +42,35 @@
       </div>
 
       <div class="space-y-4 
-                  lg:pt-16 lg:w-1/4">
-        <h3 class="text-2xl font-bold tracking-tight pt-0 mb-2 xs:text-3xl sm:text-4xl lg:text-5xl">
-          All articles
-        </h3>
-        <p class="font-text text-base text-gray-600 
-                md:text-xl
-                lg:text-2xl">
-          Every week, I share a new idea to help you in your journey to becoming a full stack founder. These are the latest issues...
-        </p>
-        <div class="pt-6">
-          <p class="font-text text-base text-gray-600 mb-2
-                md:text-lg
-                lg:text-lg">
-            Don't miss a new issue.
-          </p>
-          {{ partial:newsletter_subscribe_form button_text="Subscribe" additional_classes="lg:w-3/4" }}
-        </div>
-      </div>
+                  lg:pt-52 lg:w-1/4">
 
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold tracking-tight pt-0 mb-2 xs:text-3xl sm:text-4xl lg:text-2xl lg:font-semibold lg:mt-1">
+            Don't miss an issue
+          </h3>
+          <p class="font-text text-base text-gray-600 
+        md:text-xl
+        lg:text-lg">
+            Join thousands on the journey to growing as a full stack founder. New issues sent weekly by Brian Casel.
+          </p>
+          <div class="">
+            {{ partial:newsletter_subscribe_form button_text="Subscribe" additional_classes="lg:block lg:space-y-2" }}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold tracking-tight pt-0 mb-2 xs:text-3xl sm:text-4xl lg:text-2xl lg:font-semibold lg:mt-1">
+            Topics
+          </h3>
+          <div class="flex flex-wrap -mx-2">
+            {{ taxonomy:categories }}
+            <a href="{{ url }}" class="inline-block px-2 py-1 mb-2 mr-2 text-sm font-medium text-gray-600 bg-gray-100 rounded hover:bg-gray-200">
+              {{ name }}
+            </a>
+            {{ /taxonomy:categories }}
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
