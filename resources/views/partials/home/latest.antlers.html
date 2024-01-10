@@ -38,16 +38,25 @@
 
         <div class="space-y-16">
 
-          <a href="#" class="block group">
+          {{ collection:articles limit="3" }}
+          <a href="{{ url }}" class="block group">
+            {{ if issue_number }}
             <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
-              Issue #1
+              Issue #{{ issue_number }}
             </div>
+            {{ /if}}
+
             <h3 class="mb-2 
                       group-hover:text-primary-500">
-              Why learning how to code changes everything.
+              {{ title }}
             </h3>
+
             <p class="font-text text-gray-600 mb-4">
-              I'm a big believer in learning how to code. But not for the reasons you might think. In this issue, I'll share my story of how learning to code changed everything for me.
+              {{ if excerpt }}
+              {{ excerpt }}
+              {{ else }}
+              {{ content | strip_tags | truncate:200 }}...
+              {{ /if }}
             </p>
 
             <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
@@ -58,60 +67,12 @@
                 </div>
               </div>
               <div class="text-gray-300 opacity-80">
-                Jan 6th, 2024
+                {{ date }}
               </div>
             </div>
           </a>
+          {{ /collection:articles }}
 
-          <a href="#" class="block group">
-            <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
-              Issue #1
-            </div>
-            <h3 class="mb-2 
-                      group-hover:text-primary-500">
-              Why learning how to code changes everything.
-            </h3>
-            <p class="font-text text-gray-600 mb-4">
-              I'm a big believer in learning how to code. But not for the reasons you might think. In this issue, I'll share my story of how learning to code changed everything for me.
-            </p>
-
-            <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
-              <div class="flex items-center space-x-2">
-                <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
-                <div class="text-gray-400">
-                  Brian Casel
-                </div>
-              </div>
-              <div class="text-gray-300 opacity-80">
-                Jan 6th, 2024
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="block group">
-            <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
-              Issue #1
-            </div>
-            <h3 class="mb-2 
-                      group-hover:text-primary-500">
-              Why learning how to code changes everything.
-            </h3>
-            <p class="font-text text-gray-600 mb-4">
-              I'm a big believer in learning how to code. But not for the reasons you might think. In this issue, I'll share my story of how learning to code changed everything for me.
-            </p>
-
-            <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
-              <div class="flex items-center space-x-2">
-                <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
-                <div class="text-gray-400">
-                  Brian Casel
-                </div>
-              </div>
-              <div class="text-gray-300 opacity-80">
-                Jan 6th, 2024
-              </div>
-            </div>
-          </a>
 
           <a href="#" class="flex items-center space-x-2 text-gray-400 hover:text-primary-500">
             <span class="font-medium">All issues</span>

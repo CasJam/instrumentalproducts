@@ -1,0 +1,81 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+          -
+            handle: excerpt
+            field:
+              antlers: false
+              type: textarea
+              display: Excerpt
+              icon: textarea
+              instructions: 'Define the excerpt shown on the index page.  If blank, then the beginning of the article will be used.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - categories
+              display: Categories
+              mode: select
+          -
+            handle: tags
+            field:
+              type: terms
+              taxonomies:
+                - tags
+              display: Tags
+              mode: select
+          -
+            handle: issue_number
+            field:
+              input_type: number
+              antlers: false
+              type: text
+              display: 'Issue number'
+              icon: text
+              instructions: 'If this is a numbered issue (newsletter) then set that number here so that the issue number is displayed on this article.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+title: Article

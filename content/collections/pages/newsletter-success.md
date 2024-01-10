@@ -4,8 +4,9 @@ blueprint: page
 title: 'Newsletter Success'
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1704842565
+updated_at: 1704846204
 template: default
+headline: 'Thank you!'
 ---
 Hello world.  This is a paragraph.  Hello world.  This is a paragraph.  Hello world.  This is a paragraph.  Hello world.  This is a paragraph.  Hello world.  This is a paragraph.  Hello world.  This is a paragraph.  Hello world.  This is a paragraph.  Hello world.  This is a paragraph.
 
