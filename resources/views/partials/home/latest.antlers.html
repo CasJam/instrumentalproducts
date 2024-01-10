@@ -3,54 +3,40 @@
   <div class="mx-auto px-6
               xs:max-w-lg 
               lg:px-8 lg:max-w-7xl">
-
-    <div class="space-y-16 
-                lg:flex lg:items-start lg:space-x-16 lg:space-y-0 
-                xl:space-x-24">
-      <div class="space-y-4 
-                  lg:pt-16 lg:w-2/5">
-        <a href="#" class="xs:flex xs:items-baseline xs:space-x-6 xs:space-y-0">
-          <h2 class="pt-0 mb-2">
-            Latest issues
-          </h2>
-          <span class="flex items-center space-x-2 text-gray-300 hover:text-primary-500">
-            <span class="font-medium">All issues</span>
-            <i class="fa-solid fa-arrow-right fa-sm"></i>
-          </span>
-        </a>
-        <p class="font-text text-base text-gray-600 
-                md:text-xl
-                lg:text-2xl">
-          Every week, I share a new idea to help you in your journey to becoming a full stack founder. These are the latest issues...
-        </p>
-        <div class="pt-6">
-          <p class="font-text text-base text-gray-600 mb-2
-                md:text-lg
-                lg:text-lg">
-            Don't miss a new issue.
-          </p>
-          {{ partial:newsletter_subscribe_form button_text="Subscribe" additional_classes="lg:w-3/4" }}
-        </div>
-      </div>
-
-      <div class="flex-1 
-                  lg:pt-6 lg:w-3/5">
-
-        <div class="space-y-6 bg-white p-6 mb-16 shadow-2xl shadow-black/20 rounded">
-
-          {{ collection:articles limit="3" }}
-          {{ partial:articles/listing }}
-          {{ /collection:articles }}
-
-        </div>
-
-        <a href="/articles" class="flex items-center space-x-2 text-gray-400 hover:text-primary-500">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <a href="#" class="xs:flex xs:items-baseline xs:space-x-6 xs:space-y-0">
+        <h2 class="pt-0 mb-2">
+          Latest issues
+        </h2>
+        <span class="flex items-center space-x-2 text-gray-300 hover:text-primary-500">
           <span class="font-medium">All issues</span>
           <i class="fa-solid fa-arrow-right fa-sm"></i>
-        </a>
+        </span>
+      </a>
+      <p class="font-text text-base 
+                md:text-xl
+                lg:text-2xl">
+        Every week, I share a new idea to help you in your journey to becoming a full stack founder. These are the latest issues...
+      </p>
+      <div class="pt-6">
+        <p class="font-text text-base text-gray-600 mb-2
+              md:text-lg
+              lg:text-lg">
+          Don't miss a new issue.
+        </p>
+        {{ partial:newsletter_subscribe_form button_text="Subscribe" additional_classes="lg:w-3/4" }}
+      </div>
+    </div>
+
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <div class="space-y-16
+                lg:flex lg:items-start lg:justify-between lg:space-x-16 lg:space-y-0">
+
+        {{ collection:articles limit="3" }}
+        {{ partial:articles/listing }}
+        {{ /collection:articles }}
 
       </div>
-
     </div>
   </div>
 </div>
