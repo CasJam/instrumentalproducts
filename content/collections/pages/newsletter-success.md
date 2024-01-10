@@ -4,7 +4,7 @@ blueprint: page
 title: 'Newsletter Success'
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1704921380
+updated_at: 1704922194
 template: default_no_hero
 headline: "You're in!"
 sub_headline: 'I just sent you something...'

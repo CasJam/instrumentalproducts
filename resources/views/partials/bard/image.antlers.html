@@ -1,7 +1,11 @@
 {{ if link_url }}
 <a href="{{ link_url }}" {{ open_link_in_new_tab ? 'target="_blank"' : '' }}>
-  <img src="{{ image }}" alt="{{ alt_text }}" class="w-full overflow-hidden rounded-lg" loading="lazy" />
+  {{ image }}
+  <img src="{{ url }}" alt="{{ alt_text }}" class="w-full overflow-hidden rounded" loading="lazy" />
+  {{ /image }}
 </a>
 {{ else }}
-<img src="{{ image }}" alt="{{ alt_text }}" class="w-full overflow-hidden rounded-lg" loading="lazy" />
+{{ image }}
+<img src="{{ url }}" alt="{{ alt_text }}" class="w-full overflow-hidden rounded" loading="lazy" />
+{{ /image }}
 {{ /if }}

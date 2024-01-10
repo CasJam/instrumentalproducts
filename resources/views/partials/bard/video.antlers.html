@@ -1,0 +1,5 @@
+{{ if video | is_embeddable }}
+<iframe src="{{ video | embed_url }}" class="my-12 aspect-video w-full overflow-hidden rounded"></iframe>
+{{ else }}
+<video src="{{ video | embed_url }}" class="my-12 aspect-video w-full overflow-hidden rounded"></video>
+{{ /if }}
