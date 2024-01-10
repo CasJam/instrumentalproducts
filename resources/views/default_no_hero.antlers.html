@@ -1,0 +1,35 @@
+<div class="relative bg-off-white-50">
+  {{ partial:header mode="light" }}
+
+  <div class="z-20 relative mx-auto max-w-2xl px-6 pt-6 space-y-1 text-center 
+              xs:text-left sm:pt-12 
+              lg:pt-12 lg:space-y-2 
+              2xl:max-w-4xl">
+    <h1 class="text-3xl font-medium tracking-normal 
+              xs:text-4xl sm:text-5xl md:font-bold 
+              lg:text-5xl">
+      {{ headline ?? title }}
+    </h1>
+
+    {{ if sub_headline }}
+    <p class="font-text text-lg lg:text-2xl">
+      {{ sub_headline }}
+    </p>
+    {{ /if }}
+  </div>
+</div>
+
+<div class="bg-off-white-50 py-16 
+            md:pb-24  
+            lg:pt-20 lg:pb-32">
+  <div class="mx-auto max-w-2xl px-6 
+              2xl:max-w-4xl">
+
+    <div class="mx-auto {{ partial:prose_classes }}">
+      {{ content }}
+      {{ partial src="bard/{type}" }}
+      {{ /content }}
+    </div>
+
+  </div>
+</div

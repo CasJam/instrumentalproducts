@@ -1,14 +1,18 @@
 <div class="relative bg-off-white-100">
   {{ partial:header mode="light" }}
 
-  <div class="z-20 relative mx-auto max-w-3xl px-6 pt-6 pb-10 sm:pt-12 sm:pb-16 lg:pt-12 lg:pb-24 lg:max-w-4xl">
-    <div class="text-center">
-      <h1 class="text-3xl font-medium tracking-normal mb-8 
+  <div class="z-20 relative mx-auto max-w-3xl px-6 pt-6 pb-16 space-y-1 sm:pt-12 sm:pb-16 lg:pt-12 lg:pb-24 lg:max-w-4xl text-center">
+    <h1 class="text-3xl font-medium tracking-normal 
                   xs:text-4xl sm:text-5xl md:font-bold 
                   lg:text-7xl">
-        {{ headline ?? title }}
-      </h1>
-    </div>
+      {{ headline ?? title }}
+    </h1>
+
+    {{ if sub_headline }}
+    <p class="font-text text-lg">
+      {{ sub_headline }}
+    </p>
+    {{ /if }}
   </div>
 </div>
 
@@ -17,6 +21,8 @@
 
     <div class="mx-auto {{ partial:prose_classes }}">
       {{ content }}
+      {{ partial src="bard/{type}" }}
+      {{ /content }}
     </div>
 
   </div>

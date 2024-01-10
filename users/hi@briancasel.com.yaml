@@ -2,3 +2,7 @@ name: 'Brian Casel'
 super: true
 id: d5ab20b3-388d-4650-bb43-d170de415ebf
 password_hash: $2y$10$.HCnWw22kX8yv2DSxidGnuRg6C9U1k4RNqftFz7OKuhln9xNxFiXq
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

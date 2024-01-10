@@ -26,11 +26,21 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: content
+            handle: sub_headline
             field:
-              type: markdown
-              display: Content
-              localizable: true
+              input_type: text
+              antlers: false
+              type: text
+              display: Sub-headline
+              icon: text
+              instructions: 'Shown just below the headline in larger text than the main content.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            import: bard_with_custom_components
           -
             handle: author
             field:
