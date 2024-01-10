@@ -1,0 +1,66 @@
+<div class="relative bg-off-white-50">
+  {{ partial:header mode="light" }}
+</div>
+
+<div class="bg-off-white-50 pb-24 sm:pb-32">
+  <div class="mx-auto px-6
+              xs:max-w-lg 
+              lg:px-8 lg:max-w-7xl">
+
+    <div class="space-y-16 
+                lg:flex lg:items-start lg:space-x-16 lg:space-y-0 
+                xl:space-x-24">
+      <div class="flex-1 
+                lg:pt-6 lg:w-3/4">
+
+        <article class="space-y-6 bg-white p-6 mb-16 shadow-2xl shadow-black/20 rounded lg:p-10">
+
+          <div>
+            <h1 class="text-2xl font-bold tracking-tight xs:text-3xl sm:text-4xl lg:text-5xl">
+              {{ title }}
+            </h1>
+
+            <div class="mt-6 mb-12 flex items-center space-x-6 tracking-wide text-sm text-base">
+              <div class="flex items-center space-x-2">
+                <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
+                <div class="text-gray-400">
+                  Brian Casel
+                </div>
+              </div>
+              <div class="text-gray-300 opacity-80">
+                {{ date }}
+              </div>
+            </div>
+          </div>
+
+          <div class="prose {{ partial:prose_classes }}">
+            {{ content }}
+          </div>
+
+        </article>
+
+      </div>
+
+      <div class="space-y-4 
+                  lg:pt-16 lg:w-1/4">
+        <h3 class="text-2xl font-bold tracking-tight pt-0 mb-2 xs:text-3xl sm:text-4xl lg:text-5xl">
+          All articles
+        </h3>
+        <p class="font-text text-base text-gray-600 
+                md:text-xl
+                lg:text-2xl">
+          Every week, I share a new idea to help you in your journey to becoming a full stack founder. These are the latest issues...
+        </p>
+        <div class="pt-6">
+          <p class="font-text text-base text-gray-600 mb-2
+                md:text-lg
+                lg:text-lg">
+            Don't miss a new issue.
+          </p>
+          {{ partial:newsletter_subscribe_form button_text="Subscribe" additional_classes="lg:w-3/4" }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
