@@ -13,7 +13,15 @@
 
       <div class="space-y-6 lg:w-2/3">
 
-        <article class="space-y-6 bg-white mb-16 shadow-2xl shadow-black/20 rounded-lg">
+        <article class=" bg-white mb-16 shadow-2xl shadow-black/20 rounded-lg">
+
+          {{ if featured_video }}
+          <iframe src="{{ featured_video | embed_url }}" class="aspect-video w-full overflow-hidden rounded-t"></iframe>
+          {{ elseif featured_image }}
+          {{ featured_image }}
+          <img src="{{ url }}" alt="{{ alt }}" class="w-full overflow-hidden rounded" loading="lazy" />
+          {{ /featured_image }}
+          {{ /if }}
 
           <div class="p-6 lg:p-10">
 

@@ -46,6 +46,37 @@ tabs:
               validate:
                 - required
           -
+            handle: featured_video
+            field:
+              type: video
+              display: 'Featured video'
+              icon: video
+              instructions: "Shown at the top of the single article view.  If set, then the featured image won't be shown (but the featured image would still be shown on article listings)."
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: featured_image
+            field:
+              mode: list
+              container: assets
+              folder: cms_images
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Featured Image'
+              icon: assets
+              instructions: 'Shown on article listings and shown at the top of a single article view (unless a featured video is set).'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: categories
             field:
               type: terms
