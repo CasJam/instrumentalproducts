@@ -1,46 +1,48 @@
-<a href="{{ url }}" class="flex-1 block group rounded space-y-2 bg-white rounded shadow-2xl shadow-black/20">
-  {{ if featured_image }}
-  <div class="w-full">
-    {{ featured_image }}
-    <img src="{{ url }}" alt="{{ alt }}" class="w-full overflow-hidden rounded-t" loading="lazy" />
-    {{ /featured_image }}
-  </div>
-  {{ /if }}
-
-  <div class="flex-1 px-6 pb-6 
-              {{ if featured_image }}pt-3{{ else }} pt-6 {{ /if }}">
-    {{ if issue_number }}
-    <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
-      Issue #{{ issue_number }}
+<a href="{{ url }}" class="flex-1 block group">
+  <div class="rounded space-y-2 bg-white rounded shadow-2xl shadow-black/20">
+    {{ if featured_image }}
+    <div class="w-full">
+      {{ featured_image }}
+      <img src="{{ url }}" alt="{{ alt }}" class="w-full overflow-hidden rounded-t" loading="lazy" />
+      {{ /featured_image }}
     </div>
-    {{ /if}}
+    {{ /if }}
 
-    <h3 class="mb-2 
-              group-hover:text-primary-500">
-      {{ title }}
-    </h3>
-
-    <p class="font-text text-gray-600 mb-4">
-      {{ if excerpt }}
-      {{ excerpt }}
-      {{ else }}
-
-      {{ content }}
-      {{ partial src="bard/text" excerpt="true" }}
-      {{ /content }}
-
-      {{ /if }}
-    </p>
-
-    <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
-      <div class="flex items-center space-x-2">
-        <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
-        <div class="text-gray-400">
-          Brian Casel
-        </div>
+    <div class="flex-1 px-6 pb-6 
+                {{ if featured_image }}pt-3{{ else }} pt-6 {{ /if }}">
+      {{ if issue_number }}
+      <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
+        Issue #{{ issue_number }}
       </div>
-      <div class="text-gray-300 opacity-80">
-        {{ date }}
+      {{ /if}}
+
+      <h3 class="mb-2 
+                group-hover:text-primary-500">
+        {{ title }}
+      </h3>
+
+      <p class="font-text text-gray-600 mb-4">
+        {{ if excerpt }}
+        {{ excerpt }}
+        {{ else }}
+
+        {{ content }}
+        {{ partial src="bard/text" excerpt="true" }}
+        {{ /content }}
+
+        {{ /if }}
+      </p>
+
+      <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
+        <div class="flex items-center space-x-2">
+          <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
+          <div class="text-gray-400">
+            Brian Casel
+          </div>
+        </div>
+        <div class="text-gray-300 opacity-80">
+          {{ date }}
+        </div>
       </div>
     </div>
   </div>
