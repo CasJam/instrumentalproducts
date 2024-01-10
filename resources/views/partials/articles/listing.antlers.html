@@ -1,0 +1,32 @@
+<a href="{{ url }}" class="block group hover:bg-secondary-50 hover:bg-opacity-50 p-6 rounded">
+  {{ if issue_number }}
+  <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
+    Issue #{{ issue_number }}
+  </div>
+  {{ /if}}
+
+  <h3 class="mb-2 
+            group-hover:text-primary-500">
+    {{ title }}
+  </h3>
+
+  <p class="font-text text-gray-600 mb-4">
+    {{ if excerpt }}
+    {{ excerpt }}
+    {{ else }}
+    {{ content | strip_tags | truncate:200 }}...
+    {{ /if }}
+  </p>
+
+  <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
+    <div class="flex items-center space-x-2">
+      <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
+      <div class="text-gray-400">
+        Brian Casel
+      </div>
+    </div>
+    <div class="text-gray-300 opacity-80">
+      {{ date }}
+    </div>
+  </div>
+</a>

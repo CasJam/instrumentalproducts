@@ -7,8 +7,8 @@
     <div class="space-y-16 
                 lg:flex lg:items-start lg:space-x-16 lg:space-y-0 
                 xl:space-x-24">
-      <div class="flex-1 space-y-4 
-                  lg:pt-5">
+      <div class="space-y-4 
+                  lg:pt-16 lg:w-2/5">
         <a href="#" class="xs:flex xs:items-baseline xs:space-x-6 xs:space-y-0">
           <h2 class="pt-0 mb-2">
             Latest issues
@@ -26,7 +26,7 @@
         <div class="pt-6">
           <p class="font-text text-base text-gray-600 mb-2
                 md:text-lg
-                lg:text-xl">
+                lg:text-lg">
             Don't miss a new issue.
           </p>
           {{ partial:newsletter_subscribe_form button_text="Subscribe" additional_classes="lg:w-3/4" }}
@@ -34,52 +34,20 @@
       </div>
 
       <div class="flex-1 
-                  lg:pt-6">
+                  lg:pt-6 lg:w-3/5">
 
-        <div class="space-y-16">
+        <div class="space-y-6 bg-white p-6 mb-16 shadow-2xl shadow-black/20 rounded">
 
           {{ collection:articles limit="3" }}
-          <a href="{{ url }}" class="block group">
-            {{ if issue_number }}
-            <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
-              Issue #{{ issue_number }}
-            </div>
-            {{ /if}}
-
-            <h3 class="mb-2 
-                      group-hover:text-primary-500">
-              {{ title }}
-            </h3>
-
-            <p class="font-text text-gray-600 mb-4">
-              {{ if excerpt }}
-              {{ excerpt }}
-              {{ else }}
-              {{ content | strip_tags | truncate:200 }}...
-              {{ /if }}
-            </p>
-
-            <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
-              <div class="flex items-center space-x-2">
-                <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
-                <div class="text-gray-400">
-                  Brian Casel
-                </div>
-              </div>
-              <div class="text-gray-300 opacity-80">
-                {{ date }}
-              </div>
-            </div>
-          </a>
+          {{ partial:articles/listing }}
           {{ /collection:articles }}
 
-
-          <a href="#" class="flex items-center space-x-2 text-gray-400 hover:text-primary-500">
-            <span class="font-medium">All issues</span>
-            <i class="fa-solid fa-arrow-right fa-sm"></i>
-          </a>
-
         </div>
+
+        <a href="/articles" class="flex items-center space-x-2 text-gray-400 hover:text-primary-500">
+          <span class="font-medium">All issues</span>
+          <i class="fa-solid fa-arrow-right fa-sm"></i>
+        </a>
 
       </div>
 

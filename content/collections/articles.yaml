@@ -5,6 +5,7 @@ taxonomies:
   - categories
   - tags
 revisions: false
+route: '{parent_uri}/{slug}'
 date: true
 sort_dir: asc
 default_status: draft
