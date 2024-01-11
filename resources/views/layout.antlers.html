@@ -6,6 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ headline ?? title ?? site:name }}</title>
+  {{ seo_pro:meta }}
+  {{ if !open_graph_image }}
+  {{ if featured_image }}
+  {{ featured_image }}
+  <meta property="og:image" content="{{ permalink }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{{ alt ? alt : 'Full Stack Founder' }}" />
+  <meta name="twitter:image" content="{{ permalink }}" />
+  <meta name="twitter:image:alt" content="{{ alt ? alt : 'Full Stack Founder' }}" />
+  {{ /featured_image }}
+  {{ else }}
+  <meta property="og:image" content="{{$ url('/assets/images/full-stack-founder-og.png') $}}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{{ title ? title : 'Full Stack Founder' }}" />
+  <meta name="twitter:image" content="{{$ url('/assets/images/full-stack-founder-og.png') $}}" />
+  <meta name="twitter:image:alt" content="{{ title ? title : 'Full Stack Founder' }}" />
+  {{ /if }}
+  {{ /if }}
+
+
   {{ vite src="resources/js/site.js|resources/css/site.css" }}
   <link rel="stylesheet" href="https://use.typekit.net/qyy7fxr.css">
   <script src="https://kit.fontawesome.com/757347b8db.js" crossorigin="anonymous"></script>

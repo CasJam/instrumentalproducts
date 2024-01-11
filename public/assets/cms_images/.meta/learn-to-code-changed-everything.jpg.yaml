@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'learn to code'
 size: 184299
-last_modified: 1704924256
+last_modified: 1705011486
 width: 1920
 height: 1080
 mime_type: image/jpeg
