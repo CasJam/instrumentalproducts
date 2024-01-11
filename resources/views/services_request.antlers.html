@@ -1,0 +1,61 @@
+<div class="relative bg-off-white-50">
+  {{ partial:header mode="light" }}
+
+  <div class="z-20 relative mx-auto max-w-2xl px-6 pt-6 space-y-1 
+              sm:pt-12 
+              lg:pt-12 lg:space-y-2 lg:max-w-3xl">
+    <h1 class="text-3xl font-semibold tracking-normal 
+              xs:text-4xl
+              md:font-bold">
+      Inquire about working together
+    </h1>
+
+    <div class="font-text text-lg
+              lg:text-2xl">
+      Interested in <a href="/services">my services</a>? Get in touch here and I'll get back to you with current availability.
+    </div>
+  </div>
+</div>
+
+<div class="bg-off-white-50 py-16 
+            md:pb-24  
+            lg:pt-20 lg:pb-32">
+  <div class="mx-auto max-w-2xl px-6 
+              lg:max-w-3xl">
+
+
+    {{ form:service_request }}
+
+    {{ if success }}
+    <div class="bg-white rounded-lg border border-off-white-100 p-6 font-medium text-secondary-500 text-xl">
+      Message sent!
+    </div>
+    {{ else }}
+
+    {{ if errors }}
+    <div class="text-red-400 font-medium text-sm mb-4">
+      {{ errors }}
+      {{ value }}<br>
+      {{ /errors }}
+    </div>
+    {{ /if }}
+
+    <div class="text-left space-y-4">
+      {{ fields }}
+      <div class="flex">
+        {{ field }}
+      </div>
+      {{ /fields}}
+      <button type="submit" class="btn btn-primary">
+        Send
+      </button>
+    </div>
+
+    <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+    {{ /if }}
+
+    {{ /form:service_request }}
+
+  </div>
+</div

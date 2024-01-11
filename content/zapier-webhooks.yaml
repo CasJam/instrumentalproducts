@@ -7,3 +7,7 @@ webhooks:
     id: lr9mgx8y
     form: contact
     webhook: 'https://hook.us1.make.com/3qcwjjlysdq9p5iv4cmwzafrfwoypvke'
+  -
+    id: lr9oi3no
+    form: service_request
+    webhook: 'https://hook.us1.make.com/clx9gz13u9fkrm8s3uewq8qaur346okm'

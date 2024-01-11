@@ -1,0 +1,112 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              input_type: text
+              placeholder: 'Your name'
+              antlers: false
+              type: text
+              display: Name
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: email
+              placeholder: 'Your email'
+              antlers: false
+              type: text
+              display: Email
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: subject
+            field:
+              input_type: text
+              placeholder: Subject
+              antlers: false
+              type: text
+              display: Subject
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: website
+            field:
+              input_type: text
+              placeholder: 'Your website'
+              antlers: false
+              type: text
+              display: Website
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: services
+            field:
+              options:
+                ondemand: 'On demand advising'
+                sprints: 'Product planning sprint'
+                productdev: 'Product development'
+              inline: false
+              type: checkboxes
+              display: Services
+              icon: checkboxes
+              instructions: "Select the service(s) you're interested in."
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: message
+            field:
+              placeholder: "Tell me about your business, product, and what you're looking for help with."
+              antlers: false
+              type: textarea
+              display: Message
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: source
+            field:
+              input_type: text
+              placeholder: 'How did you hear about me / Full Stack Founder?'
+              antlers: false
+              type: text
+              display: Source
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
