@@ -86,7 +86,7 @@ tabs:
           -
             handle: message
             field:
-              placeholder: "Tell me about your business, product, and what you're looking for help with."
+              placeholder: "Tell me about your business, your product, and what you're looking for help with."
               antlers: false
               type: textarea
               display: Message
