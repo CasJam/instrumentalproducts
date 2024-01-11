@@ -1,0 +1,67 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              input_type: text
+              placeholder: 'Your name'
+              antlers: false
+              type: text
+              display: Name
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: email
+              placeholder: 'Your email'
+              antlers: false
+              type: text
+              display: Email
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: subject
+            field:
+              input_type: text
+              placeholder: Subject
+              antlers: false
+              type: text
+              display: Subject
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: message
+            field:
+              placeholder: Message
+              antlers: false
+              type: textarea
+              display: Message
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

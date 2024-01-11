@@ -3,3 +3,7 @@ webhooks:
     id: lr6r6lih
     form: newsletter_subscribe
     webhook: 'https://hook.us1.make.com/5fi51pz3em29kxn9oboi15ryrchrb9rr'
+  -
+    id: lr9mgx8y
+    form: contact
+    webhook: 'https://hook.us1.make.com/3qcwjjlysdq9p5iv4cmwzafrfwoypvke'

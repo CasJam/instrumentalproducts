@@ -5,9 +5,9 @@
               xs:text-left sm:pt-12 
               lg:pt-12 lg:space-y-2 lg:max-w-3xl
               2xl:max-w-5xl">
-    <h1 class="text-3xl font-medium tracking-normal 
-              xs:text-4xl sm:text-5xl md:font-bold 
-              lg:text-5xl">
+    <h1 class="text-3xl font-semibold tracking-normal 
+              xs:text-4xl
+              md:font-bold">
       {{ headline ?? title }}
     </h1>
 
@@ -26,9 +26,41 @@
               lg:flex lg:items-start lg:space-x-16 lg:space-y-0 lg:max-w-3xl
               2xl:max-w-5xl">
 
-    <div class="bg-off-white-100 mx-auto text-left 
-                lg:flex-1">
-      Contact form will go here.
+    <div class="flex-1">
+
+      {{ form:contact }}
+
+      {{ if success }}
+      <div class="bg-white rounded-lg border border-off-white-100 p-6 font-medium text-secondary-500 text-xl">
+        Message sent!
+      </div>
+      {{ else }}
+
+      {{ if errors }}
+      <div class="text-red-400 font-medium text-sm mb-4">
+        {{ errors }}
+        {{ value }}<br>
+        {{ /errors }}
+      </div>
+      {{ /if }}
+
+      <div class="text-left space-y-4">
+        {{ fields }}
+        <div class="flex">
+          {{ field }}
+        </div>
+        {{ /fields}}
+        <button type="submit" class="btn btn-primary">
+          Send
+        </button>
+      </div>
+
+      <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+      {{ /if }}
+
+      {{ /form:contact }}
+
     </div>
 
     <div class="lg:w-1/4">
