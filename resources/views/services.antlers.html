@@ -4,31 +4,179 @@
   <div class="z-20 relative mx-auto max-w-3xl px-6 pt-6 pb-16 text-center
               sm:pb-24 
               lg:pt-12 lg:pb-32 lg:max-w-4xl">
-    <h1 class="text-3xl font-medium tracking-normal mb-1
+    <h1 class="text-3xl font-semibold tracking-normal mb-1
                   xs:text-4xl 
                   sm:text-5xl sm:mb-2
                   md:font-bold 
                   lg:text-7xl">
-      {{ headline ?? title }}
+      Let's build product.
     </h1>
 
-    {{ if sub_headline }}
     <p class="font-text text-lg 
               sm:text-xl 
               lg:text-2xl lg:max-w-2xl lg:mx-auto">
-      {{ sub_headline }}
+      I help founders and teams build better products, faster by bringing my <span class="text-black whitespace-nowrap font-semibold">full stack founder</span> experience <span class="whitespace-nowrap">to <em>your</em> business.</span>
     </p>
-    {{ /if }}
   </div>
 </div>
 
-<div class="bg-off-white-50 py-16 sm:py-24 lg:py-32">
-  <div class="mx-auto max-w-2xl px-6 lg:max-w-3xl">
+<div class="bg-off-white-50 px-6 pt-16 pb-24 
+              sm:py-24 
+              lg:pt-32 lg:pb-40">
+
+  <div class="space-y-16 max-w-lg mx-auto
+                lg:max-w-5xl lg:flex lg:items-start lg:space-x-12 lg:space-y-0 
+                xl:max-w-6xl xl:space-x-16">
+
+    <div class="flex-1">
+      <div class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-white 
+                    md:mb-6">
+        <i class="fa-regular fa-messages fa-lg text-secondary-400"></i>
+      </div>
+      <div class="flex items-baseline space-x-4">
+        <h3 class="">
+          On-demand advising
+        </h3>
+      </div>
+      <p class="font-text flex-auto mb-3
+                            sm:text-lg 
+                            lg:mb-6">
+        Affordable, async access where we'll spend a week together to dig into something specific.
+      </p>
+      <a href="#on-demand" target="_blank" class="text-base font-semibold md:text-lg">
+        Learn more
+        <i class="fa-solid fa-chevron-down fa-sm ml-1"></i>
+      </a>
+    </div>
+
+    <div class="flex-1">
+      <div class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-white 
+                    md:mb-6">
+        <i class="fa-regular fa-map fa-lg text-secondary-400"></i>
+      </div>
+      <div class="flex items-baseline space-x-4">
+        <h3 class="">
+          Product planning sprints
+        </h3>
+      </div>
+      <p class="font-text flex-auto mb-3
+                  sm:text-lg 
+                  lg:mb-6">
+        A 2-week intensive collaboration where I'll come in to research, plan, scope and roadmap your next big feature or product.
+      </p>
+      <a href="#sprints" target="_blank" class="text-base font-semibold md:text-lg">
+        Learn more
+        <i class="fa-solid fa-chevron-down fa-sm ml-1"></i>
+      </a>
+    </div>
+
+    <div class="flex-1">
+      <div class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-white 
+                    md:mb-6">
+        <i class="fa-regular fa-rocket fa-lg text-secondary-400"></i>
+      </div>
+      <div class="flex items-baseline space-x-4">
+        <h3 class="">
+          Product development
+        </h3>
+      </div>
+      <p class="font-text flex-auto mb-3
+                  sm:text-lg 
+                  lg:mb-6">
+        Multi-month engagement where me and my small team work with you to build and ship the first version of your product.
+      </p>
+      <a href="#product" target="_blank" class="text-base font-semibold md:text-lg">
+        Learn more
+        <i class="fa-solid fa-chevron-down fa-sm ml-1"></i>
+      </a>
+    </div>
+
+  </div>
+
+  {{ partial:fancy_hr }}
+
+  <div class="mx-auto max-w-lg 
+              lg:max-w-2xl 
+              xl:max-w-3xl">
 
     <div class="mx-auto {{ partial:prose_classes }}">
-      {{ content }}
-      {{ partial src="bard/{type}" }}
-      {{ /content }}
+
+      <div id="on-demand" class="pt-4">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-white 
+                    md:mb-8 md:w-12 md:h-12 
+                    lg:mb-12 lg:w-16 lg:h-16">
+          <i class="fa-regular fa-messages text-lg text-secondary-400 
+                    md:text-xl 
+                    lg:text-2xl"></i>
+        </div>
+
+        <h2 class="pt-0 mt-0 mb-4
+                   md:text-3xl md:pt-0 md:mt-0 
+                   lg:text-4xl">
+          On-demand advising</h2>
+
+        <p>This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. </p>
+        <p>This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. </p>
+
+        <a href="/services/request" class="flex items-center space-x-2">
+          <span>Let's talk</span>
+          <i class="fa-solid fa-arrow-right fa-2xs"></i>
+        </a>
+      </div>
+
+      {{ partial:fancy_hr }}
+
+      <div id="sprints" class="pt-4">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-white 
+                    md:mb-8 md:w-12 md:h-12 
+                    lg:mb-12 lg:w-16 lg:h-16">
+          <i class="fa-regular fa-map text-lg text-secondary-400 
+                    md:text-xl 
+                    lg:text-2xl"></i>
+        </div>
+
+        <h2 class="pt-0 mt-0 mb-4
+                   md:text-3xl md:pt-0 md:mt-0 
+                   lg:text-4xl">
+          Product planning sprints
+        </h2>
+
+        <p>This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. </p>
+        <p>This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. </p>
+
+        <a href="/services/request" class="flex items-center space-x-2">
+          <span>Let's talk</span>
+          <i class="fa-solid fa-arrow-right fa-2xs"></i>
+        </a>
+      </div>
+
+      {{ partial:fancy_hr }}
+
+      <div id="product" class="pt-4">
+        <div class="mb-4 flex h-10 w-10 items-center justify-center rounded bg-white 
+                    md:mb-8 md:w-12 md:h-12 
+                    lg:mb-12 lg:w-16 lg:h-16">
+          <i class="fa-regular fa-rocket text-lg text-secondary-400 
+                    md:text-xl 
+                    lg:text-2xl"></i>
+        </div>
+
+        <h2 class="pt-0 mt-0 mb-4
+                   md:text-3xl md:pt-0 md:mt-0 
+                   lg:text-4xl">
+          Product development
+        </h2>
+
+        <p>This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. </p>
+        <p>This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. This is my version of coaching. </p>
+
+        <a href="/services/request" class="flex items-center space-x-2">
+          <span>Let's talk</span>
+          <i class="fa-solid fa-arrow-right fa-2xs"></i>
+        </a>
+      </div>
+
+
     </div>
 
   </div>

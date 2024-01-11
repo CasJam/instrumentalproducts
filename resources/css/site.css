@@ -38,6 +38,11 @@
   .prose li p {
     @apply my-0;
   }
+
+  .fancy-hr hr,
+  .prose .fancy-hr hr { 
+    @apply my-0;
+  }
 }
 
 @layer components {
