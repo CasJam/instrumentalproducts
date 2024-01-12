@@ -19,12 +19,20 @@
 
           {{ if featured_video }}
           <div class="px-2 sm:px-0">
-            <iframe src="{{ featured_video | embed_url }}" class="aspect-video w-full overflow-hidden 
-                    sm:rounded-t-lg sm:rounded-b-none sm:mx-0"></iframe>
+            <iframe
+              src="{{ featured_video | embed_url }}"
+              class="aspect-video w-full overflow-hidden 
+                    sm:rounded-t-lg sm:rounded-b-none sm:mx-0"
+            ></iframe>
           </div>
           {{ elseif featured_image }}
           {{ featured_image }}
-          <img src="{{ url }}" alt="{{ alt }}" class="w-full overflow-hidden rounded-t" loading="lazy" />
+          <img
+            src="{{ url }}"
+            alt="{{ alt }}"
+            class="w-full overflow-hidden rounded-t"
+            loading="lazy"
+          />
           {{ /featured_image }}
           {{ /if }}
 
@@ -36,7 +44,10 @@
                 <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
                   Issue #{{ issue_number }}
                 </div>
-                <a href="/" class="text-sm text-gray-300 hover:text-black font-light tracking-wide">Subscribe</a>
+                <a
+                  href="/"
+                  class="text-sm text-gray-300 hover:text-black font-light tracking-wide"
+                >Subscribe</a>
               </div>
               {{ /if}}
               <h1 class="text-2xl font-bold tracking-tight xs:text-3xl sm:text-4xl lg:text-5xl">
@@ -45,7 +56,11 @@
 
               <div class="mt-6 mb-12 flex items-center space-x-6 tracking-wide text-sm text-base">
                 <div class="flex items-center space-x-2">
-                  <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
+                  <img
+                    src="/assets/images/brian-casel-sm.jpg"
+                    alt="Brian Casel"
+                    class="h-6 w-6 rounded-full"
+                  />
                   <div class="text-gray-400">
                     Brian Casel
                   </div>
@@ -67,7 +82,10 @@
               {{ if tags }}
               <div class="flex flex-wrap items-start space-x-4 tracking-wide font-normal">
                 {{ taxonomy:tags }}
-                <a href="{{ url }}" class="inline-block mb-4 text-gray-300 hover:text-black">
+                <a
+                  href="{{ url }}"
+                  class="inline-block mb-4 text-gray-300 hover:text-black"
+                >
                   <span class="opacity-50 inline-block mr-[2px]">#</span>{{ title }}
                 </a>
                 {{ /taxonomy:tags }}
@@ -77,7 +95,11 @@
               <div class="bg-off-white-50 pl-8 p-6 rounded space-y-4
                           md:flex md:items-start md:space-x-8 md:space-y-0">
                 <div class="mt-1">
-                  <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-16 w-16 rounded-full" />
+                  <img
+                    src="/assets/images/brian-casel-sm.jpg"
+                    alt="Brian Casel"
+                    class="h-16 w-16 rounded-full"
+                  />
                 </div>
                 <div class="flex-1">
                   <h4 class="text-black font-medium text-xl">
@@ -105,7 +127,10 @@
                         sm:text-lg 
                         md:text-xl">
               <p>
-                I currently offer product strategy consulting and coaching for fellow software product founders. To learn more and check availability, <a href="/services" class="hover:text-off-white-50 font-medium whitespace-nowrap">click here</a>.
+                I currently offer product strategy consulting and coaching for fellow software product founders. To learn more and check availability, <a
+                  href="/services"
+                  class="hover:text-off-white-50 font-medium whitespace-nowrap"
+                >click here</a>.
               </p>
             </div>
 
@@ -148,7 +173,11 @@
                       xl:text-lg">
               Tune in to Full Stack Founder on YouTube, where Brian creates new videos every week on design, development, products, and entrepreneurship.
             </p>
-            <a href="https://youtube.com/@fullstackfounder" target="_blank" class="flex items-center font-semibold space-x-2">
+            <a
+              href="https://youtube.com/@fullstackfounder"
+              target="_blank"
+              class="flex items-center font-semibold space-x-2"
+            >
               <span>Subscribe on YouTube</span>
               <i class="fa-solid fa-arrow-right fa-sm"></i>
             </a>
