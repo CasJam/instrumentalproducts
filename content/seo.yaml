@@ -5,5 +5,6 @@ site_name_position: after
 site_name_separator: '|'
 canonical_url: '@seo:permalink'
 image: '@seo:open_graph_image'
+twitter_handle: casjam
 priority: 0.5
-change_frequency: monthly
+change_frequency: weekly

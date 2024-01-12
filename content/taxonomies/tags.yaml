@@ -7,3 +7,6 @@ preview_targets:
 template: tags.index
 term_template: tags.show
 layout: layout
+inject:
+  seo:
+    sitemap: false

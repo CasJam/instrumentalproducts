@@ -5,5 +5,8 @@ title: Services
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 template: services
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1704993624
+updated_at: 1705021874
+seo:
+  title: 'Product strategy services'
+  description: 'Brian Casel offers product strategy consulting, advising, and software development services through his site, Full Stack Founder.'
 ---
