@@ -16,7 +16,7 @@
             sm:flex sm:gap-x-4 sm:space-y-0 
             {{ additional_classes }}">
   <input class="form-control py-2" type="email" name="email" value="" placeholder="Your best email" required="">
-  <button type="submit" class="btn btn-primary">
+  <button type="submit" class="btn btn-primary {{ additional_button_classes }}">
     {{ button_text ?? 'Subscribe' }}
   </button>
 </div>
