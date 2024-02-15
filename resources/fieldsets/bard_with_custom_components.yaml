@@ -120,6 +120,151 @@ fields:
                     visibility: visible
                     replicator_preview: true
                     hide_display: false
+            h2_anchor:
+              display: 'H2 Anchor'
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: headline_text
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Headline text'
+                    icon: text
+                    instructions: 'The H2 headline text'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: h2_id
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'H2 ID'
+                    icon: text
+                    instructions: 'All lowercase, no spaces.  Must be unique on this page.  Table of contents links will append this ID after the #'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+            h3_anchor:
+              display: 'H3 Anchor'
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: headline_text
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Headline Text'
+                    icon: text
+                    instructions: 'The H3 headline text'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: h3_id
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'H3 ID'
+                    icon: text
+                    instructions: 'All lowercase, no spaces.  Must be unique on this page.  Table of contents links will append this ID after the #'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+            h4_anchor:
+              display: 'H4 Anchor'
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: headline_text
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'Headline text'
+                    icon: text
+                    instructions: 'The H4 headline text'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: h4_id
+                  field:
+                    input_type: text
+                    antlers: false
+                    type: text
+                    display: 'H4 ID'
+                    icon: text
+                    instructions: 'All lowercase, no spaces.  Must be unique on this page.  Table of contents links will append this ID after the #'
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+            callout:
+              display: Callout
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: content
+                  field:
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    smart_typography: false
+                    save_html: false
+                    inline: false
+                    toolbar_mode: fixed
+                    reading_time: false
+                    word_count: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    remove_empty_nodes: false
+                    antlers: false
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    always_show_set_button: false
+                    collapse: false
+                    previews: true
+                    type: bard
+                    display: Content
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
       always_show_set_button: false
       collapse: false
       previews: true
