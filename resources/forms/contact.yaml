@@ -1,1 +1,8 @@
 title: Contact
+email:
+  -
+    id: lt4jl51c
+    to: hi@briancasel.com
+    from: '{{ email }}'
+    reply_to: '{{ email }}'
+    subject: '[Full Stack Founder] {{ subject }}'
