@@ -1,4 +1,4 @@
-{{ form:newsletter_subscribe }}
+{{ form:newsletter_subscribe name="{{ form_name }}" }}
 
 {{ if success }}
 {{ redirect to="/newsletter-success" }}
@@ -15,11 +15,25 @@
 <div class="font-display space-y-2
             sm:flex sm:gap-x-4 sm:space-y-0 
             {{ additional_classes }}">
-  <input class="form-control py-2" type="email" name="email" value="" placeholder="Your best email" required="">
-  <button type="submit" class="btn btn-primary {{ additional_button_classes }}">
+  <input
+    class="form-control py-2"
+    type="email"
+    name="email"
+    value=""
+    placeholder="Your best email"
+    required=""
+  >
+  <button
+    type="submit"
+    class="btn btn-primary {{ additional_button_classes }}"
+  >
     {{ button_text ?? 'Subscribe' }}
   </button>
 </div>
 
-<input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+<input
+  type="text"
+  class="hidden"
+  name="{{ honeypot ?? 'honeypot' }}"
+>
 {{ /form:newsletter_subscribe }}
