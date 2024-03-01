@@ -1,0 +1,238 @@
+<!-- You -->
+<div
+  id="you"
+  class="space-y-8 pt-16 
+md:pt-24"
+>
+
+  <h2 class="mb-8">
+    Is this you?
+  </h2>
+
+  <div class="">
+
+    <div
+      class="flex items-start py-4 cursor-pointer
+md:py-6"
+      x-data="{ section_open: false }"
+      x-on:click="section_open = ! section_open"
+    >
+      <div class="relative w-7 top-[3px]
+    sm:top-[5px] sm:w-8
+    md:top-[5px] md:w-9 
+    lg:w-10">
+        <i
+          class="fa-sharp fa-chevron-down text-sm md:text-lg"
+          x-bind:class="section_open ? 'block' : 'hidden'"
+        ></i>
+        <i
+          class="fa-sharp fa-chevron-right text-sm md:text-lg"
+          x-bind:class="section_open ? 'hidden' : 'block'"
+        ></i>
+      </div>
+      <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
+        <div :class="section_open ? 'hidden' : 'block'">
+          <p>
+            Your busy SaaS company needs to launch something new... If only you had the bandwidth.
+          </p>
+
+          <p class="pt-4">
+            <span class="icon-link">
+              Go on...
+            </span>
+          </p>
+        </div>
+
+        <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+          <p>
+            <strong>
+              Your busy SaaS company needs to launch something new... If only you had the bandwidth.
+            </strong>
+          </p>
+
+          <p>
+            Your main product is doing its thing. Your team is focused on maintaining that day-to-day, and they can’t be distracted.
+          </p>
+
+          <p>
+            But you’re thinking about the <em>next thing.</em>
+          </p>
+
+          <p>
+            A 2nd product? A next gen? A side-hustle? Product as marketing?
+          </p>
+
+          <p>
+            Bring me (and my crew) in to be your strike team, here to start and ship V1 of your next product (or big feature)—without pulling your team off their current work.
+          </p>
+
+          <p>
+            <a
+              href="mailto:hi@briancasel.com"
+              class="icon-link"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              <span>Let's talk</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex items-start py-4 curssor-pointer
+md:py-6"
+      x-data="{ section_open: false }"
+      x-on:click="section_open = ! section_open"
+    >
+      <div class="relative w-7 top-[3px]
+    sm:top-[5px] sm:w-8
+    md:top-[5px] md:w-9 
+    lg:w-10">
+        <i
+          class="fa-sharp fa-chevron-down text-sm md:text-lg"
+          x-bind:class="section_open ? 'block' : 'hidden'"
+        ></i>
+        <i
+          class="fa-sharp fa-chevron-right text-sm md:text-lg"
+          x-bind:class="section_open ? 'hidden' : 'block'"
+        ></i>
+      </div>
+      <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
+        <div :class="section_open ? 'hidden' : 'block'">
+          <p>
+            You’re working on a big feature or redesign, and you could use some help…
+          </p>
+
+          <p class="pt-4">
+            <span class="icon-link">
+              Go on...
+            </span>
+          </p>
+        </div>
+
+        <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+          <p>
+            <strong>
+              You’re working on a big feature or redesign, and you could use some help…
+            </strong>
+          </p>
+
+          <p>
+            Maybe your product’s onboarding needs an overhaul (when does it not?).
+          </p>
+
+          <p>
+            Or you’re starting a big new feature that you can’t afford to get wrong.
+          </p>
+
+          <p>
+            Or your users keep asking about your mobile app (that’s perpetually &ldquo;coming soon&rdquo;).
+          </p>
+
+          <p>
+            Or… Whatever it is, I’m here to be your sounding board, your strategist, your UX designer, your sanity checker.
+          </p>
+
+          <p>
+            <a
+              href="mailto:hi@briancasel.com"
+              class="icon-link"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              <span>Let's talk</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex items-start py-4 cursor-pointer
+md:py-6"
+      x-data="{ section_open: false }"
+      x-on:click="section_open = ! section_open"
+    >
+      <div class="relative w-7 top-[3px]
+    sm:top-[5px] sm:w-8
+    md:top-[5px] md:w-9 
+    lg:w-10">
+        <i
+          class="fa-sharp fa-chevron-down text-sm md:text-lg"
+          x-bind:class="section_open ? 'block' : 'hidden'"
+        ></i>
+        <i
+          class="fa-sharp fa-chevron-right text-sm md:text-lg"
+          x-bind:class="section_open ? 'hidden' : 'block'"
+        ></i>
+      </div>
+      <div class="flex-1">
+        <div :class="section_open ? 'hidden' : 'block'">
+          <p>
+            You’re a creator with an audience and you want to launch your first software product this year…
+          </p>
+
+          <p class="pt-4">
+            <span class="icon-link">
+              Go on...
+            </span>
+          </p>
+        </div>
+
+        <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+          <p>
+            <strong>
+              You’re a creator with an audience and you want to launch your first software product this year…
+            </strong>
+          </p>
+
+          <p>
+            Your audience trusts you, and you know your customers (and their problems) really well.
+          </p>
+
+          <p>
+            That connection with your people has enabled you to build a thriving business selling courses, memberships, sponsorships or the like… That’s awesome!
+          </p>
+
+          <p>
+            But you’re looking to add something that is…
+          </p>
+
+          <ul class="list-disc ml-6 space-y-3">
+            <li>Less reliant on you and your name brand</li>
+            <li>Subscription-based, to grow and scale over time</li>
+            <li>An asset that can lead you to a life-changing exit in the not-too-distant future.</li>
+          </ul>
+
+          <p>
+            You’ve got the audience distribution advantage.
+          </p>
+
+          <p>
+            Maybe you even have a software product idea that you know your audience already buys (and would happily be your first customers).
+          </p>
+
+          <p>
+            But you’re not a product developer, and the idea of hiring just anyone is… A little daunting.
+          </p>
+
+          <p>
+            I’m here to be your full stack product partner on this thing. Let’s chat and see where this goes!
+          </p>
+
+          <p>
+            <a
+              href="mailto:hi@briancasel.com"
+              class="icon-link"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              <span>Let's talk</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
