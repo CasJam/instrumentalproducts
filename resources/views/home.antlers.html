@@ -1,7 +1,763 @@
-{{ partial:home/hero }}
+<!-- Main -->
+<div class="max-w-6xl mx-auto
+            lg:flex lg:flex-row-reverse lg:items-start lg:justify-between lg:px-8 
+            xl:max-w-7xl">
 
-{{ partial:home/letter }}
+  {{ partial:header }}
 
-{{ partial:home/callouts }}
+  <!-- Body content -->
+  <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
+  md:max-w-xl 
+  lg:px-0 lg:max-w-none">
 
-{{ partial:home/latest }}
+    <!-- About -->
+    <div
+      id="about"
+      class="space-y-6 pt-24 
+lg:pt-40"
+    >
+
+      <h1>
+        From concept to launched.
+      </h1>
+
+      <p>
+        As a full stack product developer, I take new products from initial concept and strategy, to design, code, and launched to customers.
+      </p>
+
+      <p>
+        I bring something of a killer combo to SaaS companies as both a multi-time founder myself <em>and</em> a full stack designer and developer.
+      </p>
+
+
+      <!-- Killer combo -->
+      <div class="space-y-8 pt-6 pb-6
+      sm:space-y-12">
+
+        <div class="flex-col space-y-4
+        xs:flex xs:flex-row xs:items-start xs:space-x-4 xs:space-y-0
+        sm:space-x-8
+        md:space-x-12">
+          <div class="text-surfaces-300 text-2xl 
+          xs:w-12 xs:relative xs:top-[2px] 
+          sm:w-8 
+          md:text-3xl 
+          lg:top-[4px]">
+            <i class="fa-regular fa-mug-saucer"></i>
+          </div>
+
+          <div class="flex-1 space-y-0 
+          xs:mt-[2px]
+          sm:mt-2 
+          md:mt-5">
+            <p>
+              <strong>
+                I strategize <span class="whitespace-nowrap">as a founder.</span>
+              </strong>
+            </p>
+            <p>
+              Finding the fastest path to ship the right product for customers.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-col space-y-4 
+        xs:flex xs:flex-row xs:items-start xs:space-x-4 xs:space-y-0
+        sm:space-x-8
+        md:space-x-12">
+          <div class="text-surfaces-300 text-2xl 
+        xs:w-12 xs:relative xs:top-[2px] 
+        sm:w-8 
+        md:text-3xl 
+        lg:top-[4px]">
+            <i class="fa-regular fa-pen-nib"></i>
+          </div>
+
+          <div class="flex-1 space-y-0 
+          xs:mt-[2px]
+          sm:mt-2 
+          md:mt-5">
+            <p>
+              <strong>
+                I ship product as a <span class="whitespace-nowrap">full stack builder.</span>
+              </strong>
+            </p>
+            <p>
+              Solving for the customer’s job to be done. As a designer, developer and strategist, I build modern web applications with a focus on simplicity and user experience.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p>
+        <em>Instrumental Products</em> is my product studio where I partner with SaaS companies, creators, and founders to take new products from concept to launched.
+      </p>
+
+
+    </div>
+
+    <!-- You -->
+    <div
+      id="you"
+      class="space-y-8 pt-16 
+    md:pt-24"
+    >
+
+      <h2 class="mb-8">
+        Is this you?
+      </h2>
+
+      <div class="">
+
+        <div
+          class="flex items-start py-4 cursor-pointer
+    md:py-6"
+          x-data="{ section_open: false }"
+          x-on:click="section_open = ! section_open"
+        >
+          <div class="relative w-7 top-[3px]
+          sm:top-[5px] sm:w-8
+          md:top-[5px] md:w-9 
+          lg:w-10">
+            <i
+              class="fa-sharp fa-chevron-down text-sm md:text-lg"
+              x-bind:class="section_open ? 'block' : 'hidden'"
+            ></i>
+            <i
+              class="fa-sharp fa-chevron-right text-sm md:text-lg"
+              x-bind:class="section_open ? 'hidden' : 'block'"
+            ></i>
+          </div>
+          <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
+            <div :class="section_open ? 'hidden' : 'block'">
+              <p>
+                Your busy SaaS company needs to launch something new... If only you had the bandwidth.
+              </p>
+
+              <p class="pt-4">
+                <span class="icon-link">
+                  Go on...
+                </span>
+              </p>
+            </div>
+
+            <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+              <p>
+                <strong>
+                  Your busy SaaS company needs to launch something new... If only you had the bandwidth.
+                </strong>
+              </p>
+
+              <p>
+                Your main product is doing its thing. Your team is focused on maintaining that day-to-day, and they can’t be distracted.
+              </p>
+
+              <p>
+                But you’re thinking about the <em>next thing.</em>
+              </p>
+
+              <p>
+                A 2nd product? A next gen? A side-hustle? Product as marketing?
+              </p>
+
+              <p>
+                Bring me (and my crew) in to be your strike team, here to start and ship V1 of your next product (or big feature)—without pulling your team off their current work.
+              </p>
+
+              <p>
+                <a
+                  href="mailto:hi@briancasel.com"
+                  class="icon-link"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Let's talk</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-start py-4 curssor-pointer
+    md:py-6"
+          x-data="{ section_open: false }"
+          x-on:click="section_open = ! section_open"
+        >
+          <div class="relative w-7 top-[3px]
+          sm:top-[5px] sm:w-8
+          md:top-[5px] md:w-9 
+          lg:w-10">
+            <i
+              class="fa-sharp fa-chevron-down text-sm md:text-lg"
+              x-bind:class="section_open ? 'block' : 'hidden'"
+            ></i>
+            <i
+              class="fa-sharp fa-chevron-right text-sm md:text-lg"
+              x-bind:class="section_open ? 'hidden' : 'block'"
+            ></i>
+          </div>
+          <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
+            <div :class="section_open ? 'hidden' : 'block'">
+              <p>
+                You’re working on a big feature or redesign, and you could use some help…
+              </p>
+
+              <p class="pt-4">
+                <span class="icon-link">
+                  Go on...
+                </span>
+              </p>
+            </div>
+
+            <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+              <p>
+                <strong>
+                  You’re working on a big feature or redesign, and you could use some help…
+                </strong>
+              </p>
+
+              <p>
+                Maybe your product’s onboarding needs an overhaul (when does it not?).
+              </p>
+
+              <p>
+                Or you’re starting a big new feature that you can’t afford to get wrong.
+              </p>
+
+              <p>
+                Or your users keep asking about your mobile app (that’s perpetually &ldquo;coming soon&rdquo;).
+              </p>
+
+              <p>
+                Or… Whatever it is, I’m here to be your sounding board, your strategist, your UX designer, your sanity checker.
+              </p>
+
+              <p>
+                <a
+                  href="mailto:hi@briancasel.com"
+                  class="icon-link"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Let's talk</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-start py-4 cursor-pointer
+    md:py-6"
+          x-data="{ section_open: false }"
+          x-on:click="section_open = ! section_open"
+        >
+          <div class="relative w-7 top-[3px]
+          sm:top-[5px] sm:w-8
+          md:top-[5px] md:w-9 
+          lg:w-10">
+            <i
+              class="fa-sharp fa-chevron-down text-sm md:text-lg"
+              x-bind:class="section_open ? 'block' : 'hidden'"
+            ></i>
+            <i
+              class="fa-sharp fa-chevron-right text-sm md:text-lg"
+              x-bind:class="section_open ? 'hidden' : 'block'"
+            ></i>
+          </div>
+          <div class="flex-1">
+            <div :class="section_open ? 'hidden' : 'block'">
+              <p>
+                You’re a creator with an audience and you want to launch your first software product this year…
+              </p>
+
+              <p class="pt-4">
+                <span class="icon-link">
+                  Go on...
+                </span>
+              </p>
+            </div>
+
+            <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+              <p>
+                <strong>
+                  You’re a creator with an audience and you want to launch your first software product this year…
+                </strong>
+              </p>
+
+              <p>
+                Your audience trusts you, and you know your customers (and their problems) really well.
+              </p>
+
+              <p>
+                That connection with your people has enabled you to build a thriving business selling courses, memberships, sponsorships or the like… That’s awesome!
+              </p>
+
+              <p>
+                But you’re looking to add something that is…
+              </p>
+
+              <ul class="list-disc ml-6 space-y-3">
+                <li>Less reliant on you and your name brand</li>
+                <li>Subscription-based, to grow and scale over time</li>
+                <li>An asset that can lead you to a life-changing exit in the not-too-distant future.</li>
+              </ul>
+
+              <p>
+                You’ve got the audience distribution advantage.
+              </p>
+
+              <p>
+                Maybe you even have a software product idea that you know your audience already buys (and would happily be your first customers).
+              </p>
+
+              <p>
+                But you’re not a product developer, and the idea of hiring just anyone is… A little daunting.
+              </p>
+
+              <p>
+                I’m here to be your full stack product partner on this thing. Let’s chat and see where this goes!
+              </p>
+
+              <p>
+                <a
+                  href="mailto:hi@briancasel.com"
+                  class="icon-link"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Let's talk</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Ways we can work -->
+    <div
+      id="services"
+      class="space-y-8 pt-16 
+    md:pt-24"
+    >
+
+      <h2 class="mb-8">
+        Some ways this <span class="whitespace-nowrap">can work...</span>
+      </h2>
+
+      <div class="">
+
+        <div
+          class="flex items-start py-4 cursor-pointer
+    md:py-6"
+          x-data="{ section_open: false }"
+          x-on:click="section_open = ! section_open"
+        >
+          <div class="relative w-7 top-[3px]
+          sm:top-[5px] sm:w-8
+          md:top-[5px] md:w-9 
+          lg:w-10">
+            <i
+              class="fa-sharp fa-chevron-down text-sm md:text-lg"
+              x-bind:class="section_open ? 'block' : 'hidden'"
+            ></i>
+            <i
+              class="fa-sharp fa-chevron-right text-sm md:text-lg"
+              x-bind:class="section_open ? 'hidden' : 'block'"
+            ></i>
+          </div>
+          <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
+            <div :class="section_open ? 'hidden' : 'block'">
+              <p>
+                Let’s build & launch a whole product!
+              </p>
+
+              <p class="pt-4">
+                <span class="icon-link">
+                  Learn more...
+                </span>
+              </p>
+            </div>
+
+            <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+              <p>
+                <strong>
+                  Let’s build & launch a whole product!
+                </strong>
+              </p>
+
+              <p>
+                Me (and my tiny crew) will work with you to go from idea to design, code and launch of your V1 to customers.
+              </p>
+
+              <p>
+                This can happen in as fast as 3 months (lean & mean shipping speed).
+              </p>
+
+              <p>
+                I (Brian) leads the whole project, from vetting and refining the product idea and scope, to design, architecture, and product management through launch.
+              </p>
+
+              <p>
+                I'll bring on a dev or 2 (at my cost) to speed up the build and get the product in your customers hands as efficiently as possible.
+              </p>
+
+
+              <p>
+                After we ship your V1 to customers, if you need continued support, we’ve got you covered. Your post-launch options range from transferring the dev(s) who worked on your v1 into your direct employment, keeping us on for fractional product management, or continuous development retainers.
+              </p>
+
+              <h3>How much?</h3>
+
+              <p>
+                All-in, you’re looking at a 5-figure investment and a couple months timeline. We’ll dial in the proposal so that there are no surprises.
+              </p>
+
+              <p>
+                For select opportunities, we can discuss a discount in exchange for equity in your new product. Let’s talk.
+              </p>
+
+              <p>
+                <a
+                  href="mailto:hi@briancasel.com"
+                  class="icon-link"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Let’s talk</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-start py-4 cursor-pointer
+    md:py-6"
+          x-data="{ section_open: false }"
+          x-on:click="section_open = ! section_open"
+        >
+          <div class="relative w-7 top-[3px]
+          sm:top-[5px] sm:w-8
+          md:top-[5px] md:w-9 
+          lg:w-10">
+            <i
+              class="fa-sharp fa-chevron-down text-sm md:text-lg"
+              x-bind:class="section_open ? 'block' : 'hidden'"
+            ></i>
+            <i
+              class="fa-sharp fa-chevron-right text-sm md:text-lg"
+              x-bind:class="section_open ? 'hidden' : 'block'"
+            ></i>
+          </div>
+          <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
+            <div :class="section_open ? 'hidden' : 'block'">
+              <p>
+                Let’s shape up something new in a 2-week sprint!
+              </p>
+
+              <p class="pt-4">
+                <span class="icon-link">
+                  Learn more...
+                </span>
+              </p>
+            </div>
+
+            <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+              <p>
+                <strong>
+                  Let’s shape up something new in a 2-week sprint!
+                </strong>
+              </p>
+
+              <p>
+                That big idea has been sitting dormant for months (years?). Why?
+              </p>
+
+              <p>
+                You haven’t been able to start it due to lack of bandwidth, resources, team, (insert your preferred excuse here 🙃). I get it. The hardest part of these big hairy projects is starting!
+              </p>
+
+              <p>
+                Bring me in to give this idea the starting energy it needs.
+              </p>
+
+              <p>
+                In a 2-week planning sprint, I’ll work with you to take this idea from concept to a tangeable project that’s shaped-up, scoped-down, and ready to build.
+              </p>
+
+              <ul>
+                <li>A call or two to talk goals and ideas</li>
+                <li>Daily(ish) async messages as I dig into the details</li>
+                <li>Thoughtfully prepared strategic plans for implementation</li>
+                <li>Visual wireframes and rough mockups (where needed)</li>
+                <li>Detailed technical specs ready for any technical team to run with</li>
+              </ul>
+
+              <p>
+                These planning sprints have worked well for:
+              </p>
+
+              <ul>
+                <li>Overhauling your customer onboarding flow</li>
+                <li>Planning a new customer learning center</li>
+                <li>Scoping and shaping a big new feature</li>
+                <li>Planning a mobile app for a SaaS</li>
+                <li>Planning a white labeled version of a product</li>
+                <li><em>Or any other big product initiative to get off the ground!</em></li>
+              </ul>
+
+              <h3>
+                How much?
+              </h3>
+              <p>
+                2-week planning sprints have a 4-figure price tag and can be repeated throughout the year (pending availability).
+              </p>
+
+              <p>
+                <a
+                  href="mailto:hi@briancasel.com"
+                  class="icon-link"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Let’s talk</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex items-start py-4 
+    md:py-6"
+          x-data="{ section_open: false }"
+        >
+          <div class="relative w-7 top-[3px]
+          sm:top-[5px] sm:w-8
+          md:top-[5px] md:w-9 
+          lg:w-10">
+            <i
+              class="fa-sharp fa-chevron-down text-sm md:text-lg"
+              x-bind:class="section_open ? 'block' : 'hidden'"
+            ></i>
+            <i
+              class="fa-sharp fa-chevron-right text-sm md:text-lg"
+              x-bind:class="section_open ? 'hidden' : 'block'"
+            ></i>
+          </div>
+          <div class="flex-1">
+            <div
+              :class="section_open ? 'hidden' : 'block'"
+              x-on:click="section_open = ! section_open"
+            >
+              <p>
+                Let’s problem-solve something quick!
+              </p>
+
+              <p class="pt-4">
+                <span class="icon-link">
+                  Learn more...
+                </span>
+              </p>
+            </div>
+
+            <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+              <p x-on:click="section_open = ! section_open">
+                <strong>
+                  Let’s problem-solve something quick!
+                </strong>
+              </p>
+
+              <p>
+                When you’ve got something specific and need a 2nd pair of eyes, ears, some fresh ideas, a sounding board, or quick technical help, this option is (usually) available.
+              </p>
+
+              <p>
+                This 1-week thing includes the following:
+              </p>
+
+              <ul>
+                <li>Send me a video laying out your main question or thing you want my input on.</li>
+                <li>I’ll send you my detailed, thoughtful response on video within 2 business days.</li>
+                <li>A few more async followup questions in the days that follow.</li>
+                <li>All messages recorded, logged, downloadable, and easy to refer back to.</li>
+              </ul>
+
+              <p>
+                Get my focused input on anything… But here’s what I love to dig into most:
+              </p>
+
+              <div
+                class="flex items-start"
+                x-data="{ sub_section_open: false }"
+                x-on:click="sub_section_open = ! sub_section_open"
+              >
+                <div class="relative w-7 top-[3px]
+                sm:top-[5px] sm:w-8
+                md:top-[5px] md:w-9 
+                lg:w-10">
+                  <i
+                    class="fa-sharp fa-chevron-down text-sm md:text-lg"
+                    x-bind:class="sub_section_open ? 'block' : 'hidden'"
+                  ></i>
+                  <i
+                    class="fa-sharp fa-chevron-right text-sm md:text-lg"
+                    x-bind:class="sub_section_open ? 'hidden' : 'block'"
+                  ></i>
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <div>
+                      <strong>
+                        Product Strategy
+                      </strong>
+                    </div>
+                    <div class="text-sm">
+                      Idea, UI, onboarding, roadmap, etc.
+                    </div>
+                  </div>
+                  <div :class="sub_section_open ? 'block space-y-6 pb-4 pt-4' : 'hidden'">
+                    <ul>
+                      <li><strong>Pitch me your idea!</strong> I’ll break down some pros, cons, gotchas, and have you thought of’s?</li>
+                      <li><strong>Interface review.</strong> Show me your UI for a specific part of your product and I’ll share my thoughts on how to make it simpler and easier to use.</li>
+                      <li><strong>Onboarding review.</strong> Show me your customer’s onboarding flow and I’ll offer ideas how to improve conversions and retention.</li>
+                      <li><strong>Roadmap review.</strong> Show me your plan (or the plan your devs gave you) and I’ll poke holes in it and tell you if I spot any inconsistencies or red flags.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start"
+                x-data="{ sub_section_open: false }"
+                x-on:click="sub_section_open = ! sub_section_open"
+              >
+                <div class="relative w-7 top-[3px]
+                sm:top-[5px] sm:w-8
+                md:top-[5px] md:w-9 
+                lg:w-10">
+                  <i
+                    class="fa-sharp fa-chevron-down text-sm md:text-lg"
+                    x-bind:class="sub_section_open ? 'block' : 'hidden'"
+                  ></i>
+                  <i
+                    class="fa-sharp fa-chevron-right text-sm md:text-lg"
+                    x-bind:class="sub_section_open ? 'hidden' : 'block'"
+                  ></i>
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <div>
+                      <strong>
+                        Business Strategy
+                      </strong>
+                    </div>
+                    <div class="text-sm">
+                      Hiring, SaaS, Productized Services, Product Marketing, etc.
+                    </div>
+                  </div>
+                  <div :class="sub_section_open ? 'block space-y-6 pb-4 pt-4' : 'hidden'">
+                    <ul>
+                      <li><strong>Hiring first team members.</strong> Growing from a team of one to a few is one of the hardest hurdles. I’ve grown teams of 25+. Let’s talk about it.</li>
+                      <li><strong>SaaS startups.</strong> Self-funding & sustaining. Finding shortcuts. SaaS gotchas…</li>
+                      <li><strong>Productized consulting.</strong> I used to be known as the “Productized Service” guy. I even built and sold a productized service business. Ask me anything.</li>
+                      <li><strong>Product marketing.</strong> Website design teardown. Copywriting review. Navigating your funnel. Signup flows. Let’s take a look!</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start"
+                x-data="{ sub_section_open: false }"
+                x-on:click="sub_section_open = ! sub_section_open"
+              >
+                <div class="relative w-7 top-[3px]
+                sm:top-[5px] sm:w-8
+                md:top-[5px] md:w-9 
+                lg:w-10">
+                  <i
+                    class="fa-sharp fa-chevron-down text-sm md:text-lg"
+                    x-bind:class="sub_section_open ? 'block' : 'hidden'"
+                  ></i>
+                  <i
+                    class="fa-sharp fa-chevron-right text-sm md:text-lg"
+                    x-bind:class="sub_section_open ? 'hidden' : 'block'"
+                  ></i>
+                </div>
+                <div class="flex-1">
+                  <div>
+                    <div>
+                      <strong>
+                        Technical Skills
+                      </strong>
+                    </div>
+                    <div class="text-sm">
+                      Learning to code or design, Ruby on Rails, TailwindCSS, Javascript, etc.
+                    </div>
+                  </div>
+                  <div :class="sub_section_open ? 'block space-y-6 pb-4 pt-4' : 'hidden'">
+                    <ul>
+                      <li><strong>Learn to code.</strong> Whether you’re learning front-end or back-end (or both), I’ll help dial in your learning plan.</li>
+                      <li><strong>Learning Ruby on Rails.</strong> Learning RoR and hit a roadblock? Let’s take a look. I can probably un-block you (for good).</li>
+                      <li><strong>Learning design.</strong> Figma. User interfaces. Marketing site design. Layouts. User experience. Let’s clean it up and dial it in!</li>
+                      <li><strong>TailwindCSS.</strong> Front-end HTML & CSS was my love-language early on. Today, it’s TailwindCSS. I can help you build and design-in-browser with efficiency.</li>
+                      <li><strong>Vanilla Javascript.</strong> I’m no React wizard, but I love me some plain vanilla Javascript (and lightweight tools like Alpine JS and Stimulus JS). I can help :)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <h3>
+                How much?
+              </h3>
+
+              <p>
+                These have a 3-figure price tag and can be repeated as needed, pending current availability.
+              </p>
+
+              <p>
+                <a
+                  href="mailto:hi@briancasel.com"
+                  class="icon-link"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>Let’s talk</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Let's talk -->
+    <div
+      id="contact"
+      class="space-y-8 pt-16 
+    md:pt-24"
+    >
+
+      <h2 class="mb-8">
+        Let's talk
+      </h2>
+
+      <p>
+        <a
+          href="mailto:hi@briancasel.com"
+          class="btn"
+        >Email Brian
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+</div>
+
+{{ partial:footer }}

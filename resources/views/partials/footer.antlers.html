@@ -1,106 +1,76 @@
 <!-- Footer -->
-<div class="bg-tertiary-500 text-secondary-200 py-12 sm:py-24">
-  <div class="mx-auto px-6 text-center
-              xs:max-w-lg 
-              lg:px-8 lg:max-w-7xl lg:text-left">
+<div class="bg-black py-24 text-off-white">
 
-    <div class="mb-24 
-                lg:flex lg:items-start lg:space-x-24 lg:justify-between">
+  <div class="px-8 text-center space-y-24">
 
-      <div class="mb-24 
-                  lg:mb-0 lg:w-2/5">
-
+    <div class="inline-flex flex-col items-center space-y-6 mx-auto">
+      <img
+        src="images/brian-casel.jpg"
+        alt="Brian Casel"
+        class="rounded-full border-4 border-black ring-2 ring-gray-800 h-24 "
+      >
+      <h3 class="text-off-white pt-0">
+        More from Brian Casel
+      </h3>
+      <div class="flex flex-col items-center space-y-4 
+                  md:flex-row md:space-y-0 md:space-x-10 md:justify-center 
+                  lg:space-x-12
+                  xl:space-x-16">
         <a
-          href="#"
-          class="inline-block mb-8"
+          href="https://briancasel.com/products"
+          target="_blank"
+          class="icon-link"
         >
-          <img
-            src="/assets/images/full-stack-founder.svg"
-            alt="Full Stack Founder"
-            class="h-24 xs:h-24 lg:h-28 xl:h-32"
-          />
+          <i class="fa-regular fa-arrow-right"></i>
+          <span>Products</span>
         </a>
 
-        <div class="lg:w-3/4">
+        <a
+          href="https://briancasel.com/podcasts"
+          target="_blank"
+          class="icon-link"
+        >
+          <i class="fa-regular fa-headphones"></i>
+          <span>Podcasts</span>
+        </a>
 
-        </div>
-        <p class="mb-3 font-text">
-          Receive new issues of Full Stack Founder, sent by Brian Casel to your inbox every Saturday.
-        </p>
-        {{ partial:newsletter_subscribe_form button_text="Subscribe" form_name="full_stack_founder_newsletter" }}
+        <a
+          href="https://youtube.com/@fullstackfounder"
+          target="_blank"
+          class="icon-link"
+        >
+          <i class="fa-brands fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+
+        <a
+          href="https://twitter.com/casjam"
+          target="_blank"
+          class="icon-link"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+          <span>Twitter</span>
+        </a>
       </div>
+    </div>
 
-
-      <div class="space-y-12">
-        <div class="flex flex-col space-y-8 text-center text-lg
-                    lg:flex-row lg:items-center lg:justify-end lg:space-y-0 lg:space-x-8 lg:flex-1">
-          <a
-            href="/"
-            class="text-off-white-50 hover:text-primary-400"
-          >Newsletter</a>
-          <a
-            href="/articles"
-            class="text-off-white-50 hover:text-primary-400"
-          >Articles</a>
-          <a
-            href="https://youtube.com/@fullstackfounder"
-            target="_blank"
-            class="text-off-white-50 hover:text-primary-400"
-          >YouTube</a>
-          <a
-            href="https://podcast.fullstackfounder.co"
-            target="_blank"
-            class="text-off-white-50 hover:text-primary-400"
-          >Podcast</a>
-          <a
-            href="/services"
-            class="text-off-white-50 hover:text-primary-400"
-          >Services</a>
-        </div>
-        <div class="flex items-center space-x-4 justify-center 
-                  lg:justify-end">
-          <a
-            href="/contact"
-            class="text-sm font-semibold text-secondary-200 lg:text-base hover:text-primary-400"
-          >
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-          <a
-            href="https://twitter.com/casjam"
-            target="_blank"
-            class="text-sm font-semibold text-secondary-200 lg:text-base hover:text-primary-400"
-          >
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a
-            href="https://www.threads.net/@brian.casel"
-            target="_blank"
-            class="text-sm font-semibold text-secondary-200 lg:text-base hover:text-primary-400"
-          >
-            <i class="fa-brands fa-threads"></i>
-          </a>
-          <a
-            href="https://youtube.com/@fullstackfounder"
-            target="_blank"
-            class="text-lg font-semibold text-secondary-200 lg:text-xl hover:text-primary-400"
-          >
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/briancasel/"
-            target="_blank"
-            class="text-sm font-semibold text-secondary-200 lg:text-base hover:text-primary-400"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-
+    <div class="mx-auto">
+      <a
+        href="https://instrumentalproducts.com"
+        class="inline-block"
+      >
+        <img
+          src="images/instrumental-products-icon.svg"
+          alt="Instrumental Products"
+          class="h-20"
+        >
+      </a>
     </div>
 
     <div class="font-sm opacity-50">
-      &copy; {{$ now()->year $}} Full Stack Founder
+      &copy; {{$ now()->year $}} Instrumental Products
     </div>
+
   </div>
+
 </div>
-<!-- / Footer -->
