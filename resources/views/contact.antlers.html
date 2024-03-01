@@ -1,32 +1,17 @@
-<div class="relative bg-off-white-50">
-  {{ partial:header mode="light" }}
+<!-- Main -->
+<div class="max-w-6xl mx-auto
+            lg:flex lg:flex-row-reverse lg:items-start lg:justify-between lg:px-8 
+            xl:max-w-7xl">
 
-  <div class="z-20 relative mx-auto max-w-2xl px-6 pt-6 space-y-1 text-center 
-              xs:text-left sm:pt-12 
-              lg:pt-12 lg:space-y-2 lg:max-w-3xl
-              2xl:max-w-5xl">
-    <h1 class="text-3xl font-semibold tracking-normal 
-              xs:text-4xl
-              md:font-bold">
-      {{ headline ?? title }}
-    </h1>
+  {{ partial:header }}
 
-    {{ if sub_headline }}
-    <p class="font-text text-lg lg:text-2xl">
-      {{ sub_headline }}
-    </p>
-    {{ /if }}
-  </div>
-</div>
+  <!-- Body content -->
+  <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
+              md:max-w-xl 
+              lg:px-0 lg:max-w-none">
 
-<div class="bg-off-white-50 py-16 
-            md:pb-24  
-            lg:pt-20 lg:pb-32">
-  <div class="mx-auto max-w-2xl px-6 space-y-16
-              lg:flex lg:items-start lg:space-x-16 lg:space-y-0 lg:max-w-3xl
-              2xl:max-w-5xl">
-
-    <div class="flex-1">
+    <div class="space-y-6 pt-24 
+            lg:pt-40">
 
       {{ form:contact }}
 
@@ -50,52 +35,25 @@
           {{ field }}
         </div>
         {{ /fields}}
-        <button type="submit" class="btn btn-primary">
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
           Send
         </button>
       </div>
 
-      <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+      <input
+        type="text"
+        class="hidden"
+        name="{{ honeypot ?? 'honeypot' }}"
+      >
 
       {{ /if }}
 
       {{ /form:contact }}
 
     </div>
-
-    <div class="lg:w-1/4">
-      <div class="space-y-2">
-        <h3 class="flex items-center space-x-3 text-xl font-semibold tracking-tight pt-0 mb-2 lg:mt-1">
-          <span>
-            Connect with Brian
-          </span>
-        </h3>
-        <div class="space-y-4">
-          <a href="https://twitter.com/brian_casel" target="_blank" class="flex items-center font-semibold space-x-2">
-            <i class="fa-brands fa-twitter text-primary-500"></i>
-            <span>Twitter</span>
-          </a>
-
-          <a href="https://threads.net/@brian.casel" target="_blank" class="flex items-center font-semibold space-x-2">
-            <i class="fa-brands fa-threads text-primary-500"></i>
-            <span>Threads</span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/briancasel/" target="_blank" class="flex items-center font-semibold space-x-2">
-            <i class="fa-brands fa-linkedin text-primary-500"></i>
-            <span>LinkedIn</span>
-          </a>
-
-          <a href="https://youtube.com/@fullstackfounder" target="_blank" class="flex items-center font-semibold space-x-2">
-            <i class="fa-brands fa-youtube text-primary-500"></i>
-            <span>YouTube</span>
-          </a>
-        </div>
-      </div>
-
-
-
-    </div>
-
   </div>
-</div
+
+</div>
