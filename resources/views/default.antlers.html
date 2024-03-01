@@ -1,35 +1,25 @@
-<div class="relative bg-off-white-100">
-  {{ partial:header mode="light" }}
+<!-- Main -->
+<div class="max-w-6xl mx-auto
+            lg:flex lg:flex-row-reverse lg:items-start lg:justify-between lg:px-8 
+            xl:max-w-7xl">
 
-  <div class="z-20 relative mx-auto max-w-3xl px-6 pt-6 pb-16 text-center
-              sm:pb-24 
-              lg:pt-12 lg:pb-32 lg:max-w-4xl">
-    <h1 class="text-3xl font-medium tracking-normal mb-1
-                  xs:text-4xl 
-                  sm:text-5xl sm:mb-2
-                  md:font-bold 
-                  lg:text-7xl">
-      {{ headline ?? title }}
-    </h1>
+  {{ partial:header }}
 
-    {{ if sub_headline }}
-    <p class="font-text text-lg 
-              sm:text-xl 
-              lg:text-2xl lg:max-w-2xl lg:mx-auto">
-      {{ sub_headline }}
-    </p>
-    {{ /if }}
-  </div>
-</div>
+  <!-- Body content -->
+  <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
+              md:max-w-xl 
+              lg:px-0 lg:max-w-none">
 
-<div class="bg-off-white-50 py-16 sm:py-24 lg:py-32">
-  <div class="mx-auto max-w-2xl px-6 lg:max-w-3xl">
+    <div class="space-y-6 pt-24 
+            lg:pt-40">
 
-    <div class="mx-auto {{ partial:prose_classes }}">
-      {{ content }}
-      {{ partial src="bard/{type}" }}
-      {{ /content }}
+      <div class="mx-auto {{ partial:prose_classes }}">
+        {{ content }}
+        {{ partial src="bard/{type}" }}
+        {{ /content }}
+      </div>
+
     </div>
-
   </div>
+
 </div>
