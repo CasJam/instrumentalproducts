@@ -1,80 +1,68 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './resources/**/*.antlers.html',
-        './resources/**/*.antlers.php',
-        './resources/**/*.blade.php',
-        './resources/**/*.vue',
-        './content/**/*.md',
+        "./resources/**/*.antlers.html",
+        "./resources/**/*.antlers.php",
+        "./resources/**/*.blade.php",
+        "./resources/**/*.vue",
+        "./content/**/*.md",
     ],
 
     theme: {
-      extend: {
-        screens: {
-          xs: "400px",
+        extend: {
+            screens: {
+                xs: "400px",
+            },
+            fontFamily: {
+                text: ["apparat", "sans-serif"],
+                display: ["niveau-grotesk", "sans-serif"],
+                labels: ["ff-ernestine-pro", "serif"],
+            },
+            colors: {
+                black: "#010101",
+                white: "#ffffff",
+                "off-white": "#FEFCF4",
+                gray: {
+                    50: "#f6f6f5",
+                    100: "#e7e7e6",
+                    200: "#d2d1cf",
+                    300: "#b3b2ad",
+                    400: "#8c8a84",
+                    500: "#716f69",
+                    600: "#605f5a",
+                    700: "#51514d",
+                    800: "#474743",
+                    900: "#3e3e3b",
+                    950: "#272725",
+                },
+                primary: {
+                    50: "#fef3f2",
+                    100: "#ffe4e1",
+                    200: "#ffcec9",
+                    300: "#feaba3",
+                    400: "#fb7a6e",
+                    500: "#f24333",
+                    600: "#e03222",
+                    700: "#bd2618",
+                    800: "#9c2318",
+                    900: "#81241b",
+                    950: "#460e09",
+                },
+                surfaces: {
+                    50: "#f8f7f4",
+                    100: "#f2f1eb",
+                    200: "#dddacb",
+                    300: "#c7c1aa",
+                    400: "#b0a587",
+                    500: "#a0916f",
+                    600: "#938263",
+                    700: "#7a6a54",
+                    800: "#645748",
+                    900: "#52473c",
+                    950: "#2b241f",
+                },
+            },
         },
-          fontFamily: {
-          text: ["alda", "serif"],
-          display: ["paralucent", "sans-serif"]
-        },
-        colors: {
-          black: "#061423",
-          "off-white": {
-            '50': '#f8f5f2',
-            '100': '#f0eae4',
-            '200': '#e1d4c7',
-            '300': '#cdb7a4',
-            '400': '#b8967f',
-            '500': '#aa7d65',
-            '600': '#9c6c5a',
-            '700': '#82594c',
-            '800': '#6a4a42',
-            '900': '#573d37',
-            '950': '#2e1f1c',
-          },
-          gray: {
-            50: "#f5f6f6",
-            100: "#e5e7e8",
-            200: "#cdd1d4",
-            300: "#aab1b6",
-            400: "#808990",
-            500: "#656e75",
-            600: "#565d64"
-          },
-          primary: {
-            '50': '#fff1f3',
-            '100': '#ffe3e7',
-            '200': '#ffccd4',
-            '300': '#ffa2b2',
-            '400': '#fe6e8a',
-            '500': '#f7325d',
-            '600': '#e51950',
-            '700': '#c10f42',
-            '800': '#a20f3f',
-            '900': '#8a113c',
-            '950': '#4d041b',
-          },
-          secondary: {
-            '50': '#f0f7ff',
-            '100': '#dfeeff',
-            '200': '#b8dfff',
-            '300': '#7ac5ff',
-            '400': '#49b2fd',
-            '500': '#098eee',
-            '600': '#0070cc',
-            '700': '#0058a5',
-            '800': '#044c88',
-            '900': '#0a4070',
-            '950': '#06274b'
-          },
-          tertiary: {
-            500: "#0B2847"
-          },
-        },
-      },
     },
-
-    plugins: [
-        require('@tailwindcss/typography'),
-    ],
+    plugins: [require("@tailwindcss/typography")],
 };
