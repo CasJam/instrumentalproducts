@@ -1,59 +1,39 @@
-<!-- Main -->
-<div class="max-w-6xl mx-auto
-            lg:flex lg:flex-row-reverse lg:items-start lg:justify-between lg:px-8 
-            xl:max-w-7xl">
+{{ form:contact }}
 
-  {{ partial:navigation }}
-
-  <!-- Body content -->
-  <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
-              md:max-w-xl 
-              lg:px-0 lg:max-w-none">
-
-    <div class="space-y-6 pt-24 
-            lg:pt-40">
-
-      {{ form:contact }}
-
-      {{ if success }}
-      <div class="bg-white font-text rounded-lg border border-off-white-100 p-6 font-medium text-secondary-500 text-xl">
-        Message sent!
-      </div>
-      {{ else }}
-
-      {{ if errors }}
-      <div class="text-red-400 font-medium text-sm mb-4">
-        {{ errors }}
-        {{ value }}<br>
-        {{ /errors }}
-      </div>
-      {{ /if }}
-
-      <div class="text-left space-y-4">
-        {{ fields }}
-        <div class="flex">
-          {{ field }}
-        </div>
-        {{ /fields}}
-        <button
-          type="submit"
-          class="btn btn-primary"
-        >
-          Send
-        </button>
-      </div>
-
-      <input
-        type="text"
-        class="hidden"
-        name="{{ honeypot ?? 'honeypot' }}"
-      >
-
-      {{ /if }}
-
-      {{ /form:contact }}
-
-    </div>
-  </div>
-
+{{ if success }}
+<div class="bg-white font-text rounded-lg border border-off-white-100 p-6 font-medium text-secondary-500 text-xl">
+  Message sent!
 </div>
+{{ else }}
+
+{{ if errors }}
+<div class="text-red-400 font-medium text-sm mb-4">
+  {{ errors }}
+  {{ value }}<br>
+  {{ /errors }}
+</div>
+{{ /if }}
+
+<div class="text-left space-y-4">
+  {{ fields }}
+  <div class="flex">
+    {{ field }}
+  </div>
+  {{ /fields}}
+  <button
+    type="submit"
+    class="btn btn-primary"
+  >
+    Send
+  </button>
+</div>
+
+<input
+  type="text"
+  class="hidden"
+  name="{{ honeypot ?? 'honeypot' }}"
+>
+
+{{ /if }}
+
+{{ /form:contact }}
