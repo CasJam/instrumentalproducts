@@ -92,18 +92,15 @@ tabs:
                 - tags
               display: Tags
               mode: select
+  SEO:
+    display: SEO
+    sections:
+      -
+        fields:
           -
-            handle: issue_number
+            handle: seo
             field:
-              input_type: number
-              antlers: false
-              type: text
-              display: 'Issue number'
-              icon: text
-              instructions: 'If this is a numbered issue (newsletter) then set that number here so that the issue number is displayed on this article.'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
+              type: seo_pro
+              listable: false
+              display: SEO
 title: Article
