@@ -1,24 +1,33 @@
-<a href="{{ url }}" class="flex-1 block group">
-  <div class="rounded space-y-2 bg-white rounded shadow-2xl shadow-black/20">
+<a
+  href="{{ url }}"
+  class="flex-1 block group"
+>
+  <div class="rounded space-y-6 
+              md:flex md:items-start md:space-y-0">
     {{ if featured_image }}
-    <div class="w-full">
+    <div class="w-full 
+                md:w-1/3">
       {{ featured_image }}
-      <img src="{{ url }}" alt="{{ alt }}" class="w-full overflow-hidden rounded-t" loading="lazy" />
+      <img
+        src="{{ url }}"
+        alt="{{ alt }}"
+        class="w-full overflow-hidden rounded"
+        loading="lazy"
+      />
       {{ /featured_image }}
     </div>
     {{ /if }}
 
     <div class="flex-1 px-6 pb-6 
-                {{ if featured_image }}pt-3{{ else }} pt-6 {{ /if }}">
+                {{ if featured_image }}pt-3{{ else }} pt-6{{ /if }} 
+                md:pt-0">
       {{ if issue_number }}
       <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
         Issue #{{ issue_number }}
       </div>
       {{ /if}}
 
-      <h3 class="mb-2 
-                lg:text-xl 
-                xl:text-2xl
+      <h3 class="mb-2 pt-0
                 group-hover:text-primary-500">
         {{ title }}
       </h3>
@@ -37,7 +46,11 @@
 
       <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
         <div class="flex items-center space-x-2">
-          <img src="/assets/images/brian-casel-sm.jpg" alt="Brian Casel" class="h-6 w-6 rounded-full" />
+          <img
+            src="/assets/images/brian-casel.jpg"
+            alt="Brian Casel"
+            class="h-6 w-6 rounded-full"
+          />
           <div class="text-gray-400">
             Brian Casel
           </div>

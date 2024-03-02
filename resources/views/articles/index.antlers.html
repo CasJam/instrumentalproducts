@@ -1,49 +1,12 @@
-<div class="relative bg-off-white-100">
-  {{ partial:header mode="light" }}
+{{ collection:articles paginate="12" as="articles" sort="date:desc" }}
+<div class="space-y-16">
 
-  <div class="z-20 relative mx-auto max-w-xl px-6 pt-6 pb-16 text-center
-              sm:pt-12 sm:pb-24 
-              lg:pt-12 lg:pb-24 lg:max-w-3xl">
-    <h1 class="text-3xl font-semibold tracking-normal mb-2
-                  xs:text-4xl sm:text-5xl md:font-bold 
-                  lg:text-7xl">
-      All articles
-    </h1>
-
-    <p class="font-text text-lg 
-              sm:text-xl">
-      Every week, I share a new idea to help you in your journey to becoming a full stack founder. These are the latest issues...
-    </p>
-
-    <div class="pt-6 mx-auto max-w-xl">
-      <p class="font-text text-base text-gray-600 mb-2
-            md:text-lg
-            lg:text-lg">
-        Don't miss a new issue.
-      </p>
-      {{ partial:newsletter_subscribe_form button_text="Subscribe" additional_classes="mx-auto lg:w-3/4" form_name="full_stack_founder_newsletter" }}
-    </div>
-  </div>
+  {{ articles }}
+  {{ partial:articles/listing }}
+  {{ /articles }}
 </div>
+{{ if total_items > 12 }}
+{{ partial:articles/pagination }}
+{{ /if}}
 
-<div class="bg-off-white-50 px-6 py-16 sm:py-24 lg:py-32">
-  <div class="mx-auto max-w-lg 
-              lg:max-w-6xl">
-    {{ collection:articles paginate="12" as="articles" sort="date:desc" }}
-    <div class="space-y-16
-                lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16 lg:space-y-0">
-
-      {{ articles }}
-      {{ partial:articles/listing }}
-      {{ /articles }}
-
-
-
-    </div>
-    {{ if total_items > 12 }}
-    {{ partial:articles/pagination }}
-    {{ /if}}
-
-    {{ /collection:articles }}
-  </div>
-</div>
+{{ /collection:articles }}
