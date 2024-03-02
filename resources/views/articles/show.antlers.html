@@ -1,193 +1,116 @@
-<div class="relative bg-off-white-50">
-  {{ partial:header mode="light" }}
-</div>
+<article class=" ">
 
-<div class="bg-off-white-50 pb-24 sm:pb-32">
-
-  <div class="mx-auto 
-              sm:px-6
-              lg:px-8 lg:max-w-7xl">
-
-    <div class="space-y-16 pb-24
-                lg:flex lg:flex-start lg:justify-between lg:space-x-12 
-                xl:space-x-24">
-
-      <div class="space-y-6 lg:w-3/4">
-
-        <article class=" bg-white mb-16 pb-8 shadow-2xl shadow-black/20 rounded-lg 
-                        sm:pb-0">
-
-          {{ if featured_video }}
-          <div class="px-2 sm:px-0">
-            <iframe
-              src="{{ featured_video | embed_url }}"
-              class="aspect-video w-full overflow-hidden 
+  {{ if featured_video }}
+  <div class="px-2 sm:px-0">
+    <iframe
+      src="{{ featured_video | embed_url }}"
+      class="aspect-video w-full overflow-hidden 
                     sm:rounded-t-lg sm:rounded-b-none sm:mx-0"
-            ></iframe>
-          </div>
-          {{ elseif featured_image }}
-          {{ featured_image }}
+    ></iframe>
+  </div>
+  {{ elseif featured_image }}
+  {{ featured_image }}
+  <img
+    src="{{ url }}"
+    alt="{{ alt }}"
+    class="w-full overflow-hidden rounded"
+    loading="lazy"
+  />
+  {{ /featured_image }}
+  {{ /if }}
+
+  <div class="p-6 lg:p-10">
+
+    <div>
+
+      <h1 class="text-2xl font-bold tracking-tight xs:text-3xl sm:text-4xl lg:text-5xl">
+        {{ title }}
+      </h1>
+
+      <div class="mt-6 mb-12 flex items-center space-x-6 tracking-wide text-sm text-base">
+        <div class="flex items-center space-x-2">
           <img
-            src="{{ url }}"
-            alt="{{ alt }}"
-            class="w-full overflow-hidden rounded-t"
-            loading="lazy"
+            src="/assets/images/brian-casel.jpg"
+            alt="Brian Casel"
+            class="h-6 w-6 rounded-full"
           />
-          {{ /featured_image }}
-          {{ /if }}
-
-          <div class="p-6 lg:p-10">
-
-            <div>
-              {{ if issue_number }}
-              <div class="mb-2 flex items-center space-x-6">
-                <div class="inline-block uppercase tracking-widest font-display text-sm font-medium text-secondary-400">
-                  Issue #{{ issue_number }}
-                </div>
-                <a
-                  href="/"
-                  class="text-sm text-gray-300 hover:text-black font-light tracking-wide"
-                >Subscribe</a>
-              </div>
-              {{ /if}}
-              <h1 class="text-2xl font-bold tracking-tight xs:text-3xl sm:text-4xl lg:text-5xl">
-                {{ title }}
-              </h1>
-
-              <div class="mt-6 mb-12 flex items-center space-x-6 tracking-wide text-sm text-base">
-                <div class="flex items-center space-x-2">
-                  <img
-                    src="/assets/images/brian-casel-sm.jpg"
-                    alt="Brian Casel"
-                    class="h-6 w-6 rounded-full"
-                  />
-                  <div class="text-gray-400">
-                    Brian Casel
-                  </div>
-                </div>
-                <div class="text-gray-300 opacity-80">
-                  {{ date }}
-                </div>
-              </div>
-            </div>
-
-            <div class="prose {{ partial:prose_classes }}">
-              {{ content }}
-              {{ partial src="bard/{type}" }}
-              {{ /content }}
-            </div>
-
-
-            <div class="mt-16 space-y-4">
-              {{ if tags }}
-              <div class="flex flex-wrap items-start space-x-4 tracking-wide font-normal">
-                {{ taxonomy:tags }}
-                <a
-                  href="{{ url }}"
-                  class="inline-block mb-4 text-gray-300 hover:text-black"
-                >
-                  <span class="opacity-50 inline-block mr-[2px]">#</span>{{ title }}
-                </a>
-                {{ /taxonomy:tags }}
-              </div>
-              {{ /if }}
-
-              <div class="bg-off-white-50 pl-8 p-6 rounded space-y-4
-                          md:flex md:items-start md:space-x-8 md:space-y-0">
-                <div class="mt-1">
-                  <img
-                    src="/assets/images/brian-casel-sm.jpg"
-                    alt="Brian Casel"
-                    class="h-16 w-16 rounded-full"
-                  />
-                </div>
-                <div class="flex-1">
-                  <h4 class="text-black font-medium text-xl">
-                    Brian Casel
-                  </h4>
-                  <p class="font-text">
-                    I'm a full stack founder who has been bootstrapping and building products and services businesses on the internet for over 15 years.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="text-gray-400">
+            Brian Casel
           </div>
+        </div>
+        <div class="text-gray-300 opacity-80">
+          {{ date }}
+        </div>
+      </div>
+    </div>
+
+    <div class="prose {{ partial:prose_classes }}">
+      {{ content }}
+      {{ partial src="bard/{type}" }}
+      {{ /content }}
+    </div>
 
 
-          <div class="rounded-lg mt-12 mx-6 bg-gradient-to-b from-black to-tertiary-500 p-6 
+    <div class="mt-16 space-y-4">
+      {{ if tags }}
+      <div class="flex flex-wrap items-start space-x-4 font-normal">
+        {{ taxonomy:tags }}
+        <a
+          href="{{ url }}"
+          class="inline-block mb-4 text-gray-300 text-sm 
+                md:text-base
+                hover:text-black"
+        >
+          <span class="opacity-50 inline-block mr-[2px]">#</span>{{ title }}
+        </a>
+        {{ /taxonomy:tags }}
+      </div>
+      {{ /if }}
+
+      <div class="bg-surfaces-100 pl-8 p-6 rounded space-y-4
+                          md:flex md:items-start md:space-x-8 md:space-y-0">
+        <div class="mt-1">
+          <img
+            src="/assets/images/brian-casel.jpg"
+            alt="Brian Casel"
+            class="h-16 w-16 rounded-full"
+          />
+        </div>
+        <div class="flex-1">
+          <h4 class="text-black font-medium">
+            Brian Casel
+          </h4>
+          <p class="font-text text-sm 
+                    xs:text-base 
+                    lg:text-lg">
+            I'm a full stack founder who has been bootstrapping and building products and services businesses on the internet for over 15 years.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="rounded-lg mt-12 mx-6  p-6 
                       sm:mx-0 sm:rounded-b-lg sm:rounded-t-none sm:p-8
                       lg:p-10">
 
-            <h3 class="text-off-white-50 font-medium mb-4 
+    <h3 class="text-off-white-50 font-medium mb-4 
                         md:text-3xl md:font-semibold">
-              How I can help
-            </h3>
+      How I can help
+    </h3>
 
-            <div class="font-text font-light text-secondary-200 
+    <div class="font-text font-light text-secondary-200 
                         sm:text-lg 
                         md:text-xl">
-              <p>
-                I currently offer product strategy consulting and coaching for fellow software product founders. To learn more and check availability, <a
-                  href="/services"
-                  class="hover:text-off-white-50 font-medium whitespace-nowrap"
-                >click here</a>.
-              </p>
-            </div>
-
-          </div>
-
-        </article>
-      </div>
-
-      <div class="px-6 
-                  sm:px-0 
-                  lg:w-1/4">
-        <div class="sticky top-16 space-y-16 lg:space-y-24">
-
-          <div class="space-y-2">
-            <h3 class="flex items-center space-x-3 text-xl font-semibold tracking-tight pt-0 mb-2 
-                       lg:mt-1 
-                       xl:text-2xl">
-              <i class="fa-solid fa-newspaper fa-sm text-primary-500"></i>
-              <span>
-                Don't miss an issue
-              </span>
-            </h3>
-            <p class="font-text text-base text-gray-600 
-                      xl:text-lg">
-              Join thousands on the journey to growing as a full stack founder. New issues sent weekly by Brian Casel.
-            </p>
-            <div class="">
-              {{ partial:newsletter_subscribe_form button_text="Subscribe" form_name="full_stack_founder_newsletter" additional_classes="lg:flex lg:flex-col lg:items-start lg:space-y-2" additional_button_classes="lg:py-1.5 lg:px-3" }}
-            </div>
-          </div>
-
-          <div class="space-y-2">
-            <h3 class="flex items-center space-x-3 text-xl font-semibold tracking-tight pt-0 mb-2 lg:mt-1">
-              <i class="fa-brands fa-youtube text-primary-500"></i>
-              <span>
-                Subscribe on YouTube
-              </span>
-            </h3>
-            <p class="font-text text-base text-gray-600 
-                      xl:text-lg">
-              Tune in to Full Stack Founder on YouTube, where Brian creates new videos every week on design, development, products, and entrepreneurship.
-            </p>
-            <a
-              href="https://youtube.com/@fullstackfounder"
-              target="_blank"
-              class="flex items-center font-semibold space-x-2"
-            >
-              <span>Subscribe on YouTube</span>
-              <i class="fa-solid fa-arrow-right fa-sm"></i>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
+      <p>
+        I currently offer product strategy consulting and coaching for fellow software product founders. To learn more and check availability, <a
+          href="/#services"
+          class="hover:text-off-white-50 font-medium whitespace-nowrap"
+        >click here</a>.
+      </p>
     </div>
 
   </div>
 
-</div>
+</article>
