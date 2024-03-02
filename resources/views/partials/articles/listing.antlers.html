@@ -3,10 +3,10 @@
   class="flex-1 block group"
 >
   <div class="rounded space-y-6 
-              md:flex md:items-start md:space-y-0">
+              md:flex md:items-start md:space-x-6 md:space-y-0">
     {{ if featured_image }}
     <div class="w-full 
-                md:w-1/4">
+                md:w-1/4 md:mt-1">
       {{ featured_image }}
       <img
         src="{{ url }}"
@@ -20,12 +20,14 @@
 
     <div class="flex-1 pb-6">
 
-      <h3 class="mb-2 pt-0
+      <h3 class="mb-2 pt-0 text-lg 
+                xs:text-xl
                 group-hover:text-primary-500">
         {{ title }}
       </h3>
 
-      <p class="font-text text-base text-gray-600 mb-4">
+      <p class="font-text text-sm text-gray-600 mb-4 
+                xs:text-base">
         {{ if excerpt }}
         {{ excerpt }}
         {{ else }}
