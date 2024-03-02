@@ -160,7 +160,9 @@
                   {{ if page.url != '/' }}
                     pt-24 lg:pt-40
                   {{ /if }}">
-        {{ template_content }}
+        <div class="mx-auto {{ partial:prose_classes }}">
+          {{ template_content }}
+        </div>
       </div>
     </div>
 
