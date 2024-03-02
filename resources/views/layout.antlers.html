@@ -141,7 +141,30 @@
 </head>
 
 <body class="">
-  {{ template_content }}
+
+  {{ if page.url == "/" }}
+  {{ partial:home/hero }}
+  {{ /if }}
+
+  <div class="max-w-6xl mx-auto
+              lg:flex lg:items-start lg:justify-between lg:px-8 lg:space-x-24 
+              xl:max-w-7xl xl:space-x-32">
+
+    {{ partial:navigation }}
+
+    <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
+                md:max-w-xl 
+                lg:px-0 lg:max-w-none">
+
+      <div class="space-y-6 
+                  {{ if page.url != '/' }}
+                    pt-24 lg:pt-40
+                  {{ /if }}">
+        {{ template_content }}
+      </div>
+    </div>
+
+  </div>
 
   {{ partial:footer}}
 </body>

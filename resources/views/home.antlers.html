@@ -1,112 +1,26 @@
-<!-- Hero section -->
-<div class="pt-8 pb-32 px-8 bg-surfaces-100
-md:pt-12 md:pb-40
-lg:py-24">
+{{ partial:home/about }}
+{{ partial:home/you }}
+{{ partial:home/services }}
 
-  <div class="max-w-6xl mx-auto">
+<!--Let's talk -->
+<div
+  id="contact"
+  class="space-y-8 pt-16 
+    md:pt-24"
+>
 
-    <div class="space-y-24 text-center 
-    md:space-y-32">
-      <a
-        href="#"
-        class="inline-block text-center mx-auto"
-      >
-        <img
-          src="assets/images/instrumental-products.svg"
-          alt="Instrumental Products"
-          class="h-32 mx-auto"
-        />
+  <h2 class="mb-8">
+    Let's talk
+  </h2>
 
-        <div class="mt-6 text-center font-labels uppercase tracking-[.2em] font-semibold text-black">
-          <div>
-            Instrumental
-          </div>
-          <div>
-            Products
-          </div>
-        </div>
-      </a>
-
-
-      <div class="space-y-8">
-        <img
-          src="assets/images/brian-casel.jpg"
-          alt="Brian Casel"
-          class="rounded-full h-32 mx-auto border-4 border-off-white ring-4 ring-surfaces-200"
-        />
-
-        <div class="max-w-md mx-auto 
-        md:max-w-xl">
-          <p class="sub-headline">
-            <strong>I'm Brian Casel.</strong>
-          </p>
-
-          <p class="">
-            Welcome to my product studio, where I partner with SaaS companies, creators, and founders to take new products from <span class="xs:whitespace-nowrap">concept to launched.</span>
-          </p>
-
-        </div>
-        <div class="flex items-center flex-col space-y-6 font-labels uppercase tracking-widest font-semibold text-sm
-        md:inline-flex md:flex-row md:space-y-0 md:space-x-12 md:text-base">
-          <a
-            href="#about"
-            class="inline-flex items-center space-x-3"
-          >
-            <i class="fa-solid fa-arrow-down fa-sm"></i>
-            <span>Learn more</span>
-          </a>
-
-          <a
-            href="mailto:hi@briancasel.com"
-            class="inline-flex items-center space-x-3"
-          >
-            <i class="fa-regular fa-envelope fa-sm"></i>
-            <span>Let's talk</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
+  <p>
+    <a
+      href="/request"
+      class="btn"
+    >Email Brian
+    </a>
+  </p>
 
 </div>
 
-<!-- Main -->
-<div class="max-w-6xl mx-auto
-            lg:flex lg:flex-row-reverse lg:items-start lg:justify-between lg:px-8 
-            xl:max-w-7xl">
-
-  {{ partial:navigation }}
-
-  <!-- Body content -->
-  <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
-  md:max-w-xl 
-  lg:px-0 lg:max-w-none">
-
-    {{ partial:home/about }}
-    {{ partial:home/you }}
-    {{ partial:home/services }}
-
-    <!--Let's talk -->
-    <div
-      id="contact"
-      class="space-y-8 pt-16 
-    md:pt-24"
-    >
-
-      <h2 class="mb-8">
-        Let's talk
-      </h2>
-
-      <p>
-        <a
-          href="/request"
-          class="btn"
-        >Email Brian
-        </a>
-      </p>
-
-    </div>
-
-  </div>
 </div>
