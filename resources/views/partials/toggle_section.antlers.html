@@ -1,0 +1,45 @@
+<div
+  class="flex items-start py-4 cursor-pointer
+md:py-6"
+  x-data="{ section_open: false }"
+  x-on:click="section_open = ! section_open"
+>
+  <div class="relative w-7 top-[1px]
+    xs:top-[3px]
+    sm:top-[3px] sm:w-8
+    md:top-[1px] md:w-9 
+    lg:w-10">
+    <i
+      class="fa-sharp fa-chevron-down text-sm md:text-base"
+      x-bind:class="section_open ? 'block' : 'hidden'"
+    ></i>
+    <i
+      class="fa-sharp fa-chevron-right text-sm md:text-base"
+      x-bind:class="section_open ? 'hidden' : 'block'"
+    ></i>
+  </div>
+  <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
+    <div :class="section_open ? 'hidden' : 'block'">
+      <p>
+        {{ title }}
+      </p>
+
+      <p class="pt-4">
+        <span class="icon-link">
+          {{ link_text }}
+        </span>
+      </p>
+    </div>
+
+    <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
+      <p>
+        <strong>
+          {{ title }}
+        </strong>
+      </p>
+
+      {{ slot }}
+
+    </div>
+  </div>
+</div>
