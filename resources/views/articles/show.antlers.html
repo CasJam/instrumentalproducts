@@ -1,7 +1,9 @@
 <article class=" ">
 
   {{ if featured_video }}
-  <div class="px-2 sm:px-0">
+  <div class="px-2 mb-6 
+              sm:px-0 
+              lg:mb-10">
     <iframe
       src="{{ featured_video | embed_url }}"
       class="aspect-video w-full overflow-hidden 
@@ -13,13 +15,14 @@
   <img
     src="{{ url }}"
     alt="{{ alt }}"
-    class="w-full overflow-hidden rounded"
+    class="w-full overflow-hidden rounded mb-6 
+          lg:mb-10"
     loading="lazy"
   />
   {{ /featured_image }}
   {{ /if }}
 
-  <div class="py-6 lg:py-10">
+  <div class="">
 
     <div>
 
