@@ -17,9 +17,9 @@
     }
 
     h1 {
-        @apply text-3xl mb-6 font-medium 
+        @apply text-3xl mb-6 font-medium
           sm:text-4xl 
-          lg:text-5xl;
+          lg:text-5xl lg:tracking-tight;
     }
 
     h2 {
@@ -33,7 +33,7 @@
     }
 
     a {
-        @apply text-primary-500 hover:text-surfaces-600;
+        @apply text-primary-500 hover:text-black;
     }
 
     strong {
@@ -42,6 +42,10 @@
 
     ul {
         @apply list-disc ml-6;
+    }
+
+    ul ul {
+        @apply mt-2;
     }
 
     ul li {

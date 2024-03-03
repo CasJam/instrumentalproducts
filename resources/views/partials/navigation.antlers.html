@@ -1,19 +1,20 @@
 <!-- Navigation -->
 <div
   class="sticky top-0 z-50
-      lg:w-1/4 lg:pt-8 lg:mt-32 lg:pb-24"
+      md:w-1/5 md:mt-16 md:pt-8 md:pb-24"
   x-data="{ mobile_nav_open: false }"
 >
 
-  <div class="flex items-center justify-between px-4 py-4 bg-surfaces-100
-            lg:text-center lg:block lg:rounded-lg ">
+  <div class="flex items-center justify-between px-2 py-2 bg-surfaces-100
+            md:text-center md:block md:rounded-lg ">
 
     <div class="text-center">
       <a
         href="/"
         class="mx-auto"
       >
-        <div class="flex flex-col items-center justify-center h-10 w-10 lg:hidden">
+        <div class="flex flex-col items-center justify-center 
+                    md:hidden">
           <img
             src="assets/images/instrumental-products-icon.svg"
             alt="Instrumental Products"
@@ -21,7 +22,7 @@
           />
         </div>
         <div class="hidden 
-                  lg:block">
+                  md:block">
 
           <img
             src="assets/images/instrumental-products.svg"
@@ -35,22 +36,23 @@
     <div class="">
 
       <div
-        class="block lg:hidden"
+        class="block md:hidden"
         x-on:click="mobile_nav_open = ! mobile_nav_open"
       >
         <i
-          class="fa-regular fa-bars fa-xl text-surfaces-300"
+          class="fa-regular fa-bars fa-lg text-surfaces-300"
           x-bind:class="mobile_nav_open ? 'hidden' : 'block'"
         ></i>
         <i
-          class="fa-regular fa-xmark fa-xl text-surfaces-300"
+          class="fa-regular fa-xmark fa-lg text-surfaces-300"
           x-bind:class="mobile_nav_open ? 'block' : 'hidden'"
         ></i>
       </div>
 
-      <div :class="mobile_nav_open ? 'absolute top-16 left-0 w-full bg-surfaces-100 py-8 px-8' : 'hidden lg:block'">
-        <div class="text-xl pt-12 uppercase tracking-widest font-semibold font-labels space-y-6 pb-6 
-                  lg:pt-12 lg:text-lg">
+      <div :class="mobile_nav_open ? 'absolute top-12 left-0 w-full bg-surfaces-100 py-8 px-8' : 'hidden md:block'">
+        <div class="text-base pt-4 pl-4 uppercase tracking-widest font-semibold font-labels space-y-6 pb-6 
+                  md:pt-8 md:text-xs md:pl-0 
+                  xl:text-sm">
           <a
             href="/#about"
             class="block mb-4"

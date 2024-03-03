@@ -5,7 +5,7 @@
     <iframe
       src="{{ featured_video | embed_url }}"
       class="aspect-video w-full overflow-hidden 
-                    sm:rounded-t-lg sm:rounded-b-none sm:mx-0"
+                    sm:rounded-lg sm:mx-0"
     ></iframe>
   </div>
   {{ elseif featured_image }}
@@ -19,15 +19,16 @@
   {{ /featured_image }}
   {{ /if }}
 
-  <div class="p-6 lg:p-10">
+  <div class="py-6 lg:py-10">
 
     <div>
 
-      <h1 class="text-2xl font-bold tracking-tight xs:text-3xl sm:text-4xl lg:text-5xl">
+      <h1 class="">
         {{ title }}
       </h1>
 
-      <div class="mt-6 mb-12 flex items-center space-x-6 tracking-wide text-sm text-base">
+      <div class="mt-6 mb-12 tracking-wide text-sm text-base space-y-2
+                  md:flex md:items-center md:space-x-6 md:space-y-0">
         <div class="flex items-center space-x-2">
           <img
             src="/assets/images/brian-casel.jpg"
@@ -38,13 +39,13 @@
             Brian Casel
           </div>
         </div>
-        <div class="text-gray-300 opacity-80">
+        <div class="text-xs text-gray-300 opacity-80 sm:text-sm">
           {{ date }}
         </div>
       </div>
     </div>
 
-    <div class="prose {{ partial:prose_classes }}">
+    <div class="space-y-6">
       {{ content }}
       {{ partial src="bard/{type}" }}
       {{ /content }}
