@@ -6,9 +6,8 @@
 
 @layer base {
     body {
-        @apply font-text font-light text-lg/normal bg-off-white text-gray-600
-            sm:text-xl/normal 
-            lg:text-2xl/normal;
+        @apply font-text font-light text-base/normal bg-off-white text-gray-600
+            xs:text-lg/normal;
     }
 
     h1,
@@ -25,8 +24,7 @@
 
     h2 {
         @apply text-2xl mb-6 font-medium 
-          sm:text-3xl 
-          lg:text-4xl;
+          sm:text-3xl;
     }
 
     h3 {
