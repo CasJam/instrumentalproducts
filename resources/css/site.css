@@ -32,8 +32,12 @@
           sm:text-2xl/8 sm:pt-6;
     }
 
+    h4 {
+        @apply text-black font-medium;
+    }
+
     a {
-        @apply text-primary-500 hover:text-black;
+        @apply font-medium text-primary-500 hover:text-black;
     }
 
     strong {
