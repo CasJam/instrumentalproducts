@@ -19,7 +19,7 @@ export default {
                 labels: ["ff-ernestine-pro", "serif"],
             },
             colors: {
-                black: "#010101",
+                black: "#031E27",
                 white: "#ffffff",
                 "off-white": "#FEFCF4",
                 gray: {
