@@ -1,42 +1,65 @@
 <div
-  class="flex items-start py-4 cursor-pointer
-md:py-6"
+  class="flex items-start cursor-pointer
+  {{ if sub_section != 'true'}}py-4 md:py-6{{ /if }}"
   x-data="{ section_open: false }"
-  x-on:click="section_open = ! section_open"
+  x-on:click="{{ if has_sub_sections != 'true' }}section_open = ! section_open{{ /if }}"
 >
-  <div class="relative w-7 top-[1px]
+  <div
+    class="relative w-7 top-[1px]
     xs:top-[3px]
     sm:top-[3px] sm:w-8
-    md:top-[1px] md:w-9 
-    lg:w-10">
+    md:top-[3px] md:w-9 
+    lg:w-10"
+    x-on:click="{{ if has_sub_sections == 'true' }}section_open = ! section_open{{ /if }}"
+  >
     <i
-      class="fa-sharp fa-chevron-down text-sm md:text-base"
+      class="fa-sharp fa-chevron-down text-sm"
       x-bind:class="section_open ? 'block' : 'hidden'"
     ></i>
     <i
-      class="fa-sharp fa-chevron-right text-sm md:text-base"
+      class="fa-sharp fa-chevron-right text-sm"
       x-bind:class="section_open ? 'hidden' : 'block'"
     ></i>
   </div>
-  <div class="flex-1 border-b-2 border-surfaces-200 pb-8">
-    <div :class="section_open ? 'hidden' : 'block'">
-      <p>
+  <div class="flex-1 
+              {{ if sub_section != 'true'}}border-b-2 border-surfaces-200 pb-8{{ /if }}">
+    <div
+      :class="section_open ? 'hidden' : 'block'"
+      x-on:click="{{ if has_sub_sections == 'true' }}section_open = ! section_open{{ /if }}"
+    >
+      <p class="{{ if sub_title }}text-black font-medium{{ /if }}">
         {{ title }}
       </p>
 
+      {{ if sub_title }}
+      <p class="text-sm">
+        {{ sub_title }}
+      </p>
+      {{ /if }}
+
+      {{ if link_text}}
       <p class="pt-4">
         <span class="icon-link">
           {{ link_text }}
         </span>
       </p>
+      {{ /if }}
     </div>
 
     <div :class="section_open ? 'block space-y-6 pb-4' : 'hidden'">
-      <p>
-        <strong>
-          {{ title }}
-        </strong>
-      </p>
+      <div>
+        <p>
+          <strong>
+            {{ title }}
+          </strong>
+        </p>
+
+        {{ if sub_title }}
+        <p class="text-sm">
+          {{ sub_title }}
+        </p>
+        {{ /if }}
+      </div>
 
       {{ slot }}
 

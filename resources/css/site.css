@@ -62,7 +62,7 @@
     .icon-link {
         @apply font-labels uppercase tracking-wider font-semibold flex items-center space-x-3 text-primary-500 text-sm
             sm:text-base 
-            lg:text-xl lg:space-x-4
+            lg:text-base lg:space-x-4
             hover:text-black;
     }
 
