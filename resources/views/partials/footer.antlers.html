@@ -1,76 +1,127 @@
 <!-- Footer -->
-<div class="bg-black py-24 text-off-white">
+<div class="bg-black py-24 text-off-white space-y-12">
 
-  <div class="px-8 text-center space-y-24">
+  <div class="px-8 text-center space-y-12 max-w-4xl mx-auto
+              sm:text-left sm:flex sm:items-start sm:justify-between sm:space-x-12 sm:space-y-0 
+              xl:max-w-5xl">
 
-    <div class="inline-flex flex-col items-center space-y-6 mx-auto">
-      <img
-        src="assets/images/brian-casel.jpg"
-        alt="Brian Casel"
-        class="rounded-full border-4 border-black ring-2 ring-gray-800 h-24 "
-      >
-      <h3 class="text-off-white pt-0">
-        More from Brian Casel
-      </h3>
-      <div class="flex flex-col items-center space-y-4 
-                  md:flex-row md:space-y-0 md:space-x-10 md:justify-center 
-                  lg:space-x-12
-                  xl:space-x-16">
-        <a
-          href="https://briancasel.com/products"
-          target="_blank"
-          class="icon-link"
-        >
-          <i class="fa-regular fa-arrow-right"></i>
-          <span>Products</span>
-        </a>
-
-        <a
-          href="https://briancasel.com/podcasts"
-          target="_blank"
-          class="icon-link"
-        >
-          <i class="fa-regular fa-headphones"></i>
-          <span>Podcasts</span>
-        </a>
-
-        <a
-          href="https://youtube.com/@fullstackfounder"
-          target="_blank"
-          class="icon-link"
-        >
-          <i class="fa-brands fa-youtube"></i>
-          <span>YouTube</span>
-        </a>
-
-        <a
-          href="https://twitter.com/casjam"
-          target="_blank"
-          class="icon-link"
-        >
-          <i class="fa-brands fa-x-twitter"></i>
-          <span>Twitter</span>
-        </a>
-      </div>
-    </div>
-
-    <div class="mx-auto">
+    <div class="mx-auto 
+                sm:mx-0 sm:w-2/5">
       <a
         href="https://instrumentalproducts.com"
-        class="inline-block"
+        class="inline-block mb-4"
       >
         <img
-          src="assets/images/instrumental-products-icon.svg"
+          src="assets/images/instrumental-products-dark.svg"
           alt="Instrumental Products"
-          class="h-20"
+          class="h-36 mx-auto 
+                "
         >
       </a>
+
+      <p class="text-secondary-700 text-sm max-w-xs mx-auto 
+                sm:mx-0">
+        The product studio of <span class="text-secondary-500">Brian Casel</span>, a full stack software product designer and developer.
+      </p>
     </div>
 
-    <div class="font-sm opacity-50">
-      &copy; {{$ now()->year $}} Instrumental Products
+    <div class="space-y-12 
+                sm:flex-1 sm:flex sm:items-start sm:justify-end sm:space-x-20 sm:space-y-0 
+                md:space-x-32 md:pr-12">
+
+      <div class="sm:text-left">
+        <h3 class="text-off-white pt-0 mb-4 
+                  sm:text-lg 
+                  xl:text-xl">
+          The Studio
+        </h3>
+
+        <div class="font-labels uppercase tracking-widest font-semibold text-sm flex flex-col items-center justify-center space-y-3 
+                    sm:items-start">
+          <a href="/#about">
+            About
+          </a>
+
+          <a href="/#services">
+            Services
+          </a>
+
+          <a href="/portfolio">
+            Portfolio
+          </a>
+
+          <a href="/portfolio">
+            Writing
+          </a>
+
+          <a href="/contact">
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="space-y-3 mb-4 pt-0
+                   sm:flex sm:items-center sm:space-x-3 sm:space-y-0">
+          <img
+            src="assets/images/brian-casel.jpg"
+            alt="Brian Casel"
+            class="w-12 h-12 rounded-full inline-block border-2 border-black ring-1 ring-secondary-900 
+                  sm:w-8 sm:h-8"
+          >
+          <h3 class="pt-0 text-off-white whitespace-nowrap
+          sm:text-lg 
+          xl:text-xl">
+            Brian Casel
+          </h3>
+        </div>
+
+        <div class="font-labels uppercase tracking-widest font-semibold text-sm flex flex-col items-center justify-center space-y-3  
+                    sm:items-start">
+          <a
+            href="https://briancasel.com"
+            target="_blank"
+          >
+            Blog
+          </a>
+
+          <a
+            href="https://briancasel.com/podcasts"
+            target="_blank"
+          >
+            Podcasts
+          </a>
+
+          <a
+            href="https://youtube.com/@briancasel"
+            target="_blank"
+          >
+            YouTube
+          </a>
+
+          <a
+            href="https://twitter.com/casjam"
+            target="_blank"
+          >
+            Twitter
+          </a>
+
+          <a
+            href="https://linkedin.com/in/briancasel"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
     </div>
 
+  </div>
+
+  <div class="px-8 pt-12 text-center text-sm text-secondary-800 
+              sm:text-left">
+    &copy; {{$ now()->year $}} Instrumental Products
   </div>
 
 </div>
