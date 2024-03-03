@@ -72,7 +72,7 @@
 
     .sub-headline {
         @apply font-text text-xl 
-            xs:text-2xl/snug
-            sm:text-3xl/snug;
+            xs:text-xl/snug
+            sm:text-2xl/snug;
     }
 }
