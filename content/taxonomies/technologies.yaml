@@ -1,0 +1,9 @@
+title: Technologies
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+template: technologies.index
+term_template: technologies.show
+layout: layout

@@ -6,18 +6,18 @@
               group-hover:border-primary-500 
               sm:flex sm:flex-row sm:items-start sm:justify-between sm:space-x-6 
               lg:flex-col lg:items-center lg:justify-center">
-    {{ if project_logo }}
+    {{ if project_logo_square }}
     <div class="w-full h-24 flex flex-col items-center justify-center text-center 
                 sm:w-1/5 
                 lg:w-full">
-      {{ project_logo }}
+      {{ project_logo_square }}
       <img
         src="{{ url }}"
         alt="{{ alt }}"
         class="h-16 mx-auto"
         loading="lazy"
       />
-      {{ /project_logo }}
+      {{ /project_logo_square }}
     </div>
     {{ /if }}
 

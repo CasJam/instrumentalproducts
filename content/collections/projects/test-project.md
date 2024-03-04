@@ -6,16 +6,24 @@ project_status: 'This is the project status'
 launched_date: '2024-03-01'
 project_technology:
   - ruby-on-rails
-  - tailwindcss
 project_role:
   - founder
   - designer
   - developer
   - product-manager
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709566889
+updated_at: 1709580450
 project_logo:
   - images/projects/project_logos/clarityflow-icon.svg
+project_logo_square:
+  - images/projects/project_logos/clarityflow-icon.svg
+project_logo_full:
+  - images/projects/project_logos/clarityflow.svg
+sub_headline: 'A SaaS for asynchronous video messaging for coaches.'
+logo_as_title: true
+technologies:
+  - tailwindcss
+  - ruby-on-rails
 content:
   -
     type: paragraph

@@ -12,20 +12,72 @@ tabs:
               validate:
                 - required
           -
-            import: bard_with_custom_components
-          -
-            handle: excerpt
+            handle: project_logo_square
             field:
-              antlers: false
-              type: textarea
-              display: Excerpt
-              icon: textarea
-              instructions: 'Define the excerpt shown on the index page.  If blank, then the beginning of the project content will be used.'
+              mode: list
+              container: assets
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Project Square Logo'
+              icon: assets
+              instructions: 'Shown on project listing.  It should be a square SVG.'
               listable: hidden
               instructions_position: above
               visibility: visible
               replicator_preview: true
               hide_display: false
+              folder: images/projects/project_logos
+          -
+            handle: project_logo_full
+            field:
+              mode: list
+              container: assets
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Project Full Logo'
+              icon: assets
+              instructions: 'Shown on project single view.  It can be the full (rectangular) logo.  Should be an SVG.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: images/projects/project_logos
+          -
+            handle: logo_as_title
+            field:
+              default: false
+              type: toggle
+              display: 'Show the logo as the page title'
+              icon: toggle
+              instructions: 'Set this to true if the full logo should be displayed in place of the text title (as H1) on the single project page.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: sub_headline
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Sub Headline'
+              icon: text
+              instructions: '1 sentence to describe this project.  Shown on the index page and on the single project page.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            import: bard_with_custom_components
   sidebar:
     display: Sidebar
     sections:
@@ -46,20 +98,6 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
-          -
-            handle: project_status
-            field:
-              input_type: text
-              antlers: false
-              type: text
-              display: 'Project Status'
-              icon: text
-              instructions: 'A short sentence to specify the current status of this project.'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
           -
             handle: featured_video
             field:
@@ -92,24 +130,34 @@ tabs:
               hide_display: false
               folder: images/projects/project_images
           -
-            handle: project_logo
+            handle: project_status
             field:
-              mode: list
-              container: assets
-              restrict: true
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: 'Project Logo'
-              icon: assets
-              instructions: 'Shown on project listing and on the single project view.  It should be a square SVG.'
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Project Status'
+              icon: text
+              instructions: 'A short sentence to specify the current status of this project.'
               listable: hidden
               instructions_position: above
               visibility: visible
               replicator_preview: true
               hide_display: false
-              folder: images/projects/project_logos
+          -
+            handle: website_url
+            field:
+              input_type: text
+              placeholder: 'https://'
+              antlers: false
+              type: text
+              display: 'Website URL'
+              icon: text
+              instructions: 'Enter the full website URL (including https://)'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: launched_date
             field:
@@ -129,20 +177,20 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: project_technology
-            field:
-              type: terms
-              taxonomies:
-                - project_technology
-              display: 'Project Technologies'
-              mode: select
-          -
             handle: project_role
             field:
               type: terms
               taxonomies:
                 - project_role
               display: 'Project Roles'
+              mode: select
+          -
+            handle: technologies
+            field:
+              type: terms
+              taxonomies:
+                - technologies
+              display: Technologies
               mode: select
   SEO:
     display: SEO

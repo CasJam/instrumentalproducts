@@ -1,0 +1,101 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: headline
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Headline
+              icon: text
+              instructions: 'Shown on the single taxonomy page for this technology.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: sub_headline
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Sub headline'
+              icon: text
+              instructions: 'Shown on the single taxonomy page for this technology.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: technology_logo
+            field:
+              mode: list
+              container: assets
+              folder: images/projects/technology_logos
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: technology_logo
+              icon: assets
+              instructions: 'SVG.  If present, this overrides the fontawesome Icon'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: fontawesome_icon_class
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Fontawesome Icon Class'
+              icon: text
+              instructions: 'The `fa-` class for the [Fontawesome Icon](https://fontawesome.com/search) for this technology.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            import: bard_with_custom_components
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              required: true
+              validate:
+                - required
+                - 'max:200'
+  SEO:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
+title: 'Project Technology'

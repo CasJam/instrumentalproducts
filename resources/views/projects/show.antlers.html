@@ -1,3 +1,80 @@
+<div class="divide-y-4 divide-surfaces-100 text-left">
+
+  <!-- Title -->
+  <div class="py-8">
+    <div class="mb-4 pt-6">
+      {{ if logo_as_title == true }}
+      {{ if project_logo_full }}
+      {{ project_logo_full }}
+      <img
+        src="{{ url }}"
+        alt="{{ alt }}"
+        class="h-16"
+        loading="lazy"
+      />
+      {{ /project_logo_full }}
+      {{ /if }}
+      {{ else }}
+      <h1>
+        {{ title }}
+      </h1>
+      {{ /if}}
+    </div>
+    {{ if sub_headline }}
+    <p class="sub-headline">
+      {{ sub_headline }}
+    </p>
+    {{ /if }}
+  </div>
+
+  <!-- Meta -->
+  <div class="grid grid-cols-1 gap-6 py-8
+              md:grid-cols-2">
+
+    {{ if project_status }}
+    {{ partial:projects/project_meta label="Status" }}
+    {{ project_status }}
+    {{ /partial:projects/project_meta}}
+    {{ /if }}
+
+
+    {{ if launched_date }}
+    {{ partial:projects/project_meta label="Launched" }}
+    {{ launched_date }}
+    {{ /partial:projects/project_meta}}
+    {{ /if }}
+
+
+    {{ if technologies }}
+    {{ partial:projects/project_meta label="Technologies" }}
+    {{ taxonomy:technologies }}
+    <a
+      href="{{ url }}"
+      class="inline-block mb-4 text-gray-300 text-sm 
+                md:text-base
+                hover:text-black"
+    >
+      <span class="opacity-50 inline-block mr-[2px]">#</span>{{ title }}
+    </a>
+    {{ /taxonomy:technologies }}
+    {{ /partial:projects/project_meta}}
+    {{ /if }}
+
+
+
+  </div>
+
+</div>
+
+
+
+<div>
+
+</div>
+
+
+
+
 <article class=" ">
 
   {{ if featured_video }}
@@ -26,9 +103,6 @@
 
     <div>
 
-      <h1 class="">
-        {{ title }}
-      </h1>
 
       <div class="mt-6 mb-12 tracking-wide text-sm text-base space-y-2
                   md:flex md:items-center md:space-x-6 md:space-y-0">

@@ -9,7 +9,6 @@ project_logo:
 launched_date: '2024-03-04'
 project_technology:
   - ruby-on-rails
-  - tailwindcss
 project_role:
   - founder
   - designer
