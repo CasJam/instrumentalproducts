@@ -2,57 +2,42 @@
   href="{{ url }}"
   class="flex-1 block group"
 >
-  <div class="rounded space-y-6 
-              md:flex md:items-start md:space-x-6 md:space-y-0">
-    {{ if featured_image }}
-    <div class="w-full 
-                md:w-1/4 md:mt-1">
-      {{ featured_image }}
+  <div class="bg-white border border-surfaces-100 rounded-md p-4 pb-6 flex flex-col items-center justify-center 
+              group-hover:border-primary-500 
+              sm:flex sm:flex-row sm:items-start sm:justify-between sm:space-x-6 
+              lg:flex-col lg:items-center lg:justify-center">
+    {{ if project_logo }}
+    <div class="w-full h-24 flex flex-col items-center justify-center text-center 
+                sm:w-1/5 
+                lg:w-full">
+      {{ project_logo }}
       <img
         src="{{ url }}"
         alt="{{ alt }}"
-        class="w-full overflow-hidden rounded"
+        class="h-16 mx-auto"
         loading="lazy"
       />
-      {{ /featured_image }}
+      {{ /project_logo }}
     </div>
     {{ /if }}
 
-    <div class="flex-1 pb-6">
-
-      <h2 class="mb-2 pt-0
-                group-hover:text-primary-500">
+    <div class="text-center 
+                sm:text-left sm:flex-1 
+                lg:text-center">
+      <h3 class="pt-0 text-center mb-2 
+                sm:text-left 
+                lg:text-center">
         {{ title }}
-      </h2>
-
-      <p class="font-text text-sm text-gray-600 mb-4 
-                xs:text-base">
+      </h3>
+      <p class="text-gray-500">
         {{ if excerpt }}
         {{ excerpt }}
         {{ else }}
-
         {{ content }}
         {{ partial src="bard/text" excerpt="true" }}
         {{ /content }}
-
         {{ /if }}
       </p>
-
-      <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
-        <div class="flex items-center space-x-2">
-          <img
-            src="/assets/images/brian-casel.jpg"
-            alt="Brian Casel"
-            class="h-6 w-6 rounded-full"
-          />
-          <div class="text-gray-400">
-            Brian Casel
-          </div>
-        </div>
-        <div class="text-gray-300 opacity-80">
-          {{ date }}
-        </div>
-      </div>
     </div>
   </div>
 </a>

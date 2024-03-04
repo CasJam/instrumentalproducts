@@ -1,5 +1,6 @@
-{{ collection:projects paginate="12" as="projects" sort="date:desc" }}
-<div class="space-y-16">
+{{ collection:projects paginate="16" as="projects" sort="date:desc" }}
+<div class="space-y-16 
+            lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">
   {{ projects }}
   {{ partial:projects/listing }}
   {{ /projects }}
