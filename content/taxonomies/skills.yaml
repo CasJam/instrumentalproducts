@@ -1,9 +1,9 @@
-title: 'Project Roles'
+title: Skills
 preview_targets:
   -
     label: Term
     url: '{permalink}'
     refresh: true
-template: project_role.index
-term_template: project_role.show
+template: skills/index
+term_template: skills/show
 layout: layout

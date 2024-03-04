@@ -2,8 +2,8 @@ title: Projects
 template: projects/show
 layout: layout
 taxonomies:
-  1: project_role
   2: technologies
+  3: skills
 revisions: false
 route: '{parent_uri}/projects/{slug}'
 sort_dir: asc

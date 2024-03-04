@@ -4,6 +4,8 @@ layout: layout
 taxonomies:
   - categories
   - tags
+  - skills
+  - technologies
 revisions: false
 route: '{parent_uri}/{slug}'
 date: true

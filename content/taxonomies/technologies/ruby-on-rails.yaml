@@ -1,1 +1,21 @@
 title: 'Ruby on Rails'
+headline: 'Headline about RoR'
+sub_headline: 'sub headline'
+fontawesome_icon_class: fa-gem
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'this is the content.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'This is another paragraph.'
+updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
+updated_at: 1709583180
+technology_logo:
+  - images/projects/technology_logos/ruby.svg

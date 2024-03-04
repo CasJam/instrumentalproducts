@@ -1,6 +1,6 @@
 title: TailwindCSS
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709580272
+updated_at: 1709581412
 blueprint: technology
 headline: 'TailwindCSS UI Designer'
 sub_headline: 'At Instrumental Products, TailwindCSS is our go-to for all of the interfaces we design in the browser.'
@@ -13,3 +13,23 @@ content:
       -
         type: text
         text: 'This is the content.'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'This is a H2'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'this is more content.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'And this is another paragraph.'

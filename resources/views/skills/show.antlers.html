@@ -1,0 +1,22 @@
+<div class="divide-y-4 divide-surfaces-100 text-left">
+
+  <!-- Title -->
+  <div class="py-8">
+    <h1 class="">
+      {{ title }}
+    </h1>
+
+    {{ if sub_headline }}
+    <p class="sub-headline">
+      {{ sub_headline }}
+    </p>
+    {{ /if }}
+  </div>
+
+  <div class="py-8">
+    {{ content }}
+    {{ partial src="bard/{type}" }}
+    {{ /content }}
+  </div>
+
+</div>
