@@ -5,10 +5,10 @@ title: Home
 template: home
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1705021779
+updated_at: 1709588769
 seo:
-  title: 'Full Stack Founder'
-  description: 'Brian Casel teaches you how to acquire the full stack of skills to take any software product idea from design to code to launched and build a life-changing business.'
+  title: 'Instrumental Products'
+  description: 'The product studio of Brian Casel, a full stack software product designer and developer.'
   site_name: false
 content:
   -
