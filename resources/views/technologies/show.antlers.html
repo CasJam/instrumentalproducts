@@ -1,0 +1,171 @@
+<div class="divide-y-4 divide-surfaces-100 text-left">
+
+  <!-- Title -->
+  <div class="py-8">
+    <div class="mb-4 pt-6">
+      {{ if logo_as_title == true }}
+      {{ if project_logo_full }}
+      {{ project_logo_full }}
+      <img
+        src="{{ url }}"
+        alt="{{ alt }}"
+        class="h-16"
+        loading="lazy"
+      />
+      {{ /project_logo_full }}
+      {{ /if }}
+      {{ else }}
+      <h1>
+        {{ title }}
+      </h1>
+      {{ /if}}
+    </div>
+    {{ if sub_headline }}
+    <p class="sub-headline">
+      {{ sub_headline }}
+    </p>
+    {{ /if }}
+  </div>
+
+  <!-- Meta -->
+  <div class="grid grid-cols-1 gap-6 py-8
+              md:grid-cols-2">
+
+    {{ if project_status }}
+    {{ partial:projects/project_meta label="Status" }}
+    {{ project_status }}
+    {{ /partial:projects/project_meta}}
+    {{ /if }}
+
+
+    {{ if launched_date }}
+    {{ partial:projects/project_meta label="Launched" }}
+    {{ launched_date }}
+    {{ /partial:projects/project_meta}}
+    {{ /if }}
+
+
+    {{ if technologies }}
+    {{ partial:projects/project_meta label="Technologies" }}
+    {{ taxonomy:technologies }}
+    <a
+      href="{{ url }}"
+      class="inline-block mb-4 text-gray-300 text-sm 
+                md:text-base
+                hover:text-black"
+    >
+      <span class="opacity-50 inline-block mr-[2px]">#</span>{{ title }}
+    </a>
+    {{ /taxonomy:technologies }}
+    {{ /partial:projects/project_meta}}
+    {{ /if }}
+
+
+
+  </div>
+
+</div>
+
+
+
+<div>
+
+</div>
+
+
+
+
+<article class=" ">
+
+  {{ if featured_video }}
+  <div class="px-2 mb-6 
+              sm:px-0 
+              lg:mb-10">
+    <iframe
+      src="{{ featured_video | embed_url }}"
+      class="aspect-video w-full overflow-hidden 
+                    sm:rounded-lg sm:mx-0"
+    ></iframe>
+  </div>
+  {{ elseif featured_image }}
+  {{ featured_image }}
+  <img
+    src="{{ url }}"
+    alt="{{ alt }}"
+    class="w-full overflow-hidden rounded mb-6 
+          lg:mb-10"
+    loading="lazy"
+  />
+  {{ /featured_image }}
+  {{ /if }}
+
+  <div class="">
+
+    <div>
+
+
+      <div class="mt-6 mb-12 tracking-wide text-sm text-base space-y-2
+                  md:flex md:items-center md:space-x-6 md:space-y-0">
+        <div class="flex items-center space-x-2">
+          <img
+            src="/assets/images/brian-casel.jpg"
+            alt="Brian Casel"
+            class="h-6 w-6 rounded-full"
+          />
+          <div class="text-gray-400">
+            Brian Casel
+          </div>
+        </div>
+        <div class="text-xs text-gray-300 opacity-80 sm:text-sm">
+          {{ date }}
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-6">
+      {{ content }}
+      {{ partial src="bard/{type}" }}
+      {{ /content }}
+    </div>
+
+
+    <div class="mt-16 space-y-4">
+      {{ if project_tags }}
+      <div class="flex flex-wrap items-start space-x-4 font-normal">
+        {{ taxonomy:project_tags }}
+        <a
+          href="{{ url }}"
+          class="inline-block mb-4 text-gray-300 text-sm 
+                md:text-base
+                hover:text-black"
+        >
+          <span class="opacity-50 inline-block mr-[2px]">#</span>{{ title }}
+        </a>
+        {{ /taxonomy:project_tags }}
+      </div>
+      {{ /if }}
+
+      <div class="bg-surfaces-100 pl-8 p-6 rounded space-y-4
+                          md:flex md:items-start md:space-x-8 md:space-y-0">
+        <div class="mt-1">
+          <img
+            src="/assets/images/brian-casel.jpg"
+            alt="Brian Casel"
+            class="h-16 w-16 rounded-full"
+          />
+        </div>
+        <div class="flex-1">
+          <h4 class="text-black font-medium">
+            Brian Casel
+          </h4>
+          <p class="font-text text-sm 
+                    xs:text-base 
+                    lg:text-lg">
+            I'm a full stack founder who has been bootstrapping and building products and services businesses on the internet for over 15 years.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</article>

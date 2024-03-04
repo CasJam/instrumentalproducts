@@ -1,0 +1,12 @@
+{{ collection:technologies paginate="16" as="technologies" sort="date:desc" }}
+<div class="space-y-16 
+            lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">
+  {{ technologies }}
+  {{ partial:technologies/listing }}
+  {{ /technologies }}
+</div>
+{{ if total_items > 16 }}
+{{ partial:technologies/pagination }}
+{{ /if}}
+
+{{ /collection:technologies }}
