@@ -7,7 +7,8 @@
 @layer base {
     body {
         @apply font-text font-light text-base/normal bg-off-white text-gray-600
-            xs:text-lg/normal;
+                xs:text-lg/normal 
+                2xl:text-xl/normal;
     }
 
     h1,
@@ -19,12 +20,14 @@
     h1 {
         @apply text-3xl mb-6 font-medium 
           sm:text-4xl 
-          lg:text-5xl lg:tracking-tight;
+          lg:text-5xl lg:tracking-tight 
+          2xl:text-6xl;
     }
 
     h2 {
         @apply text-2xl mb-6 font-medium 
-          sm:text-3xl;
+          sm:text-3xl 
+          2xl:text-4xl;
     }
 
     h3 {
