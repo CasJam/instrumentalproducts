@@ -1,0 +1,25 @@
+{{ taxonomy:technologies }}
+<a
+  href="{{ url }}"
+  class="mt-1 mr-2 mb-1 inline-flex items-center space-x-2 text-sm bg-surfaces-100 py-1 px-2 rounded text-gray-600 
+            hover:text-primary-500"
+>
+  <span>
+    {{ if technology_logo }}
+    {{ technology_logo }}
+    <img
+      src="{{ url }}"
+      alt="{{ alt }}"
+      class="h-3 "
+      loading="lazy"
+    />
+    {{ /technology_logo }}
+    {{ else }}
+    <i class="fa-solid {{ fontawesome_icon_class}}"></i>
+    {{ /if}}
+  </span>
+  <span>
+    {{ title }}
+  </span>
+</a>
+{{ /taxonomy:technologies }}

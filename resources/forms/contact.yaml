@@ -5,4 +5,4 @@ email:
     to: hi@briancasel.com
     from: '{{ email }}'
     reply_to: '{{ email }}'
-    subject: '[Full Stack Founder] {{ subject }}'
+    subject: '[Instrumental Products] {{ subject }}'

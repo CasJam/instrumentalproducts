@@ -31,12 +31,12 @@
     }
 
     h3 {
-        @apply text-xl/7 font-medium pt-4
+        @apply text-xl/7 font-medium pt-4 mb-6
           sm:text-2xl/8 sm:pt-6;
     }
 
     h4 {
-        @apply text-black font-medium;
+        @apply text-black font-medium mb-6 pt-4;
     }
 
     a {
@@ -89,5 +89,21 @@
     
     .form-control:focus {
       @apply outline-none text-black border-2 border-primary-500;
+    }
+    
+    .content p,
+    .content ul,
+    .content ol,
+    .content blockquote {
+        @apply mb-6;
+    }
+    
+    .content ul li p {
+        @apply mb-2;
+    }
+    
+    .content ul ul,
+    .content ol ol {
+        @apply mb-2;
     }
 }

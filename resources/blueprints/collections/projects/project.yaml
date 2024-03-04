@@ -177,20 +177,20 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
-            handle: project_role
-            field:
-              type: terms
-              taxonomies:
-                - project_role
-              display: 'Project Roles'
-              mode: select
-          -
             handle: technologies
             field:
               type: terms
               taxonomies:
                 - technologies
               display: Technologies
+              mode: select
+          -
+            handle: skills
+            field:
+              type: terms
+              taxonomies:
+                - skills
+              display: Skills
               mode: select
   SEO:
     display: SEO
