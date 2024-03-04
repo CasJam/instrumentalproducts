@@ -12,7 +12,7 @@ project_role:
   - developer
   - product-manager
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709584420
+updated_at: 1709588157
 project_logo:
   - images/projects/project_logos/clarityflow-icon.svg
 project_logo_square:
@@ -26,7 +26,6 @@ technologies:
   - ruby-on-rails
 skills:
   - founder
-  - design
   - development
 content:
   -

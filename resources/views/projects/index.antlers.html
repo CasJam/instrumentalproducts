@@ -2,7 +2,7 @@
 <div class="space-y-16 
             lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">
   {{ projects }}
-  {{ partial:projects/listing }}
+  {{ partial:listing :image="project_logo_square" :title="title" :description="sub_headline" }}
   {{ /projects }}
 </div>
 {{ if total_items > 16 }}
