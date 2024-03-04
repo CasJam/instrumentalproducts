@@ -1,0 +1,9 @@
+title: 'Project Roles'
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+template: project_role.index
+term_template: project_role.show
+layout: layout

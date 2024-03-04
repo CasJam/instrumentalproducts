@@ -1,0 +1,9 @@
+title: 'Project Technologies'
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+template: project_technology.index
+term_template: project_technology.show
+layout: layout

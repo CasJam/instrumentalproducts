@@ -1,0 +1,158 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            import: bard_with_custom_components
+          -
+            handle: excerpt
+            field:
+              antlers: false
+              type: textarea
+              display: Excerpt
+              icon: textarea
+              instructions: 'Define the excerpt shown on the index page.  If blank, then the beginning of the project content will be used.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - projects
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: project_status
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Project Status'
+              icon: text
+              instructions: 'A short sentence to specify the current status of this project.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: featured_video
+            field:
+              type: video
+              display: 'Featured Video'
+              icon: video
+              instructions: "Shown at the top of the single project view.  If set, then the featured image won't be shown."
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: featured_image
+            field:
+              mode: list
+              container: assets
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Featured Image'
+              icon: assets
+              instructions: 'Shown at the top of a single project view (unless a featured video is set).  It should be 1200x768.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: images/projects/project_images
+          -
+            handle: project_logo
+            field:
+              mode: list
+              container: assets
+              restrict: true
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Project Logo'
+              icon: assets
+              instructions: 'Shown on project listing and on the single project view.  It should be a square SVG.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: images/projects/project_logos
+          -
+            handle: launched_date
+            field:
+              mode: single
+              inline: false
+              full_width: false
+              columns: 1
+              rows: 1
+              time_enabled: false
+              time_seconds_enabled: false
+              type: date
+              display: 'Launched Date'
+              icon: date
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: project_technology
+            field:
+              type: terms
+              taxonomies:
+                - project_technology
+              display: 'Project Technologies'
+              mode: select
+          -
+            handle: project_role
+            field:
+              type: terms
+              taxonomies:
+                - project_role
+              display: 'Project Roles'
+              mode: select
+  SEO:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
+title: Project

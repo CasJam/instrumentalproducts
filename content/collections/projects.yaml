@@ -1,0 +1,21 @@
+title: Projects
+template: projects/show
+layout: layout
+taxonomies:
+  - project_technology
+  - project_role
+revisions: false
+route: '{parent_uri}/projects/{slug}'
+sort_dir: asc
+default_status: draft
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: false
+  slugs: true

@@ -82,4 +82,12 @@
             xs:text-xl/snug
             sm:text-2xl/snug;
     }
+    
+    .form-control {
+      @apply w-full bg-surfaces-100 rounded-md py-3 px-4;
+    }
+    
+    .form-control:focus {
+      @apply outline-none text-black border-2 border-primary-500;
+    }
 }

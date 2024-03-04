@@ -1,0 +1,11 @@
+{{ collection:projects paginate="12" as="projects" sort="date:desc" }}
+<div class="space-y-16">
+  {{ projects }}
+  {{ partial:projects/listing }}
+  {{ /projects }}
+</div>
+{{ if total_items > 12 }}
+{{ partial:projects/pagination }}
+{{ /if}}
+
+{{ /collection:projects }}
