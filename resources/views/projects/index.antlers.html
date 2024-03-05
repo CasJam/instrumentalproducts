@@ -1,6 +1,5 @@
 {{ collection:projects paginate="16" as="projects" sort="date:desc" }}
-<div class="space-y-16 
-            lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">
+<div class="divide-y-2 divide-surfaces-200">
   {{ projects }}
   {{ partial:listing :image="project_logo_square" :title="title" :description="sub_headline" }}
   {{ /projects }}
