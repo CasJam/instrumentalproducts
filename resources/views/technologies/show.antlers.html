@@ -1,8 +1,8 @@
 <div class="divide-y-4 divide-surfaces-100 text-left">
 
   <!-- Title -->
-  <div class="py-8">
-    <div class="mb-4 pt-6 flex items-center space-x-4">
+  <div class="pb-8">
+    <div class="mb-6 flex items-center space-x-4">
       {{ if technology_logo }}
       <div class="w-12 h-12 bg-white border border-surfaces-100 rounded-md flex flex-col items-center justify-center 
                   lg:w-16 lg:h-16">
@@ -17,7 +17,11 @@
       </div>
       {{ /if }}
       <h1 class="pt-0 mb-0">
+        {{ if headline }}
+        {{ headline }}
+        {{ else }}
         {{ title }}
+        {{ /if }}
       </h1>
     </div>
 

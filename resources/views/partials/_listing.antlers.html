@@ -5,11 +5,11 @@
   <div class="flex flex-col items-center justify-center space-y-3
               group-hover:border-primary-500 
               xs:space-y-0 xs:flex xs:flex-row xs:items-start xs:justify-between xs:space-x-8 ">
-    {{ if image }}
 
-    {{ image }}
-    <div class="w-auto 
-    xs:mt-2 xs:w-12">
+    <div class="w-auto text-center
+                xs:mt-2 xs:w-12">
+      {{ if image }}
+      {{ image }}
       <img
         src="{{ url }}"
         alt="{{ alt }}"
@@ -17,9 +17,11 @@
         xs:h-auto xs:w-full"
         loading="lazy"
       />
+      {{ /image }}
+      {{ else }}
+      <i class="fa-regular {{ fontawesome_icon_class }} text-5xl text-secondary-500 inline-block mx-auto"></i>
+      {{ /if }}
     </div>
-    {{ /image }}
-    {{ /if }}
 
     <div class="text-center 
     xs:text-left xs:flex-1">
