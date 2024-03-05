@@ -38,4 +38,14 @@
     {{ /content }}
   </div>
 
+  <div class="py-12">
+    <h2>Projects where we used {{ title }}</h2>
+
+    <div class="divide-y-2 divide-surfaces-200">
+      {{ collection:projects taxonomy:technologies="{{ page:title | lower }}" }}
+      {{ partial:listing :image="project_logo_square" :title="title" :description="sub_headline" }}
+      {{ /collection:projects}}
+    </div>
+  </div>
+
 </div>
