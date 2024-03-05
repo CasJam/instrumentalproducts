@@ -1,6 +1,6 @@
 title: TailwindCSS
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709666330
+updated_at: 1709678200
 blueprint: technology
 headline: 'TailwindCSS UI Designer'
 sub_headline: 'At <em>Instrumental Products</em>, TailwindCSS is our go-to for all of the interfaces we design in the browser.'
@@ -12,6 +12,68 @@ content:
     content:
       -
         type: text
-        text: a
+        text: "As a front-end web designer and developer who's been making things on the web since the early 2000s (!), the transition from traditional CSS and SCSS over to "
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://tailwindcss.com'
+              rel: null
+              target: _blank
+              title: null
+        text: TailwindCSS
+      -
+        type: text
+        text: ' has been a breathe of fresh air (to say the least).'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Built around the concept of utility classes, The TailwindCSS front-end design framework makes it fast to build and iterate on designing interfaces directly in the browser.  The folks at Tailwind Labs are a smart a support bunch!'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'That means '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'faster turnaround times'
+      -
+        type: text
+        text: ' to go from concept to functioning UI and product ready to ship to customers.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'But the real benefit of using TailwindCSS has been in its '
+      -
+        type: text
+        marks:
+          -
+            type: italic
+        text: maintainability
+      -
+        type: text
+        text: ".  It's 1000x easier and faster to iterate, make changes and update your interfaces when the product was built using TailwindCSS.  With traditional CSS, we'd have to refactor lines upon lines of CSS code, wheras with Tailwind, the changes are fast and easy."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'And fast iteration cycles is critical when the product is early in its lifetime.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "There aren't many technologies that we insist on using 100% of the time when we're building the interface for a product.  But TailwindCSS is certainly one of them."
 seo:
   title: '@seo:headline'

@@ -2,5 +2,55 @@ title: Statamic
 technology_logo:
   - images/projects/technology_logos/statamic.svg
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709650190
+updated_at: 1709679002
 blueprint: technology
+headline: 'Statamic CMS Developer'
+sub_headline: 'Our go-to CMS for all of our marketing sites.  Including this one!'
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Guess what?  The site you're reading write now uses the wonderful "
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://statamic.com'
+              rel: null
+              target: _blank
+              title: null
+        text: Statamic
+      -
+        type: text
+        text: ' CMS to manage its content!'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "After decades of building sites using WordPress, then dabbling in a number of flat file static site generators, Brian finally landed on Statamic and now it's the go-to."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'It offers the perfect mix of hands-on pixel-perfect design capabilities with a powerful and customizeable CMS interface that anyone on the marketing team can log into and use.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'If Brian and the '
+      -
+        type: text
+        marks:
+          -
+            type: italic
+        text: 'Instrumental Products'
+      -
+        type: text
+        text: " team is involved in the marketing site for your product, then we'll most likely recommend Statamic as the CMS."

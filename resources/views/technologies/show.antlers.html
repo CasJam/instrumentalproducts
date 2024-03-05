@@ -2,7 +2,7 @@
 
   <!-- Title -->
   <div class="pb-8">
-    <div class="mb-6 flex items-center space-x-4">
+    <div class="mb-6 flex items-start space-x-4">
       {{ if technology_logo }}
       <div class="w-12 h-12 bg-white border border-surfaces-100 rounded-md flex flex-col items-center justify-center 
                   lg:w-16 lg:h-16">
@@ -32,7 +32,7 @@
     {{ /if }}
   </div>
 
-  <div class="py-8">
+  <div class="py-12 content">
     {{ content }}
     {{ partial src="bard/{type}" }}
     {{ /content }}
@@ -42,7 +42,7 @@
     <h2>Projects where we used {{ title }}</h2>
 
     <div class="divide-y-2 divide-surfaces-200">
-      {{ collection:projects taxonomy:technologies="{{ page:title | lower }}" }}
+      {{ collection:projects taxonomy:technologies="{{ page:title | lower | slugify }}" }}
       {{ partial:listing :image="project_logo_square" :title="title" :description="sub_headline" }}
       {{ /collection:projects}}
     </div>
