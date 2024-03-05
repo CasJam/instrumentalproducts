@@ -10,7 +10,7 @@ logo_as_title: true
 website_url: 'https://processkit.com'
 launched_date: '2019-02-01'
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709652424
+updated_at: 1709655185
 sub_headline: 'SaaS for creating & running repeatable processes and SOPs with your team.'
 project_status: 'Sold in 2021, still running under new ownership'
 technologies:

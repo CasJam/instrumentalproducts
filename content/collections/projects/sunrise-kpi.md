@@ -18,7 +18,7 @@ skills:
   - development
   - design
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709653045
+updated_at: 1709655189
 content:
   -
     type: paragraph

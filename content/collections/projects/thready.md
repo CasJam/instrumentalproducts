@@ -19,7 +19,7 @@ skills:
   - development
   - product-management
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709653391
+updated_at: 1709655192
 content:
   -
     type: paragraph
