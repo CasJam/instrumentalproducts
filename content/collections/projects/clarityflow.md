@@ -25,7 +25,8 @@ skills:
   - development
   - product-management
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709655177
+updated_at: 1709665237
+featured_video: 'https://www.youtube.com/watch?v=CGGNQJsCiBI'
 content:
   -
     type: paragraph
@@ -194,4 +195,59 @@ content:
       -
         type: text
         text: .
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'See Clarityflow in action'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'For the full series of video demos, you can request access at '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://clarityflow.com/demo'
+              rel: null
+              target: _blank
+              title: null
+        text: clarityflow.com/demo
+      -
+        type: text
+        text: .
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Here are a few highlights:'
+  -
+    type: set
+    attrs:
+      id: lteqin87
+      values:
+        type: video
+        video: 'https://www.youtube.com/watch?v=CGGNQJsCiBI'
+  -
+    type: set
+    attrs:
+      id: lteqhy9u
+      values:
+        type: video
+        video: 'https://www.youtube.com/watch?v=bERHrcvqG9E'
+  -
+    type: set
+    attrs:
+      id: lteqj60k
+      values:
+        type: video
+        video: 'https://www.youtube.com/watch?v=C5ooScoZoDo'
 ---
