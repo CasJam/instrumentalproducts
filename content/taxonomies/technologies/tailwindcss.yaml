@@ -1,8 +1,17 @@
 title: TailwindCSS
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709666195
+updated_at: 1709666330
 blueprint: technology
 headline: 'TailwindCSS UI Designer'
 sub_headline: 'At <em>Instrumental Products</em>, TailwindCSS is our go-to for all of the interfaces we design in the browser.'
 technology_logo:
   - images/projects/technology_logos/tailwindcss.svg
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: a
+seo:
+  title: '@seo:headline'
