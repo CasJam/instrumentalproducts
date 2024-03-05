@@ -6,7 +6,8 @@
 >
 
   <div class="flex items-center justify-between px-2 py-2 bg-surfaces-100
-            md:text-center md:block md:rounded-lg ">
+            md:text-center md:block md:rounded-lg md:px-4 md:pt-4 md:pb-2 
+            xl:px-6 xl:pt-6 xl:pb-3">
 
     <div class="text-center">
       <a
@@ -18,7 +19,7 @@
           <img
             src="/assets/images/instrumental-products-icon.svg"
             alt="Instrumental Products"
-            class="h-8"
+            class="h-12"
           />
         </div>
         <div class="hidden 
@@ -35,17 +36,29 @@
     <div class="">
 
       <div
-        class="block md:hidden"
+        class="block mr-4 md:hidden"
         x-on:click="mobile_nav_open = ! mobile_nav_open"
       >
-        <i
-          class="fa-regular fa-bars fa-lg text-surfaces-300"
-          x-bind:class="mobile_nav_open ? 'hidden' : 'block'"
-        ></i>
-        <i
-          class="fa-regular fa-xmark fa-lg text-surfaces-300"
-          x-bind:class="mobile_nav_open ? 'block' : 'hidden'"
-        ></i>
+        <div class="flex items-center space-x-6">
+          <a
+            href="/contact"
+            class="icon-link"
+          >
+            <i class="fa-regular fa-envelope fa-lg text-surfaces-300 relative top-[1px]"></i>
+            <span>
+              New project
+            </span>
+          </a>
+
+          <i
+            class="fa-regular fa-bars fa-xl text-surfaces-300"
+            x-bind:class="mobile_nav_open ? 'hidden' : 'block'"
+          ></i>
+          <i
+            class="fa-regular fa-xmark fa-xl text-surfaces-300"
+            x-bind:class="mobile_nav_open ? 'block' : 'hidden'"
+          ></i>
+        </div>
       </div>
 
       <div :class="mobile_nav_open ? 'absolute top-12 left-0 w-full bg-surfaces-100 py-8 px-8' : 'hidden md:block'">
