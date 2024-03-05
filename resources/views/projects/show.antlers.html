@@ -2,7 +2,8 @@
 
   <!-- Title -->
   <div class="py-8">
-    <div class="mb-4 pt-6">
+    <div class="mb-4  
+                md:flex md:items-center md:space-x-6 md:justify-between">
       {{ if logo_as_title == true }}
       {{ if project_logo_full }}
       {{ project_logo_full }}
@@ -15,9 +16,22 @@
       {{ /project_logo_full }}
       {{ /if }}
       {{ else }}
-      <h1>
+      <h1 class="pt-0 mb-0">
         {{ title }}
       </h1>
+      {{ /if }}
+
+      {{ if website_url }}
+      <a
+        href="{{ website_url }}"
+        class="icon-link text-surfaces-400 mt-4 
+                md:mt-0"
+        target="_blank"
+      >
+        <span>Visit Site
+        </span>
+        <i class="fa-solid fa-external-link fa-xs relative"></i>
+      </a>
       {{ /if }}
     </div>
     {{ if sub_headline }}
