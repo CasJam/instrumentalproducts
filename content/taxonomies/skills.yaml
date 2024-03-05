@@ -7,3 +7,7 @@ preview_targets:
 template: skills/index
 term_template: skills/show
 layout: layout
+inject:
+  seo:
+    title: '@seo:headline'
+    description: '@seo:sub_headline'

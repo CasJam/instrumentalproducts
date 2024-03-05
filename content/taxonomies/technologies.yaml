@@ -7,3 +7,7 @@ preview_targets:
 template: technologies/index
 term_template: technologies/show
 layout: layout
+inject:
+  seo:
+    title: '@seo:headline'
+    description: '@seo:sub_headline'

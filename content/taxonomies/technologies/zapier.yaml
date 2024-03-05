@@ -2,5 +2,40 @@ title: Zapier
 technology_logo:
   - images/projects/technology_logos/zapier.svg
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1709651196
+updated_at: 1709680264
 blueprint: technology
+headline: 'Zapier Integration Developer'
+sub_headline: 'Almost all SaaS need a Zapier integration sooner rather than later.'
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Since '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://zapier.com'
+              rel: null
+              target: _blank
+              title: null
+        text: Zapier
+      -
+        type: text
+        text: " has become such a widespread tool for integrating... anything... to anything else... It's not surprise that Brian and his team at Instrumental Products has built multiple Zapier integrations for their products."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Zapier is typically one of the first external integrations we build for our products because it opens up so many capabilities for customers—which often seals the deal with activating new customers on a new product.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Plus, Zapier's developer platform is a joy to build on.  We've built extensive functionality between our SaaS apps and Zapier and found it's developer (and end-user) interface to be an efficient building platform.  Plus their technical developer support team has been exceptional when working through particularly complex Zapier functionality."
