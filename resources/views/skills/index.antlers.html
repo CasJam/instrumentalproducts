@@ -1,8 +1,15 @@
+<div class="mb-12">
+  <h1>Full Stack Product Skills</h1>
+  <p class="sub-headline">
+    Brian (and occassionally his small team) are full stack software product designers, developers and strategists.
+  </p>
+</div>
+
+
 {{ taxonomy:skills paginate="16" as="skills" sort="date:desc" }}
-<div class="space-y-16 
-            lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-6">
+<div class="divide-y-2 divide-surfaces-200">
   {{ skills }}
-  {{ partial:skills/listing }}
+  {{ partial:listing :title="title" :description="sub_headline" }}
   {{ /skills }}
 </div>
 {{ if total_items > 16 }}
