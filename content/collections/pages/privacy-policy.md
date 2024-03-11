@@ -1,11 +1,10 @@
 ---
 id: f2e1aba0-9f56-4f0f-aaf5-9ccdb6665d91
-published: false
 blueprint: page
 title: 'Privacy Policy'
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1710160659
+updated_at: 1710160661
 content:
   -
     type: paragraph
