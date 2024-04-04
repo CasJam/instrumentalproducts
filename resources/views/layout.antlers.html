@@ -1,128 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- prettier-ignore -->
-        {{ seo_pro:meta }}
-        {{ if !open_graph_image }}
-          {{ if featured_image }}
-            {{ featured_image }}
-        <meta property="og:image" content="{{ permalink }}" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-            property="og:image:alt"
-            content="{{ alt ? alt : 'Instrumental Products' }}"
-        />
-        <meta name="twitter:image" content="{{ permalink }}" />
-        <meta
-            name="twitter:image:alt"
-            content="{{ alt ? alt : 'Instrumental Products' }}"
-        />
-        {{ /featured_image }} {{ else }}
-        <meta
-            property="og:image"
-            content="{{$ url('/assets/images/instrumental-products-og.png') $}}"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-            property="og:image:alt"
-            content="{{ title ? title : 'Instrumental Products' }}"
-        />
-        <meta
-            name="twitter:image"
-            content="{{$ url('/assets/images/instrumental-products-og.png') $}}"
-        />
-        <meta
-            name="twitter:image:alt"
-            content="{{ title ? title : 'Instrumental Products' }}"
-        />
-        {{ /if }} {{ /if }}
 
-        <script
-            src="https://kit.fontawesome.com/8e089e8fef.js"
-            crossorigin="anonymous"
-        ></script>
 
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-        <link rel="stylesheet" href="https://use.typekit.net/maf8xwl.css" />
+<head>
+  <meta charset="utf-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+  {{ seo_pro:meta }}
+  {{ if !open_graph_image }}
+  {{ if featured_image }}
+  {{ featured_image }}
+  <meta
+    property="og:image"
+    content="{{ permalink }}"
+  />
+  <meta
+    property="og:image:width"
+    content="1200"
+  />
+  <meta
+    property="og:image:height"
+    content="630"
+  />
+  <meta
+    property="og:image:alt"
+    content="{{ alt ? alt : 'Instrumental Products' }}"
+  />
+  <meta
+    name="twitter:image"
+    content="{{ permalink }}"
+  />
+  <meta
+    name="twitter:image:alt"
+    content="{{ alt ? alt : 'Instrumental Products' }}"
+  />
+  {{ /featured_image }}
+  {{ else }}
+  <meta
+    property="og:image"
+    content="{{$ url('/assets/images/instrumental-products-og.png') $}}"
+  />
+  <meta
+    property="og:image:width"
+    content="1200"
+  />
+  <meta
+    property="og:image:height"
+    content="630"
+  />
+  <meta
+    property="og:image:alt"
+    content="{{ title ? title : 'Instrumental Products' }}"
+  />
+  <meta
+    name="twitter:image"
+    content="{{$ url('/assets/images/instrumental-products-og.png') $}}"
+  />
+  <meta
+    name="twitter:image:alt"
+    content="{{ title ? title : 'Instrumental Products' }}"
+  />
+  {{ /if }}
+  {{ /if }}
 
-        <!-- Favicon -->
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/images/favicon/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="assets/images/favicon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="assets/images/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
-        <link
-            rel="mask-icon"
-            href="assets/images/favicon/safari-pinned-tab.svg"
-            color="#f24333"
-        />
-        <meta name="msapplication-TileColor" content="#fefcf4" />
-        <meta name="theme-color" content="#fefcf4" />
+  <script
+    src="https://kit.fontawesome.com/8e089e8fef.js"
+    crossorigin="anonymous"
+  ></script>
 
-        <script
-            defer
-            data-domain="instrumentalproducts.com"
-            src="https://plausible.io/js/script.js"
-        ></script>
+  {{ vite src="resources/js/site.js|resources/css/site.css" }}
+  <link
+    rel="stylesheet"
+    href="https://use.typekit.net/maf8xwl.css"
+  >
 
-        <script type="text/javascript">
-            (function () {
-                var t = document.createElement("script"),
-                    s = document.getElementsByTagName("script")[0];
-                t.async = true;
-                t.id = "cio-forms-handler";
-                t.setAttribute("data-site-id", "bfd8d79666e7ff911c8f");
-                t.setAttribute("data-base-url", "https://customerioforms.com");
 
-                t.src = "https://customerioforms.com/assets/forms.js";
+  <!-- Favicon -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="assets/images/favicon/apple-touch-icon.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="assets/images/favicon/favicon-32x32.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="assets/images/favicon/favicon-16x16.png"
+  >
+  <link
+    rel="manifest"
+    href="assets/images/favicon/site.webmanifest"
+  >
+  <link
+    rel="mask-icon"
+    href="assets/images/favicon/safari-pinned-tab.svg"
+    color="#f24333"
+  >
+  <meta
+    name="msapplication-TileColor"
+    content="#fefcf4"
+  >
+  <meta
+    name="theme-color"
+    content="#fefcf4"
+  >
 
-                s.parentNode.insertBefore(t, s);
-            })();
-        </script>
-    </head>
+  <script
+    defer
+    data-domain="instrumentalproducts.com"
+    src="https://plausible.io/js/script.js"
+  ></script>
 
-    <body class="">
-        <!-- prettier-ignore -->
-        {{ if page.url == "/" }}
-          {{ partial:home/hero }}
-        {{ /if }}
+  <script type="text/javascript">
+    (function () {
+      var t = document.createElement('script'),
+        s = document.getElementsByTagName('script')[0];
+      t.async = true;
+      t.id = 'cio-forms-handler';
+      t.setAttribute('data-site-id', 'bfd8d79666e7ff911c8f');
+      t.setAttribute('data-base-url', 'https://customerioforms.com');
 
-        <div
-            class="max-w-4xl mx-auto md:flex md:items-start md:justify-between md:px-8 md:space-x-12 xl:max-w-5xl 2xl:max-w-6xl 2xl:space-x-20"
-        >
-            {{ partial:navigation }}
-            <div
-                class="flex-1 pb-24 px-8 max-w-lg mx-auto md:px-8 md:max-w-full"
-            >
-                <div
-                    class="space-y-6
+      t.src = 'https://customerioforms.com/assets/forms.js';
+
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+
+</head>
+
+<body class="">
+
+  {{ if page.url == "/" }}
+    {{ partial:home/hero }}
+  {{ /if }}
+
+  <div class="max-w-4xl mx-auto
+              md:flex md:items-start md:justify-between md:px-8 md:space-x-12
+              xl:max-w-5xl
+              2xl:max-w-6xl 2xl:space-x-20">
+    {{ partial:navigation }}
+    <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
+                md:px-8 md:max-w-full">
+
+      <div class="space-y-6
                   {{ if page.url != '/' }}
                     pt-8 md:pt-24
-                  {{ /if }}"
-                >
-                    {{ template_content }}
-                </div>
-            </div>
-        </div>
+                  {{ /if }}">
+        {{ template_content }}
+      </div>
+    </div>
 
-        {{ partial:footer}}
-    </body>
+  </div>
+
+  {{ partial:footer}}
+</body>
+
 </html>
