@@ -1,10 +1,10 @@
-<div class="divide-y-4 divide-surfaces-100 text-left">
+<div class="divide-y-4 divide-secondary-100 text-left">
 
   <!-- Title -->
   <div class="pb-8">
     <div class="mb-6 flex items-start space-x-4">
       {{ if technology_logo }}
-      <div class="w-12 h-12 bg-white border border-surfaces-100 rounded-md flex flex-col items-center justify-center 
+      <div class="w-12 h-12 bg-white border border-secondary-100 rounded-md flex flex-col items-center justify-center
                   lg:w-16 lg:h-16">
         {{ technology_logo }}
         <img
@@ -41,7 +41,7 @@
   <div class="py-12">
     <h2>Projects where we used {{ title }}</h2>
 
-    <div class="divide-y-2 divide-surfaces-200">
+    <div class="divide-y-2 divide-secondary-200">
       {{ collection:projects taxonomy:technologies="{{ page:title | lower | slugify }}" }}
       {{ partial:listing :image="project_logo_square" :title="title" :description="sub_headline" }}
       {{ /collection:projects}}

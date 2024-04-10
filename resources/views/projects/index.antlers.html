@@ -6,7 +6,7 @@
 </div>
 
 {{ collection:projects paginate="16" as="projects" sort="date:desc" }}
-<div class="divide-y-2 divide-surfaces-200">
+<div class="divide-y-2 divide-secondary-200">
   {{ projects }}
   {{ partial:listing :image="project_logo_square" :title="title" :description="sub_headline" }}
   {{ /projects }}

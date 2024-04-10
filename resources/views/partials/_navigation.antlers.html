@@ -5,30 +5,26 @@
   x-data="{ mobile_nav_open: false }"
 >
 
-  <div class="flex items-center justify-between px-2 py-2 bg-surfaces-100
-            md:text-center md:block md:rounded-lg md:px-4 md:pt-4 md:pb-2 
-            xl:px-6 xl:pt-6 xl:pb-3">
+  <div class="flex items-center justify-between px-2 py-2 bg-secondary-50
+            md:text-center md:block md:rounded-lg md:px-4 md:pt-4 md:pb-2">
 
     <div class="text-center">
       <a
         href="/"
         class="mx-auto"
       >
-        <div class="flex flex-col items-center justify-center 
+        <div class="w-10 h-10 flex flex-col items-center justify-center uppercase tracking-widest font-semibold text-secondary-500 rounded bg-secondary-200 text-xl leading-0
                     md:hidden">
-          <img
-            src="/assets/images/instrumental-products-icon.svg"
-            alt="Instrumental Products"
-            class="h-12"
-          />
+          IP
         </div>
-        <div class="hidden 
+        <div class="hidden uppercase tracking-widest font-semibold text-secondary-500 rounded bg-secondary-200 text-sm py-2 px-4 leading-0
                   md:block">
-
-          <img
-            src="/assets/images/instrumental-products.svg"
-            alt="Instrumental Products"
-          />
+          <div>
+            Instrumental
+          </div>
+          <div>
+            Products
+          </div>
         </div>
       </a>
     </div>
@@ -44,26 +40,26 @@
             href="/contact"
             class="icon-link"
           >
-            <i class="fa-regular fa-envelope fa-lg text-surfaces-300 relative top-[1px]"></i>
+            <i class="fa-regular fa-envelope fa-lg text-secondary-300 relative top-[1px]"></i>
             <span>
               New project
             </span>
           </a>
 
           <i
-            class="fa-regular fa-bars fa-xl text-surfaces-300"
+            class="fa-regular fa-bars fa-xl text-secondary-300"
             x-bind:class="mobile_nav_open ? 'hidden' : 'block'"
           ></i>
           <i
-            class="fa-regular fa-xmark fa-xl text-surfaces-300"
+            class="fa-regular fa-xmark fa-xl text-secondary-300"
             x-bind:class="mobile_nav_open ? 'block' : 'hidden'"
           ></i>
         </div>
       </div>
 
-      <div :class="mobile_nav_open ? 'absolute top-12 left-0 w-full bg-surfaces-100 py-8 px-8' : 'hidden md:block'">
-        <div class="text-base pt-4 pl-4 uppercase tracking-widest font-semibold font-labels space-y-6 pb-6 
-                  md:pt-8 md:text-sm md:pl-0 
+      <div :class="mobile_nav_open ? 'absolute top-12 left-0 w-full bg-secondary-50 py-8 px-8' : 'hidden md:block'">
+        <div class="text-base pt-4 pl-4 uppercase tracking-widest font-semibold font-labels space-y-6 pb-6
+                  md:pt-8 md:text-sm md:pl-0
                   2xl:text-base">
           <a
             href="/#about"

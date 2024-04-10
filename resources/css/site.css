@@ -6,8 +6,8 @@
 
 @layer base {
     body {
-        @apply font-text font-light text-base/normal bg-off-white text-gray-600
-                xs:text-lg/normal 
+        @apply font-text font-normal text-base/normal bg-off-white text-gray-600
+                xs:text-lg/normal
                 2xl:text-xl/normal;
     }
 
@@ -18,15 +18,15 @@
     }
 
     h1 {
-        @apply text-3xl mb-6 font-medium 
-          sm:text-4xl 
-          lg:text-5xl lg:tracking-tight 
+        @apply text-3xl mb-6 font-medium tracking-tight
+          sm:text-4xl
+          lg:text-5xl lg:tracking-tight
           2xl:text-6xl;
     }
 
     h2 {
-        @apply text-2xl mb-6 font-medium pt-4
-          sm:text-3xl 
+        @apply text-2xl mb-6 font-medium pt-4 tracking-tight
+          sm:text-3xl
           2xl:text-4xl;
     }
 
@@ -62,19 +62,19 @@
 
 @layer components {
     .btn {
-        @apply bg-primary-500 text-base tracking-widest text-white uppercase font-labels py-2 px-4 rounded font-medium 
+        @apply bg-primary-500 text-base tracking-widest text-white uppercase font-labels py-2 px-4 rounded font-medium
           hover:text-white hover:bg-black;
     }
 
     .icon-link {
         @apply font-labels uppercase tracking-wider font-semibold flex items-center space-x-3 text-primary-500 text-sm
-            sm:text-base 
+            sm:text-base
             lg:text-base lg:space-x-4
             hover:text-black;
     }
 
     .icon-link.right-icon {
-      @apply space-x-2;
+        @apply space-x-2;
     }
 
     .link {
@@ -82,30 +82,30 @@
     }
 
     .sub-headline {
-        @apply font-text text-xl 
+        @apply font-text text-xl
             xs:text-xl/snug
             sm:text-2xl/snug;
     }
-    
+
     .form-control {
-      @apply w-full bg-surfaces-100 rounded-md py-3 px-4;
+        @apply w-full bg-secondary-100 rounded-md py-3 px-4;
     }
-    
+
     .form-control:focus {
-      @apply outline-none text-black border-2 border-primary-500;
+        @apply outline-none text-black border-2 border-primary-500;
     }
-    
+
     .content p,
     .content ul,
     .content ol,
     .content blockquote {
         @apply mb-6;
     }
-    
+
     .content ul li p {
         @apply mb-2;
     }
-    
+
     .content ul ul,
     .content ol ol {
         @apply mb-2;
