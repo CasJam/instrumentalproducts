@@ -1,8 +1,8 @@
-<div class="divide-y-4 divide-surfaces-100 text-left">
+<div class="divide-y-4 divide-secondary-100 text-left">
 
   <!-- Title -->
   <div class="pb-8">
-    <div class="mb-6  
+    <div class="mb-6
                 md:flex md:items-center md:space-x-6 md:justify-between">
       {{ if logo_as_title == true }}
       {{ if project_logo_full }}
@@ -24,7 +24,7 @@
       {{ if website_url }}
       <a
         href="{{ website_url }}"
-        class="icon-link text-surfaces-400 mt-4 
+        class="icon-link text-secondary-400 mt-4
                 md:mt-0"
         target="_blank"
       >
@@ -78,12 +78,12 @@
   <!-- Content -->
   <div class="py-8">
     {{ if featured_video }}
-    <div class="px-2 mb-6 
-              sm:px-0 
+    <div class="px-2 mb-6
+              sm:px-0
               lg:mb-10">
       <iframe
         src="{{ featured_video | embed_url }}"
-        class="aspect-video w-full overflow-hidden 
+        class="aspect-video w-full overflow-hidden
                     sm:rounded-lg sm:mx-0"
       ></iframe>
     </div>
@@ -92,7 +92,7 @@
     <img
       src="{{ url }}"
       alt="{{ alt }}"
-      class="w-full overflow-hidden rounded mb-6 
+      class="w-full overflow-hidden rounded mb-6
           lg:mb-10"
       loading="lazy"
     />

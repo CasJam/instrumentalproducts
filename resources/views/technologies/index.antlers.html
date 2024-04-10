@@ -7,7 +7,7 @@
 
 
 {{ taxonomy:technologies paginate="16" as="technologies" sort="date:desc" }}
-<div class="divide-y-2 divide-surfaces-200">
+<div class="divide-y-2 divide-secondary-200">
   {{ technologies }}
   {{ partial:listing :image="technology_logo" :title="title" :description="sub_headline" }}
   {{ /technologies }}

@@ -143,18 +143,18 @@
 <body class="">
 
   {{ if page.url == "/" }}
-  {{ partial:home/hero }}
+    {{ partial:home/hero }}
   {{ /if }}
 
   <div class="max-w-4xl mx-auto
-              md:flex md:items-start md:justify-between md:px-8 md:space-x-12 
-              xl:max-w-5xl 
+              md:flex md:items-start md:justify-between md:px-8 md:space-x-12
+              xl:max-w-5xl
               2xl:max-w-6xl 2xl:space-x-20">
     {{ partial:navigation }}
-    <div class="flex-1 pb-24 px-8 max-w-lg mx-auto 
+    <div class="flex-1 pb-24 px-8 max-w-lg mx-auto
                 md:px-8 md:max-w-full">
 
-      <div class="space-y-6 
+      <div class="space-y-6
                   {{ if page.url != '/' }}
                     pt-8 md:pt-24
                   {{ /if }}">
