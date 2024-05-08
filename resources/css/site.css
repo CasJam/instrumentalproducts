@@ -36,7 +36,7 @@
     }
 
     h4 {
-        @apply text-black font-medium mb-6 pt-4;
+        @apply text-xl text-black font-medium mb-6 pt-4;
     }
 
     a {
@@ -44,7 +44,7 @@
     }
 
     strong {
-        @apply text-black font-medium;
+        @apply text-gray-700 font-medium;
     }
 
     ul {
