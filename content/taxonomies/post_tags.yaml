@@ -1,1 +1,8 @@
 title: 'Post Tags'
+preview_targets:
+  -
+    label: Term
+    url: '{permalink}'
+    refresh: true
+term_template: post_tags/show
+layout: layout
