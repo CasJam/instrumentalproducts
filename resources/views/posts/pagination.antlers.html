@@ -1,0 +1,92 @@
+{{ paginate }}
+<div class="w-full mt-24 text-center">
+  <ul class="mx-auto inline-flex items-center">
+    {{ if prev_page }}
+    <li>
+      <a href="{{ prev_page }}"
+         class="w-8 h-8 flex flex-col items-start justify-center">
+        <i class="fa-solid fa-chevrons-left fa-xs"></i>
+      </a>
+    </li>
+    {{ else }}
+    <li class="disabled w-8 h-8 flex flex-col items-start justify-center">
+      <i class="fa-solid fa-chevrons-left fa-xs"></i>
+    </li>
+    {{ /if }}
+
+    {{ links:segments }}
+
+    {{ first }}
+    {{ if page == current_page }}
+    <li class="active w-8 h-8 bg-white text-black border border-off-white-100 flex flex-col items-center justify-center text-base rounded">
+      <span>{{ page }}</span>
+    </li>
+    {{ else }}
+    <li class="w-8">
+      <a href="{{ url }}"
+         class="w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+        {{ page }}
+      </a>
+    </li>
+    {{ /if }}
+    {{ /first }}
+
+    {{ if slider }}
+    <li class="disabled w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+      <span>...</span>
+    </li>
+    {{ /if }}
+
+    {{ slider }}
+    {{ if page == current_page }}
+    <li class="active w-8 h-8 bg-white text-black border border-off-white-100 flex flex-col items-center justify-center text-base rounded">
+      <span>{{ page }}</span>
+    </li>
+    {{ else }}
+    <li class="w-8">
+      <a href="{{ url }}"
+         class="w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+        {{ page }}
+      </a>
+    </li>
+    {{ /if }}
+    {{ /slider }}
+
+    {{ if slider || (!slider && last) }}
+    <li class="disabled disabled w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+      <span>...</span>
+    </li>
+    {{ /if }}
+
+    {{ last }}
+    {{ if page == current_page }}
+    <li class="active w-8 h-8 bg-white text-black border border-off-white-100 flex flex-col items-center justify-center text-base rounded">
+      <span>{{ page }}</span>
+    </li>
+    {{ else }}
+    <li class="w-8">
+      <a href="{{ url }}"
+         class="w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+        {{ page }}
+      </a>
+    </li>
+    {{ /if }}
+    {{ /last }}
+
+    {{ /links:segments }}
+
+    {{ if next_page }}
+    <li class="w-8">
+      <a href="{{ next_page }}"
+         class="w-8 h-8 flex flex-col items-center justify-center">
+        <i class="fa-solid fa-chevrons-right fa-xs"></i>
+      </a>
+    </li>
+    {{ else }}
+    <li class="disabled w-8 h-8 flex flex-col items-center justify-center">
+      <i class="fa-solid fa-chevrons-right fa-xs"></i>
+    </li>
+    {{ /if }}
+  </ul>
+</div>
+{{ /paginate }}
