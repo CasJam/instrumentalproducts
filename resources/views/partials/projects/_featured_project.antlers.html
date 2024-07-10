@@ -1,0 +1,28 @@
+<a href="{{ url }}"
+   class="block group"
+   target="_blank">
+  <div class="border-4 border-secondary-900 p-1.5">
+    <div>
+      <div class="px-4 h-40 bg-secondary-900 bg-opacity-20 w-full h-full flex items-center justify-center">
+        <img src="/assets/images/projects/{{ off_image }}"
+             alt="{{ title }}"
+             class="h-12 block group-hover:hidden">
+        <img src="/assets/images/projects/{{ on_image }}"
+             alt="{{ title }}"
+             class="h-12 hidden group-hover:block">
+      </div>
+      <div class="p-4 space-y-2
+                  md:p-6">
+        <div class="text-secondary-400">
+          {{ description }}
+        </div>
+        <div class="flex items-center space-x-3">
+          <div>
+            {{ display_link }}
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square fa-xs relative top-[2px] text-secondary-600"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
