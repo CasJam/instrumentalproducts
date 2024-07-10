@@ -1,9 +1,0 @@
-title: 'Article Categories'
-preview_targets:
-  -
-    label: Category
-    url: '{permalink}'
-    refresh: true
-template: categories.index
-term_template: categories.show
-layout: layout
