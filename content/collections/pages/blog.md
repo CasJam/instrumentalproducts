@@ -5,6 +5,6 @@ title: Blog
 headline: Blog
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720621253
+updated_at: 1720634427
 template: posts/index
 ---
