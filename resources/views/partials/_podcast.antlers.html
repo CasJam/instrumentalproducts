@@ -1,0 +1,25 @@
+<a href="{{ url }}"
+   target="_blank"
+   class="group flex justify-start flex-col space-y-2
+          md:space-y-0 md:flex-row md:items-start md:space-x-8">
+  <div class="w-40 mx-auto border-4 border-secondary-900
+              md:mt-2">
+    <img src="/assets/images/{{ image }}"
+         alt="{{ title }}"
+         class="">
+  </div>
+  <div class="flex-1">
+    <h2 class="pt-0 mb-2
+               md:mb-4
+               group-hover:text-primary-400">
+      {{ title }}
+      <i class="fa-regular fa-arrow-up-right-from-square fa-xs ml-2 hidden text-secondary-600
+                md:group-hover:inline-block"></i>
+    </h2>
+    <div class="text-secondary-400
+                xs:w-3/4 xs:mx-auto
+                md:w-full">
+      {{ description }}
+    </div>
+  </div>
+</a>

@@ -14,7 +14,7 @@
   h1,
   h2,
   h3 {
-    @apply font-medium text-black;
+    @apply font-medium text-secondary-100;
   }
 
   h1 {
@@ -22,6 +22,10 @@
     sm:text-4xl
     lg:text-5xl lg:tracking-tight
     2xl:text-6xl;
+  }
+
+  .sub-headline {
+    @apply lg:text-2xl lg:leading-9;
   }
 
   h2 {
