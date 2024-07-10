@@ -1,4 +1,6 @@
-<div class="space-y-12 py-12">
+<div class="space-y-12 py-12
+            md:pt-20
+            lg:pt-24">
 
   <div class="">
     <h1>
@@ -6,12 +8,15 @@
       <span class="nw">feel like it.</span>
     </h1>
 
-    <p>
+    <p class="md:w-4/5
+              lg:text-2xl lg:leading-9
+              xl:w-3/5">
       I love the hard, creative work of designing products just as much as my mission to build a business that lasts.
     </p>
   </div>
 
-  <div class="space-y-6 flex flex-col">
+  <div class="space-y-6 flex flex-col items-center
+              md:items-start">
 
     {{ partial:pointer_link text="What I'm working on" url="/projects" }}
 

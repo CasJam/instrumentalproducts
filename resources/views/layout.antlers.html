@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="{{ site:short_locale }}">
-
+<html lang="{{ site:short_locale }}"
+      class="h-full">
 
 <head>
   <meta charset="utf-8">
@@ -123,16 +123,21 @@
 
 </head>
 
-<body class="px-8 py-12
+<body class="px-8 py-12 h-full
              md:px-10">
 
-<div class="text-center space-y-12
+<div class="text-center space-y-12 h-full flex flex-col justify-between
             md:text-left">
 
-  {{ partial:header }}
+  <div>
 
-  <div class="md:px-32">
-    {{ template_content }}
+    {{ partial:header }}
+
+    <div class="sm:w-3/4 sm:mx-auto
+              md:w-full md:px-32">
+      {{ template_content }}
+    </div>
+
   </div>
 
   {{ partial:footer/footer }}
