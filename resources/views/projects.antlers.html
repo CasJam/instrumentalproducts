@@ -49,5 +49,64 @@ sub_headline: "These are the projects that keep me busy at the moment."
 
   </div>
 
+  <div class="text-left">
+
+    <div class="mb-12">
+      <h2 class="mb-3">
+        All my projects
+      </h2>
+      <p>
+        Let's work our way back to the beginning.
+      </p>
+    </div>
+
+    <div class="hidden
+                lg:text-secondary-700 lg:pb-4 lg:flex lg:items-start lg:space-x-6 ">
+      <div class="flex items-start space-x-20">
+        <div class="uppercase font-medium text-base tracking-widest
+                  lg:w-1/5">
+          Project
+        </div>
+        <div class="uppercase font-medium text-base tracking-widest
+                  lg:w-1/5">
+          Started
+        </div>
+      </div>
+
+      <div class="flex-1 flex items-start space-x-20">
+
+        <div class="flex-1 uppercase tracking-widest text-base font-medium">
+          Description
+        </div>
+
+        <div class="flex-1 uppercase tracking-widest text-base font-medium">
+          What happened?
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="border-t border-b divide-y divide-secondary-800 border-secondary-800">
+      {{ partial:projects/project
+      title="Clarityflow"
+      url="https://clarityflow.com"
+      display_link="clarityflow.com"
+      started="2023"
+      description="A SaaS product primarily used by coaches for async video, audio, and text communication with
+      clients."
+      what_happened="Still running with my small team." }}
+
+      {{ partial:projects/project
+      title="ZipMessage"
+      url="https://zipmessage.com"
+      display_link="zipmessage.com"
+      started="2021"
+      description="The precursor to Clarityflow, which began as a general-purpose async video messaging tool."
+      what_happened="In 2023 I rebranded it to Clarityflow and niched it down to serve coaches." }}
+    </div>
+
+  </div>
+
 </div>
 
