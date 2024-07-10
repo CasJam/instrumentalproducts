@@ -4,5 +4,6 @@ blueprint: page
 title: Podcasts
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720644313
+updated_at: 1720644321
+template: podcasts
 ---
