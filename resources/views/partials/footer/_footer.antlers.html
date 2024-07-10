@@ -1,0 +1,24 @@
+<div class="border-t-4 border-secondary-900 pt-8 space-y-12">
+
+  <div class="space-y-6">
+
+    <div class="space-x-4">
+      {{ partial:footer/footer_nav_link text="About" url="/about" }}
+      {{ partial:footer/footer_nav_link text="Blog" url="/blog" }}
+      {{ partial:footer/footer_nav_link text="Contact" url="/contact" }}
+    </div>
+
+    <div class="flex items-center space-x-2 justify-center space-x-6">
+      {{ partial:footer/social_link icon_name="square-x-twitter" url="https://x.com/casjam" }}
+      {{ partial:footer/social_link icon_name="square-threads" url="https://www.threads.net/@brian.casel" }}
+      {{ partial:footer/social_link icon_name="square-youtube" url="https://youtube.com/@briancasel" }}
+      {{ partial:footer/social_link icon_name="linkedin" url="https://www.linkedin.com/in/briancasel/" }}
+    </div>
+
+  </div>
+
+  <div class="text-secondary-500 text-base">
+    © {{$ now()->year $}} CasJam Media LLC
+  </div>
+
+</div>

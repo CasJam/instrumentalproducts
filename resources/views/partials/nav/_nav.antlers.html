@@ -1,0 +1,8 @@
+<div class="space-y-4 flex flex-col items-center text-xl
+            sm:space-y-0 sm:flex-row sm:space-x-10 sm:justify-center
+            md:ml-32 md:justify-start">
+  {{ partial:nav/nav_link text="Home" url="/" active="{ current_uri == '/' }" }}
+  {{ partial:nav/nav_link text="Podcasts" url="/podcasts" active="{ current_uri == '/podcasts' }" }}
+  {{ partial:nav/nav_link text="Projects" url="/projects" active="{ current_uri == '/projects' }" }}
+  {{ partial:nav/nav_link text="Work with me" url="/consulting" active="{ current_uri == '/consulting' }" }}
+</div>

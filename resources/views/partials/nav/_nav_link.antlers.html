@@ -1,0 +1,22 @@
+<a href="{{ url }}"
+   class="group flex items-center space-x-3 border-transparent
+          {{ if active }}
+            cursor-default
+          {{ else }}
+          {{ /if }}">
+  <div class="hidden
+              sm:block sm:w-4 sm:h-4 sm:rounded-xs sm:relative sm:-top-[2px]
+              {{ if active }}
+                bg-secondary-300
+              {{ else }}
+                bg-secondary-900
+              {{ /if }}"></div>
+  <span class="inline-block pb-1 border-b-[3px] border-black
+               {{ if active }}
+                 text-secondary-300
+               {{ else }}
+                 group-hover:border-secondary-900
+               {{ /if }}">
+    {{ text }}
+  </span>
+</a>

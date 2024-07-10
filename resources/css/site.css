@@ -5,109 +5,117 @@
 /* This is all you. */
 
 @layer base {
-    body {
-        @apply font-text font-normal text-base/normal text-gray-600
-                xs:text-lg/normal
-                2xl:text-xl/normal;
-    }
+  body {
+    @apply font-text font-normal text-base/normal bg-black text-secondary-400
+    xs:text-lg/normal
+    2xl:text-xl/normal;
+  }
 
-    h1,
-    h2,
-    h3 {
-        @apply font-medium text-black;
-    }
+  h1,
+  h2,
+  h3 {
+    @apply font-medium text-black;
+  }
 
-    h1 {
-        @apply text-3xl mb-6 font-medium tracking-tight
-          sm:text-4xl
-          lg:text-5xl lg:tracking-tight
-          2xl:text-6xl;
-    }
+  h1 {
+    @apply text-3xl mb-6 font-medium tracking-tight text-secondary-100
+    sm:text-4xl
+    lg:text-5xl lg:tracking-tight
+    2xl:text-6xl;
+  }
 
-    h2 {
-        @apply text-2xl mb-6 font-medium pt-4 tracking-tight
-          sm:text-3xl
-          2xl:text-4xl;
-    }
+  h2 {
+    @apply text-2xl mb-6 font-medium pt-4 tracking-tight
+    sm:text-3xl
+    2xl:text-4xl;
+  }
 
-    h3 {
-        @apply text-xl/7 font-medium pt-4 mb-6
-          sm:text-2xl/8 sm:pt-6;
-    }
+  h3 {
+    @apply text-xl/7 font-medium pt-4 mb-6
+    sm:text-2xl/8 sm:pt-6;
+  }
 
-    h4 {
-        @apply text-xl text-black font-medium mb-6 pt-4;
-    }
+  h4 {
+    @apply text-xl text-black font-medium mb-6 pt-4;
+  }
 
-    a {
-        @apply text-primary-500 hover:text-black;
-    }
+  a {
+    @apply text-primary-400;
+  }
 
-    strong {
-        @apply text-gray-700 font-medium;
-    }
+  strong {
+    @apply text-gray-700 font-medium;
+  }
 
-    ul {
-        @apply list-disc ml-6;
-    }
+  ul {
+    @apply list-disc ml-6;
+  }
 
-    ul ul {
-        @apply mt-2;
-    }
+  ul ul {
+    @apply mt-2;
+  }
 
-    ul li {
-        @apply mb-2;
-    }
+  ul li {
+    @apply mb-2;
+  }
 }
 
 @layer components {
-    .btn {
-        @apply bg-primary-500 text-base tracking-widest text-white uppercase py-2 px-4 rounded font-medium
-          hover:text-white hover:bg-black;
-    }
+  .btn {
+    @apply bg-primary-500 text-base tracking-widest text-white uppercase py-2 px-4 rounded font-medium
+    hover:text-white hover:bg-black;
+  }
 
-    .icon-link {
-        @apply font-labels uppercase tracking-wider font-semibold flex items-center space-x-3 text-primary-500 text-sm
-            sm:text-base
-            lg:text-base lg:space-x-4
-            hover:text-black;
-    }
+  .icon-link {
+    @apply font-labels uppercase tracking-wider font-semibold flex items-center space-x-3 text-primary-500 text-sm
+    sm:text-base
+    lg:text-base lg:space-x-4
+    hover:text-black;
+  }
 
-    .icon-link.right-icon {
-        @apply space-x-2;
-    }
+  .icon-link.right-icon {
+    @apply space-x-2;
+  }
 
-    .link {
-        @apply cursor-pointer text-primary-500 hover:text-black;
-    }
+  .link {
+    @apply cursor-pointer text-primary-500 hover:text-black;
+  }
 
-    .sub-headline {
-        @apply font-text text-xl
-            xs:text-xl/snug
-            sm:text-2xl/snug;
-    }
+  .sub-headline {
+    @apply font-text text-xl
+    xs:text-xl/snug
+    sm:text-2xl/snug;
+  }
 
-    .form-control {
-        @apply w-full bg-secondary-100 rounded-md py-3 px-4;
-    }
+  .form-control {
+    @apply w-full bg-secondary-100 rounded-md py-3 px-4;
+  }
 
-    .form-control:focus {
-        @apply outline-none text-black border-2 border-primary-500;
-    }
+  .form-control:focus {
+    @apply outline-none text-black border-2 border-primary-500;
+  }
 
-    .content p,
-    .content ul,
-    .content ol,
-    .content blockquote {
-        @apply mb-6;
-    }
+  .content a {
+    @apply inline-block border-b-[3px] pb-0.5 border-b-black hover:text-primary-400 hover:border-b-secondary-800;
+  }
 
-    .content ul li p {
-        @apply mb-2;
-    }
+  .content p,
+  .content ul,
+  .content ol,
+  .content blockquote {
+    @apply mb-6;
+  }
 
-    .content ul ul,
-    .content ol ol {
-        @apply mb-2;
-    }
+  .content ul li p {
+    @apply mb-2;
+  }
+
+  .content ul ul,
+  .content ol ol {
+    @apply mb-2;
+  }
+
+  .nw {
+    @apply whitespace-nowrap;
+  }
 }

@@ -30,7 +30,7 @@
   />
   <meta
     property="og:image:alt"
-    content="{{ alt ? alt : 'Instrumental Products' }}"
+    content="{{ alt ? alt : 'Brian Casel' }}"
   />
   <meta
     name="twitter:image"
@@ -38,13 +38,13 @@
   />
   <meta
     name="twitter:image:alt"
-    content="{{ alt ? alt : 'Instrumental Products' }}"
+    content="{{ alt ? alt : 'Brian Casel' }}"
   />
   {{ /featured_image }}
   {{ else }}
   <meta
     property="og:image"
-    content="{{$ url('/assets/images/instrumental-products-og.png') $}}"
+    content="{{$ url('/assets/images/brian-casel-og.png') $}}"
   />
   <meta
     property="og:image:width"
@@ -56,15 +56,15 @@
   />
   <meta
     property="og:image:alt"
-    content="{{ title ? title : 'Instrumental Products' }}"
+    content="{{ title ? title : 'Brian Casel' }}"
   />
   <meta
     name="twitter:image"
-    content="{{$ url('/assets/images/instrumental-products-og.png') $}}"
+    content="{{$ url('/assets/images/brian-casel-og.png') $}}"
   />
   <meta
     name="twitter:image:alt"
-    content="{{ title ? title : 'Instrumental Products' }}"
+    content="{{ title ? title : 'Brian Casel' }}"
   />
   {{ /if }}
   {{ /if }}
@@ -106,43 +106,38 @@
   <link
     rel="mask-icon"
     href="assets/images/favicon/safari-pinned-tab.svg"
-    color="#f24333"
+    color="#171921"
   >
   <meta
     name="msapplication-TileColor"
-    content="#fefcf4"
+    content="#171921"
   >
   <meta
     name="theme-color"
-    content="#fefcf4"
+    content="#171921"
   >
 
-  <script
-    defer
-    data-domain="instrumentalproducts.com"
-    src="https://plausible.io/js/script.js"
-  ></script>
-
-  <script type="text/javascript">
-    (function () {
-      var t = document.createElement('script'),
-        s = document.getElementsByTagName('script')[0];
-      t.async = true;
-      t.id = 'cio-forms-handler';
-      t.setAttribute('data-site-id', 'bfd8d79666e7ff911c8f');
-      t.setAttribute('data-base-url', 'https://customerioforms.com');
-
-      t.src = 'https://customerioforms.com/assets/forms.js';
-
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
+  <script defer
+          data-domain="briancasel.com"
+          src="https://plausible.io/js/script.js"></script>
 
 </head>
 
-<body class="">
+<body class="px-8 py-12
+             md:px-10">
 
-{{ template_content }}
+<div class="text-center space-y-12
+            md:text-left">
+
+  {{ partial:header }}
+
+  <div class="md:px-32">
+    {{ template_content }}
+  </div>
+
+  {{ partial:footer/footer }}
+
+</div>
 
 </body>
 
