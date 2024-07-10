@@ -15,13 +15,10 @@ export default {
             },
             fontFamily: {
                 text: ["barlow", "sans-serif"],
-                display: ["barlow", "sans-serif"],
-                labels: ["barlow", "serif"],
             },
             colors: {
                 black: "#182125",
                 white: "#ffffff",
-                "off-white": "#ffffff",
                 gray: {
                     50: "#f4f5f7",
                     100: "#e4e8e9",
@@ -60,20 +57,7 @@ export default {
                     800: "#555f7e",
                     900: "#495166",
                     950: "#2b2f3b",
-                },
-                surfaces: {
-                    50: "#f3f8f8",
-                    100: "#e1ebec",
-                    200: "#c6d9db",
-                    300: "#9ebec2",
-                    400: "#6f9ba1",
-                    500: "#537f87",
-                    600: "#486a72",
-                    700: "#3f585f",
-                    800: "#394b51",
-                    900: "#334146",
-                    950: "#253237",
-                },
+                }
             },
         },
     },

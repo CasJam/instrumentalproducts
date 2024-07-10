@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply font-text font-normal text-base/normal bg-off-white text-gray-600
+        @apply font-text font-normal text-base/normal text-gray-600
                 xs:text-lg/normal
                 2xl:text-xl/normal;
     }
@@ -14,7 +14,7 @@
     h1,
     h2,
     h3 {
-        @apply font-display font-medium text-black;
+        @apply font-medium text-black;
     }
 
     h1 {
@@ -62,7 +62,7 @@
 
 @layer components {
     .btn {
-        @apply bg-primary-500 text-base tracking-widest text-white uppercase font-labels py-2 px-4 rounded font-medium
+        @apply bg-primary-500 text-base tracking-widest text-white uppercase py-2 px-4 rounded font-medium
           hover:text-white hover:bg-black;
     }
 
