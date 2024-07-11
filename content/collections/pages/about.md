@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720662632
+updated_at: 1720662738
 content:
   -
     type: paragraph
@@ -116,4 +116,10 @@ content:
               -
                 type: text
                 text: "  When I'm not working on software projects, I'm often working on music projects in my home production studio.  I'm a lifelong guitarist, songwriter, and hobby music production.  Someday I hope to publish some songs.  Someday. "
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'What else... I live in coastal Connecticut with my wife and 2 daughters (born 2014 and 2016).  We love to travel the world, watch the Mets and Knicks, and spend as much time outdoors as we can.'
 ---
