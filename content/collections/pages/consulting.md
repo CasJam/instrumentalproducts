@@ -4,7 +4,7 @@ blueprint: page
 title: Consulting
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720658220
+updated_at: 1720658241
 headline: 'Work with me'
 sub_headline: 'Currently booking consulting projects.'
 content:
@@ -14,6 +14,10 @@ content:
       -
         type: text
         text: "I'm currently consulting with SaaS companies and founders on product design and development.  There are two flavors of projects that I'm taking:"
+  -
+    type: paragraph
+  -
+    type: horizontalRule
   -
     type: heading
     attrs:
@@ -62,6 +66,10 @@ content:
       -
         type: text
         text: ' to inquire about availability.'
+  -
+    type: paragraph
+  -
+    type: horizontalRule
   -
     type: heading
     attrs:
