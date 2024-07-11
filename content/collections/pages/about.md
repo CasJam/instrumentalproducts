@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720662738
+updated_at: 1720663678
 content:
   -
     type: paragraph
