@@ -4,8 +4,9 @@ blueprint: page
 title: Consulting
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720657490
+updated_at: 1720657588
 headline: 'Work with me'
+sub_headline: 'Currently booking consulting projects.'
 content:
   -
     type: paragraph
