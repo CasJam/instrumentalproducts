@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720661727
+updated_at: 1720661812
 content:
   -
     type: paragraph
@@ -25,5 +25,17 @@ content:
     content:
       -
         type: text
-        text: a
+        text: "So instead of giving you my 1-line elevator pitch about me, I'll give it to you in bullet list form (my favorite):"
+  -
+    type: bulletList
+    content:
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: a
 ---
