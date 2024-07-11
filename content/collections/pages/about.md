@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720661937
+updated_at: 1720662097
 content:
   -
     type: paragraph
@@ -49,5 +49,11 @@ content:
             content:
               -
                 type: text
-                text: a
+                marks:
+                  -
+                    type: bold
+                text: "I'm a bootstrapper."
+              -
+                type: text
+                text: "  I've always preferred the simplicity of self-funding all of my businesses by focusing on revenue and profitability.  Build a thing and sell it.  Simple.  A few years back I took a (relatively) small investment for one of my businesses (Clarityflow) but remained bootstrapped for everything else."
 ---
