@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720662488
+updated_at: 1720662632
 content:
   -
     type: paragraph
@@ -101,4 +101,19 @@ content:
               -
                 type: text
                 text: "  I've always preferred the simplicity of self-funding all of my businesses by focusing on revenue and profitability.  Build a thing and sell it.  Simple.  A few years back I took a (relatively) small investment for one of my businesses (Clarityflow) but remained bootstrapped for everything else."
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'I make music.'
+              -
+                type: text
+                text: "  When I'm not working on software projects, I'm often working on music projects in my home production studio.  I'm a lifelong guitarist, songwriter, and hobby music production.  Someday I hope to publish some songs.  Someday. "
 ---
