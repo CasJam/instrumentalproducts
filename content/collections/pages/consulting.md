@@ -4,7 +4,7 @@ blueprint: page
 title: Consulting
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720657710
+updated_at: 1720658013
 headline: 'Work with me'
 sub_headline: 'Currently booking consulting projects.'
 content:
@@ -13,7 +13,61 @@ content:
     content:
       -
         type: text
-        text: "I'm currently offering consulting services.  If you're interested, please "
+        text: "I'm currently consulting with SaaS companies and founders on product design and development.  There are two flavors of projects that I'm taking:"
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'UI & UX design'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "If your SaaS product needs an upgraded user interface and user experience, I'd love to help.  I've been designing and building interfaces for over 15 years and now focus on modern interfaces with Tailwind CSS."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'To learn more about my UI design service, visit '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://tailormadeui.com'
+              rel: null
+              target: _blank
+              title: null
+        text: 'Tailor-Made UI'
+      -
+        type: text
+        text: ' and '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: /contact
+              rel: null
+              target: null
+              title: null
+        text: 'get in touch'
+      -
+        type: text
+        text: ' to inquire about availability.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "If you're interested, please "
       -
         type: text
         marks:
