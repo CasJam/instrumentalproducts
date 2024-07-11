@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720662097
+updated_at: 1720662350
 content:
   -
     type: paragraph
@@ -41,6 +41,36 @@ content:
               -
                 type: text
                 text: '  I''ve been building businesses for as long as I can remember.  I became "unemployable" in 2008 when I left my last salary job to go freelance as a web designer, and I''ve been building businesses on the internet ever since.'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: "I'm a designer."
+              -
+                type: text
+                text: '  The strongest skill in my "stack" is design.  Specifically, user interface design.  I''ve always been obsessed with how a user experiences a web application.  CSS is my design medium of choice :)'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: "I'm a developer."
+              -
+                type: text
+                text: '  I started my career as a professional front-end developer but later expanded to become a full stack developer (I build apps using Ruby on Rails, mostly.)'
       -
         type: listItem
         content:
