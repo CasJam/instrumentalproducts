@@ -4,17 +4,18 @@
   <div class="rounded space-y-6
               md:flex md:items-start md:space-x-6 md:space-y-0">
 
-    <div class="flex-1 pb-6">
+    <div class="flex-1 pb-6 space-y-4">
 
-      <h2 class="mb-2 pt-0
+      <h2 class="pt-0
                 group-hover:text-primary-500">
-        <a href="{{ url }}">
+        <a href="{{ url }}"
+           class="text-secondary-300
+                  hover:text-primary-400">
           {{ title }}
         </a>
       </h2>
 
-      <div class="font-text text-sm text-gray-600 mb-4
-                xs:text-base">
+      <div class="">
         {{ if excerpt }}
         {{ excerpt }}
         {{ else }}
@@ -22,18 +23,9 @@
         {{ /if }}
       </div>
 
-      <div class="flex items-center space-x-6 tracking-wide text-sm text-base">
-        <div class="flex items-center space-x-2">
-          <img
-            src="/assets/images/brian-casel.jpg"
-            alt="Brian Casel"
-            class="h-6 w-6 rounded-full"
-          />
-          <div class="text-gray-400">
-            Brian Casel
-          </div>
-        </div>
-        <div class="text-gray-300 opacity-80">
+      <div class="flex items-center space-x-6 tracking-wide">
+        
+        <div class="text-secondary-600">
           {{ date }}
         </div>
       </div>
