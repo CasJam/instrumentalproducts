@@ -1,24 +1,22 @@
 <div class="pt-6 pb-7 space-y-6
-            lg:space-y-0 lg:flex lg:items-start lg:space-x-6">
-  <div class="lg:flex lg:items-start lg:space-x-20">
+            lg:space-y-0 lg:flex lg:items-start lg:space-x-20">
+  <div class="space-y-6
+              lg:space-y-0 lg:w-1/4 lg:flex lg:items-start lg:space-x-2">
 
-    <div class="lg:w-1/5">
+    <div class="flex-1">
       {{ if url }}
       <a href="{{ url }}"
          target="_blank"
-         class="group flex items-center space-x-2">
-        <div class="text-white group-hover:text-primary-400">
-          {{ title }}
-        </div>
-        <i class="fa-solid fa-arrow-up-right-from-square fa-xs hidden text-secondary-600 relative top-[1px]
-                group-hover:block"></i>
+         class="flex items-center space-x-2 text-white
+                hover:text-primary-400">
+        {{ title }}
       </a>
       {{ else }}
       {{ title }}
       {{ /if }}
     </div>
 
-    <div class="lg:w-1/5">
+    <div class="">
       <div class="uppercase tracking-widest text-base font-medium text-secondary-700 mb-1.5
                   lg:hidden">
         Started
