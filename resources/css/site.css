@@ -14,14 +14,14 @@
   h1,
   h2,
   h3 {
-    @apply font-medium text-secondary-200;
+    @apply font-medium text-white;
   }
 
   h1 {
-    @apply text-3xl mb-6 font-medium tracking-tight text-white
-    sm:text-4xl
-    lg:text-5xl lg:tracking-tight
-    2xl:text-6xl;
+    @apply text-3xl/snug mb-6 font-medium tracking-tight text-white
+    sm:text-4xl/snug
+    lg:text-5xl/snug lg:tracking-tight
+    2xl:text-6xl/snug;
   }
 
   .sub-headline {
