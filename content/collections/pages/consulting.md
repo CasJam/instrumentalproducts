@@ -4,7 +4,7 @@ blueprint: page
 title: Consulting
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720658013
+updated_at: 1720658220
 headline: 'Work with me'
 sub_headline: 'Currently booking consulting projects.'
 content:
@@ -62,6 +62,26 @@ content:
       -
         type: text
         text: ' to inquire about availability.'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Full Stack SaaS MVP Development'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'As a full stack founder, having designed, built and sold multiple SaaS apps, I have a unique combo of skills that are ideal for launching a new SaaS product idea as efficiently as possible.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'I work with founders to define a scope for your MVP (minimal viable product) and handle all of the design and build to get your version 1 into the hands of first customers.  In most cases, these projects can be shipped in under 3 months.'
   -
     type: paragraph
     content:
