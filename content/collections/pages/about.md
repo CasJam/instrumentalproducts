@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720662350
+updated_at: 1720662488
 content:
   -
     type: paragraph
@@ -71,6 +71,21 @@ content:
               -
                 type: text
                 text: '  I started my career as a professional front-end developer but later expanded to become a full stack developer (I build apps using Ruby on Rails, mostly.)'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'I build in public.'
+              -
+                type: text
+                text: "  For my entire career, I've had a natural inclination to share as much of work in public — through my podcasts, Twitter, my newsletter, or on YouTube.  Why?  Because we're incredibly lucky to work in an industry that shares so openly and helps eachother level up.  It's only right to contribute my part."
       -
         type: listItem
         content:
