@@ -1,15 +1,16 @@
 {{ paginate }}
-<div class="w-full mt-24">
+<div class="w-full mt-20 text-lg">
   <div class="mx-auto inline-flex items-center">
     {{ if prev_page }}
     <div>
       <a href="{{ prev_page }}"
-         class="w-8 h-8 flex flex-col items-start justify-center">
+         class="w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
         <i class="fa-solid fa-chevrons-left text-xs"></i>
       </a>
     </div>
     {{ else }}
-    <div class="disabled w-8 h-8 flex flex-col items-start justify-center">
+    <div class="disabled w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-500">
       <i class="fa-solid fa-chevrons-left fa-xs"></i>
     </div>
     {{ /if }}
@@ -18,13 +19,15 @@
 
     {{ first }}
     {{ if page == current_page }}
-    <div class="active w-8 h-8 bg-white text-black border border-gray-100 flex flex-col items-center justify-center text-base rounded">
+    <div class="active w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
       <span>{{ page }}</span>
     </div>
     {{ else }}
-    <div class="w-8">
+    <div class="">
       <a href="{{ url }}"
-         class="w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+         class="w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
         {{ page }}
       </a>
     </div>
@@ -32,20 +35,22 @@
     {{ /first }}
 
     {{ if slider }}
-    <li class="disabled w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+    <div class="disabled w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-500">
       <span>...</span>
-    </li>
+    </div>
     {{ /if }}
 
     {{ slider }}
     {{ if page == current_page }}
-    <div class="active w-8 h-8 bg-white text-black border border-gray-100 flex flex-col items-center justify-center text-base rounded">
+    <div class="active w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
       <span>{{ page }}</span>
     </div>
     {{ else }}
     <div class="w-8">
       <a href="{{ url }}"
-         class="w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+         class="w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
         {{ page }}
       </a>
     </div>
@@ -53,37 +58,40 @@
     {{ /slider }}
 
     {{ if slider || (!slider && last) }}
-    <div class="disabled disabled w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+    <div class="disabled w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-500">
       <span>...</span>
     </div>
     {{ /if }}
 
     {{ last }}
     {{ if page == current_page }}
-    <div class="active w-8 h-8 bg-white text-black border border-gray-100 flex flex-col items-center justify-center text-base rounded">
+    <div class="active w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
       <span>{{ page }}</span>
     </div>
     {{ else }}
-    <li class="w-8">
+    <div class="">
       <a href="{{ url }}"
-         class="w-8 h-8 flex flex-col items-center justify-center text-base rounded">
+         class="w-8 h-8 w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
         {{ page }}
       </a>
-    </li>
+    </div>
     {{ /if }}
     {{ /last }}
 
     {{ /links:segments }}
 
     {{ if next_page }}
-    <div class="w-8">
+    <div class="">
       <a href="{{ next_page }}"
-         class="w-8 h-8 flex flex-col items-center justify-center">
+         class="w-8 w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-300
+                hover:bg-secondary-900 hover:text-primary-400">
         <i class="fa-solid fa-chevrons-right text-xs"></i>
       </a>
     </div>
     {{ else }}
-    <div class="disabled w-8 h-8 flex flex-col items-center justify-center">
+    <div class="disabled w-8 h-8 flex flex-col items-center justify-center rounded-sm text-secondary-500">
       <i class="fa-solid fa-chevrons-right text-xs"></i>
     </div>
     {{ /if }}
