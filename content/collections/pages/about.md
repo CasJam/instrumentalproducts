@@ -6,7 +6,7 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720661828
+updated_at: 1720661937
 content:
   -
     type: paragraph
@@ -26,6 +26,21 @@ content:
   -
     type: bulletList
     content:
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: "I'm an entrepreneur."
+              -
+                type: text
+                text: '  I''ve been building businesses for as long as I can remember.  I became "unemployable" in 2008 when I left my last salary job to go freelance as a web designer, and I''ve been building businesses on the internet ever since.'
       -
         type: listItem
         content:
