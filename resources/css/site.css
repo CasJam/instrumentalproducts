@@ -62,6 +62,10 @@
   ul li {
     @apply mb-2;
   }
+
+  hr {
+    @apply border-t-4 border-secondary-900 mt-20 mb-16;
+  }
 }
 
 @layer components {
