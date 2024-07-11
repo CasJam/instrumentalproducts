@@ -6,14 +6,14 @@ headline: 'About Brian Casel'
 sub_headline: "(That's me, Hi 👋)"
 author: d5ab20b3-388d-4650-bb43-d170de415ebf
 updated_by: d5ab20b3-388d-4650-bb43-d170de415ebf
-updated_at: 1720661699
+updated_at: 1720661727
 content:
   -
     type: paragraph
     content:
       -
         type: text
-        text: "For my entire career, I've had a hard time knowing what to say when asked, "
+        text: "For my entire career, I've had a hard time knowing what to say when someone asks me, "
       -
         type: text
         marks:
